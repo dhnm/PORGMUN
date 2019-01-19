@@ -162,11 +162,11 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
     tableView.refreshControl?.beginRefreshing()
     updateData()
     
-    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.rowHeight = UITableView.automaticDimension
     tableView.estimatedRowHeight = 500.0
   }
   
-  func updateData() {
+  @objc func updateData() {
     if connectedToNetwork() {
       posts = [Post]()
       callAPI()
@@ -187,7 +187,7 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
     return 1
   }
   
-  func handleTap(_ recognizer: UITapGestureRecognizer) {
+  @objc func handleTap(_ recognizer: UITapGestureRecognizer) {
     var index: Int = recognizer.view!.tag
     if index < 1000 {
       if let safeLink = posts[index].link {
@@ -283,19 +283,19 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
       
       cell.messageLabel.font = UIFont(name: "ProximaNova-Regular", size: 16)
       //cell.messageLabel.textColor = UIColor.darkGray
-      cell.messageLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+      cell.messageLabel.lineBreakMode = .byWordWrapping
       cell.messageLabel.numberOfLines = 0
       cell.messageLabel.enabledTextCheckingTypes = NSTextCheckingResult.CheckingType.link.rawValue
       cell.messageLabel.delegate = self
       
-      let linkAttributes = [
-        NSForegroundColorAttributeName: UIColor.black,
-        NSFontAttributeName: UIFont(name: "ProximaNova-Semibold", size: 16)
+      let linkAttributes: [NSAttributedString.Key: Any] = [
+        .foregroundColor: UIColor.black,
+        .font: UIFont(name: "ProximaNova-Semibold", size: 16)!
       ]
-      let activeLinkAttributes = [
-        NSForegroundColorAttributeName: UIColor.black.withAlphaComponent(0.80),
-        NSUnderlineStyleAttributeName: NSNumber(value: true),
-        ]
+      let activeLinkAttributes: [NSAttributedString.Key: Any] = [
+        .foregroundColor: UIColor.black.withAlphaComponent(0.80),
+        .underlineStyle: NSNumber(value: true)
+      ]
       
       cell.messageLabel.linkAttributes = linkAttributes
       cell.messageLabel.activeLinkAttributes = activeLinkAttributes
@@ -303,14 +303,11 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
       let text: String = message!
       
       cell.messageLabel.setText(text, afterInheritingLabelAttributesAndConfiguringWith: { mutableAttributedString in
-        let boldRange: NSRange = (mutableAttributedString!.string as NSString).range(of: "ipsum dolor", options: .caseInsensitive)
+        let boldRange = (mutableAttributedString!.string as NSString).range(of: "ipsum dolor", options: .caseInsensitive)
         // Core Text APIs use C functions without a direct bridge to UIFont. See Apple's "Core Text Programming Guide" to learn how to configure string attributes.
         let boldFont = UIFont(name: "ProximaNova-Semibold", size: 16)!
-        let font: CTFont? = CTFontCreateWithName((boldFont.fontName as CFString), boldFont.pointSize, nil)
-        
-        if font != nil {
-          mutableAttributedString?.addAttribute((kCTFontAttributeName as String), value: (font as Any), range: boldRange)
-        }
+        let font = CTFontCreateWithName(boldFont.fontName as CFString, boldFont.pointSize, nil)
+        mutableAttributedString?.addAttribute(NSAttributedString.Key(kCTFontAttributeName as String), value: font, range: boldRange)
         return mutableAttributedString!
       })
       
@@ -391,8 +388,8 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
   }
   
   func attributedLabel(_ label: TTTAttributedLabel!, didSelectLinkWith url: URL!) {
-    let mailtoCheck = url.absoluteString.substring(to: url.absoluteString.index(url.absoluteString.startIndex, offsetBy: 7))
-    let httpCheck = url.absoluteString.substring(to: url.absoluteString.index(url.absoluteString.startIndex, offsetBy: 4))
+    let mailtoCheck = url.absoluteString[...url.absoluteString.index(url.absoluteString.startIndex, offsetBy: 7)]
+    let httpCheck = url.absoluteString[...url.absoluteString.index(url.absoluteString.startIndex, offsetBy: 4)]
     
     if httpCheck == "http" {
       openSafariVC(url: url)
@@ -401,7 +398,7 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
       if MFMailComposeViewController.canSendMail() {
         let mail = MFMailComposeViewController()
         mail.mailComposeDelegate = self
-        let recipient = url.absoluteString.substring(from: url.absoluteString.index(url.absoluteString.startIndex, offsetBy: 7))
+        let recipient = String(url.absoluteString[url.absoluteString.index(url.absoluteString.startIndex, offsetBy: 7)...])
         mail.setToRecipients([recipient])
         mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
         present(mail, animated: true)

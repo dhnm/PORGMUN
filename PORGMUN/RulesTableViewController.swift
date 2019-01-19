@@ -176,7 +176,7 @@ class RulesTableViewController: UITableViewController, UISearchResultsUpdating {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "rulesDetailSegue" {
       if let destinationVC: RulesDetailViewController = segue.destination as? RulesDetailViewController {
-        let indexPath: IndexPath = self.rulesTableView.indexPathForSelectedRow!
+        let indexPath = self.rulesTableView.indexPathForSelectedRow!
         let sectionCell = filteredRules[indexPath.section].items[indexPath.row]
         destinationVC.data = (title: sectionCell.name, text: sectionCell.detail)
       }

@@ -22,40 +22,40 @@ class TabBarController: UITabBarController {
     
     UIApplication.shared.statusBarStyle = .default
     
-    UINavigationBar.appearance().barTintColor = UIColor.white // top bar background color
+    UINavigationBar.appearance().barTintColor = .white // top bar background color
     /*UINavigationBar.appearance().setBackgroundImage(UIImage.imageWithColor(color: UIColor.clear, size: CGSize(width: 1, height: 1)), for: .default)
      let blurEffect = UIBlurEffect(style: .light)
      let blurEffectView = UIVisualEffectView(effect: blurEffect)
      blurEffectView.frame = UINavigationBar.appearance().bounds
      UINavigationBar.appearance().insertSubview(blurEffectView, at: 0)*/
     
-    UINavigationBar.appearance().tintColor = UIColor.black // top bar buttons color
-    UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.black] // top bar text color
+    UINavigationBar.appearance().tintColor = .black // top bar buttons color
+    UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.black] // top bar text color
     UINavigationBar.appearance().isTranslucent = true
     
     // TAB BAR
     
-    self.tabBar.items?[0].image = #imageLiteral(resourceName: "fa-calendar@3x.png").withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-    self.tabBar.items?[0].selectedImage = #imageLiteral(resourceName: "fa-calendar@3x.png").withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+    self.tabBar.items?[0].image = #imageLiteral(resourceName: "fa-calendar@3x.png").withRenderingMode(.alwaysTemplate)
+    self.tabBar.items?[0].selectedImage = #imageLiteral(resourceName: "fa-calendar@3x.png").withRenderingMode(.alwaysTemplate)
     
-    self.tabBar.items?[1].image = #imageLiteral(resourceName: "fa-newspaper@2x.png").withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-    self.tabBar.items?[1].selectedImage = #imageLiteral(resourceName: "fa-newspaper@2x.png").withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+    self.tabBar.items?[1].image = #imageLiteral(resourceName: "fa-newspaper@2x.png").withRenderingMode(.alwaysTemplate)
+    self.tabBar.items?[1].selectedImage = #imageLiteral(resourceName: "fa-newspaper@2x.png").withRenderingMode(.alwaysTemplate)
     
-    self.tabBar.items?[2].image = #imageLiteral(resourceName: "fa-handshake@2x.png").withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-    self.tabBar.items?[2].selectedImage = #imageLiteral(resourceName: "fa-handshake@2x.png").withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+    self.tabBar.items?[2].image = #imageLiteral(resourceName: "fa-handshake@2x.png").withRenderingMode(.alwaysTemplate)
+    self.tabBar.items?[2].selectedImage = #imageLiteral(resourceName: "fa-handshake@2x.png").withRenderingMode(.alwaysTemplate)
     
-    self.tabBar.items?[3].image = #imageLiteral(resourceName: "fa-book@3x.png").withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-    self.tabBar.items?[3].selectedImage = #imageLiteral(resourceName: "fa-book@3x.png").withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+    self.tabBar.items?[3].image = #imageLiteral(resourceName: "fa-book@3x.png").withRenderingMode(.alwaysTemplate)
+    self.tabBar.items?[3].selectedImage = #imageLiteral(resourceName: "fa-book@3x.png").withRenderingMode(.alwaysTemplate)
     
-    self.tabBar.items?[4].image = #imageLiteral(resourceName: "fa-id@2x.png").withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-    self.tabBar.items?[4].selectedImage = #imageLiteral(resourceName: "fa-id@2x.png").withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+    self.tabBar.items?[4].image = #imageLiteral(resourceName: "fa-id@2x.png").withRenderingMode(.alwaysTemplate)
+    self.tabBar.items?[4].selectedImage = #imageLiteral(resourceName: "fa-id@2x.png").withRenderingMode(.alwaysTemplate)
     
     let numberOfItems = CGFloat(tabBar.items!.count)
     let tabBarItemSize = CGSize(width: tabBar.frame.width / numberOfItems, height: tabBar.frame.height)
     
     self.tabBar.selectionIndicatorImage = UIImage.imageWithColor(color: UIColor.lightText.withAlphaComponent(0.15), size: tabBarItemSize)
     
-    self.tabBar.barTintColor = UIColor.white // botom bar bg color
+    self.tabBar.barTintColor = .white // botom bar bg color
     /*self.tabBar.backgroundImage = UIImage.imageWithColor(color: UIColor.clear, size: CGSize(width: 1, height: 1))
      blurEffectView.frame = self.tabBar.bounds
      self.tabBar.insertSubview(blurEffectView, at: 0)*/
@@ -64,10 +64,10 @@ class TabBarController: UITabBarController {
     self.tabBar.unselectedItemTintColor = unselectedColor
     self.tabBar.isTranslucent = true
     
-    UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: unselectedColor], for: .normal)
-    UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: selectedColor], for: .selected)
-    UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "ProximaNova-Regular", size: 10)!], for: .normal)
-    UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "ProximaNova-Regular", size: 10)!], for: .selected)
+    UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: unselectedColor], for: .normal)
+    UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: selectedColor], for: .selected)
+    UITabBarItem.appearance().setTitleTextAttributes([.font: UIFont(name: "ProximaNova-Regular", size: 10)!], for: .normal)
+    UITabBarItem.appearance().setTitleTextAttributes([.font: UIFont(name: "ProximaNova-Regular", size: 10)!], for: .selected)
   }
 }
 

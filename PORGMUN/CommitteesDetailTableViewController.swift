@@ -48,7 +48,7 @@ class CommitteesDetailTableViewController: UITableViewController {
         return 0
       }
     }
-    return UITableViewAutomaticDimension
+    return UITableView.automaticDimension
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -94,14 +94,14 @@ class CommitteesDetailTableViewController: UITableViewController {
     if indexPath.section == 0 {
       return 143.0
     }
-    return UITableViewAutomaticDimension
+    return UITableView.automaticDimension
   }
   
   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     if indexPath.section == 0 {
       return 143.0
     }
-    return UITableViewAutomaticDimension
+    return UITableView.automaticDimension
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -25,7 +25,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     let regionRadius = CLLocationDistance(radius)
     let latitude = location.coordinate.latitude - 0.075 * (Double(radius)/6000)
     let convertedLocation = CLLocation(latitude: latitude, longitude: location.coordinate.longitude)
-    let coordinateRegion = MKCoordinateRegionMakeWithDistance(convertedLocation.coordinate, regionRadius * 3.0, regionRadius * 3.0)
+    let coordinateRegion = MKCoordinateRegion(center: convertedLocation.coordinate, latitudinalMeters: regionRadius * 3.0, longitudinalMeters: regionRadius * 3.0)
     mapView.setRegion(coordinateRegion, animated: true)
   }
   
@@ -92,7 +92,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                           UIFont(name: "ProximaNova-Regular", size: 15)!]),
     ]
   
-  func titleTapped() {
+  @objc func titleTapped() {
     let lat: CLLocationDegrees = 50.089139
     let lon: CLLocationDegrees = 14.417630
     let initialLocation = CLLocation(latitude: lat, longitude: lon)
@@ -119,7 +119,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     // blurred tableView
     
-    if !UIAccessibilityIsReduceTransparencyEnabled() {
+    if !UIAccessibility.isReduceTransparencyEnabled {
       tableView.backgroundColor = UIColor(white: 1.00, alpha: 0.00)
       let blurEffect = UIBlurEffect(style: .light)
       let blurEffectView = UIVisualEffectView(effect: blurEffect)
@@ -218,8 +218,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     let index = Int((titlePlaceColor?[1])!)!
     
-    let startTime = timesString.substring(to: startTimeIndex)
-    let endTime = timesString.substring(from: endTimeIndex)
+    let startTime = timesString[...startTimeIndex]
+    let endTime = timesString[endTimeIndex...]
     let placeName = titlePlaceColor?[0]
     var address = mapPoints[index].title
     if address == "Wenceslas Square" {
@@ -274,8 +274,9 @@ class MapPointClass: NSObject, MKAnnotation {
   }
   
   func mapItem() -> MKMapItem {
-    let addressDictionary = [String(CNPostalAddressStreetKey): subtitle as Any]
-    let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDictionary as? [String : Any])
+    var addressDictionary: [String: Any] = [:]
+    addressDictionary[CNPostalAddressStreetKey] = subtitle
+    let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDictionary)
     let mapItem = MKMapItem(placemark: placemark)
     mapItem.name = title
     return mapItem
@@ -321,7 +322,7 @@ extension MapViewController: UITableViewDelegate, UITableViewDataSource {
     // OPTION 1
     
     let coords = dictData["coords"] as! CLLocationCoordinate2D
-    let convertedLatitude = (coords.latitude as Double) + 0.002 as CLLocationDegrees
+    let convertedLatitude = coords.latitude + 0.002
     print(convertedLatitude)
     
     let initialLocation = CLLocation(latitude: convertedLatitude, longitude: coords.longitude)
@@ -357,15 +358,17 @@ extension MapViewController: UITableViewDelegate, UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
     if section == keysArray.count - 1 {
-      return CGFloat.leastNormalMagnitude
+      return .leastNormalMagnitude
     }
     return tableView.sectionFooterHeight
   }
   
   func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
-    view.tintColor = UIColor.red
-    guard let header = view as? UITableViewHeaderFooterView else { return }
-    header.textLabel?.textColor = UIColor.black
+    view.tintColor = .red
+    guard let header = view as? UITableViewHeaderFooterView else {
+      return
+    }
+    header.textLabel?.textColor = .black
     header.textLabel?.font = UIFont(name: "ProximaNova-Semibold", size: 14)
     
     header.textLabel?.frame = header.frame
@@ -390,13 +393,13 @@ extension MapViewController : MKMapViewDelegate {
           view.pinTintColor = UIColor(red:0.00, green:0.36, blue:0.64, alpha:1.00)
           
         case "orange":
-          view.pinTintColor = UIColor.orange
+          view.pinTintColor = .orange
           
         case "purple":
-          view.pinTintColor = UIColor.purple
+          view.pinTintColor = .purple
           
         default:
-          view.pinTintColor = UIColor.red
+          view.pinTintColor = .red
         }
         
       } else {
@@ -410,13 +413,13 @@ extension MapViewController : MKMapViewDelegate {
           view.pinTintColor = UIColor(red:0.00, green:0.36, blue:0.64, alpha:1.00)
           
         case "orange":
-          view.pinTintColor = UIColor.orange
+          view.pinTintColor = .orange
           
         case "purple":
-          view.pinTintColor = UIColor.purple
+          view.pinTintColor = .purple
           
         default:
-          view.pinTintColor = UIColor.red
+          view.pinTintColor = .red
           
         }
       }

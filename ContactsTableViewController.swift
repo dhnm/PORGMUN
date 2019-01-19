@@ -117,7 +117,7 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
     if indexPath.section != 0 && indexPath.row == 0 && data[indexPath.section]["picture"] != "" {
       return 330
     }
-    return UITableViewAutomaticDimension
+    return UITableView.automaticDimension
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -184,8 +184,8 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
           
         } else {
           UIPasteboard.general.string = data[indexPath.section]["e-mail"]
-          let alert = UIAlertController(title: "Copied to Clipboard", message: "E-mail address copied to clipboard.", preferredStyle: UIAlertControllerStyle.alert)
-          alert.addAction(UIAlertAction(title: "Great!", style: UIAlertActionStyle.default, handler: nil))
+          let alert = UIAlertController(title: "Copied to Clipboard", message: "E-mail address copied to clipboard.", preferredStyle: .alert)
+          alert.addAction(UIAlertAction(title: "Great!", style: .default, handler: nil))
           self.present(alert, animated: true, completion: nil)
         }
         
@@ -200,8 +200,8 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
               
             } else {
               UIPasteboard.general.string = String(phoneNumber)
-              let alert = UIAlertController(title: "Copied to Clipboard", message: "\(phoneNumber) copied to clipboard.", preferredStyle: UIAlertControllerStyle.alert)
-              alert.addAction(UIAlertAction(title: "Great!", style: UIAlertActionStyle.default, handler: nil))
+              let alert = UIAlertController(title: "Copied to Clipboard", message: "\(phoneNumber) copied to clipboard.", preferredStyle: .alert)
+              alert.addAction(UIAlertAction(title: "Great!", style: .default, handler: nil))
               self.present(alert, animated: true, completion: nil)
             }
           }
@@ -219,8 +219,8 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
         
       } else {
         UIPasteboard.general.string = "it@porgmun.cz"
-        let alert = UIAlertController(title: "Copied to Clipboard", message: "E-mail address copied to clipboard.", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Great!", style: UIAlertActionStyle.default, handler: nil))
+        let alert = UIAlertController(title: "Copied to Clipboard", message: "E-mail address copied to clipboard.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Great!", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
       }
     }

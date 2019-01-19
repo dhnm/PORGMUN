@@ -34,13 +34,12 @@ class ConferenceThemeViewController: UIViewController, TTTAttributedLabelDelegat
       let small = UIFont(name: "MyriadPro-Regular", size: 15)!
       let bold = UIFont(name: "MyriadPro-Semibold", size: 18)!
       let italic = UIFont(name: "MyriadPro-It", size: 16)!
-      let smallFont: CTFont? = CTFontCreateWithName((small.fontName as CFString), small.pointSize, nil)
-      let boldFont: CTFont? = CTFontCreateWithName((bold.fontName as CFString), bold.pointSize, nil)
-      if smallFont != nil && boldFont != nil && italicFont != nil {
-        mutableAttributedString?.addAttribute((kCTFontAttributeName as String), value: (smallFont as Any), range: smallRange)
-        mutableAttributedString?.addAttribute((kCTFontAttributeName as String), value: (boldFont as Any), range: boldRange)
-        mutableAttributedString?.addAttribute((kCTFontAttributeName as String), value: (italicFont as Any), range: italicRange)
-      }
+      let smallFont = CTFontCreateWithName(small.fontName as CFString, small.pointSize, nil)
+      let boldFont = CTFontCreateWithName(bold.fontName as CFString, bold.pointSize, nil)
+      let italicFont = CTFontCreateWithName(italic.fontName as CFString, italic.pointSize, nil)
+      mutableAttributedString?.addAttribute(NSAttributedString.Key(kCTFontAttributeName as String), value: smallFont, range: smallRange)
+      mutableAttributedString?.addAttribute(NSAttributedString.Key(kCTFontAttributeName as String), value: boldFont, range: boldRange)
+      mutableAttributedString?.addAttribute(NSAttributedString.Key(kCTFontAttributeName as String), value: italicFont, range: italicRange)
       return mutableAttributedString!
     })
   }

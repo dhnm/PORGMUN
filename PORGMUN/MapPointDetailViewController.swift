@@ -45,11 +45,11 @@ class MapPointDetailViewController: UITableViewController, TTTAttributedLabelDel
       
       var ctfonts = [CTFont?]()
       for font in self.location.fonts {
-        ctfonts.append(CTFontCreateWithName((font.fontName as CFString), font.pointSize, nil))
+        ctfonts.append(CTFontCreateWithName(font.fontName as CFString, font.pointSize, nil))
       }
       if ctfonts.contains(where: {$0 == nil}) {} else {
         for (index, _) in self.location.directionsText.enumerated() {
-          mutableAttributedString?.addAttribute((kCTFontAttributeName as String), value: (ctfonts[index] as Any), range: ranges[index])
+          mutableAttributedString?.addAttribute(NSAttributedString.Key(kCTFontAttributeName as String), value: (ctfonts[index] as Any), range: ranges[index])
         }
       }
       return mutableAttributedString!
@@ -68,7 +68,7 @@ class MapPointDetailViewController: UITableViewController, TTTAttributedLabelDel
     if indexPath.section == 0 {
       return 44
     }
-    return UITableViewAutomaticDimension
+    return UITableView.automaticDimension
   }
   
   override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
