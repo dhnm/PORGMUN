@@ -1,0 +1,75 @@
+//
+//  ConferenceThemeViewController.swift
+//  PORGMUN
+//
+//  Created by Nhat Minh Dinh Huy on 12/03/2017.
+//  Copyright © 2017 dhnm. All rights reserved.
+//
+
+import UIKit
+import TTTAttributedLabel
+
+class ConferenceThemeViewController: UIViewController, TTTAttributedLabelDelegate {
+
+    @IBOutlet weak var mainLabel: TTTAttributedLabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        
+        mainLabel.font = UIFont(name: "MyriadPro-Regular", size: 16)
+        //mainLabel.textColor = UIColor.darkGray
+        mainLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+        mainLabel.numberOfLines = 0
+        mainLabel.delegate = self
+        
+        let text: [String] = ["Theme of the Conference:", "\nSwinging Back to Democracy", "\nStriving for institutional change in an ever-changing society", "\n\nNew, hybrid threats, devaluation of national sovereignty in favour of globalization, political radicalization and the evident disconnect of the majority from leading political elites are all clear indicators that our current era is steadily rendering our conventional political system obsolete. The need for change is apparent. Essentially, Swinging back to democracy aims to address this issue by discussing the dissolution of the core democratic ideas of responsibility, decisiveness, and trust in the bureaucratic process and re-evaluating the way our society works or even debating on how it should work."]
+        
+        mainLabel.setText(text.joined(separator: ""), afterInheritingLabelAttributesAndConfiguringWith: {(_ mutableAttributedString: NSMutableAttributedString?) -> NSMutableAttributedString in
+            
+            let smallRange: NSRange = (mutableAttributedString!.string as NSString).range(of: text[0], options: .caseInsensitive)
+            let boldRange: NSRange = (mutableAttributedString!.string as NSString).range(of: text[1], options: .caseInsensitive)
+            let italicRange: NSRange = (mutableAttributedString!.string as NSString).range(of: text[2], options: .caseInsensitive)
+            
+            // Core Text APIs use C functions without a direct bridge to UIFont. See Apple's "Core Text Programming Guide" to learn how to configure string attributes.
+            
+            let small = UIFont(name: "MyriadPro-Regular", size: 15)!
+            let bold = UIFont(name: "MyriadPro-Semibold", size: 18)!
+            let italic = UIFont(name: "MyriadPro-It", size: 16)!
+            
+            let smallFont: CTFont? = CTFontCreateWithName((small.fontName as CFString), small.pointSize, nil)
+            let boldFont: CTFont? = CTFontCreateWithName((bold.fontName as CFString), bold.pointSize, nil)
+            let italicFont: CTFont? = CTFontCreateWithName((italic.fontName as CFString), italic.pointSize, nil)
+            
+            if smallFont != nil && boldFont != nil && italicFont != nil {
+                
+                mutableAttributedString?.addAttribute((kCTFontAttributeName as String), value: (smallFont as Any), range: smallRange)
+                mutableAttributedString?.addAttribute((kCTFontAttributeName as String), value: (boldFont as Any), range: boldRange)
+                mutableAttributedString?.addAttribute((kCTFontAttributeName as String), value: (italicFont as Any), range: italicRange)
+                
+            }
+            
+            return mutableAttributedString!
+            
+        })
+        
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
