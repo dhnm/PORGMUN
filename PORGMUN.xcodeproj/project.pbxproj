@@ -22,11 +22,6 @@
 		650DAD881E57A0BE0082A9B4 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650DAD871E57A0BE0082A9B4 /* logo@2x.png */; };
 		651901811E7590DE009C5A64 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 651901801E7590DE009C5A64 /* MyriadPro-Regular.otf */; };
 		6519686D1E27914200F0CD7D /* NovyPorg.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6519686C1E27914200F0CD7D /* NovyPorg.gpx */; };
-		654AE49F1E4BCF1500564EB4 /* calendar_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 654AE49A1E4BCF1500564EB4 /* calendar_unselected.png */; };
-		654AE4A01E4BCF1500564EB4 /* document_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 654AE49B1E4BCF1500564EB4 /* document_unselected.png */; };
-		654AE4A11E4BCF1500564EB4 /* hand-shake_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 654AE49C1E4BCF1500564EB4 /* hand-shake_unselected.png */; };
-		654AE4A21E4BCF1500564EB4 /* id-card_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 654AE49D1E4BCF1500564EB4 /* id-card_unselected.png */; };
-		654AE4A31E4BCF1500564EB4 /* newspaper_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 654AE49E1E4BCF1500564EB4 /* newspaper_unselected.png */; };
 		654AE4A51E4BD13B00564EB4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654AE4A41E4BD13B00564EB4 /* TabBarController.swift */; };
 		65587BC61E7596D100855365 /* MyriadPro-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651901821E7591EB009C5A64 /* MyriadPro-Semibold.ttf */; };
 		65587BC81E75970F00855365 /* MyriadPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65587BC71E75970F00855365 /* MyriadPro-Italic.ttf */; };
@@ -97,7 +92,6 @@
 		65CA8CB12054362C00737854 /* fa-facebook@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8CAE2054362B00737854 /* fa-facebook@3x.png */; };
 		65CA8CB22054362C00737854 /* fa-instagram@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8CAF2054362B00737854 /* fa-instagram@3x.png */; };
 		65CA8CB32054362C00737854 /* fa-twitter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8CB02054362C00737854 /* fa-twitter@3x.png */; };
-		65E6E8411E4BDFF300BE0E9F /* selectedTabBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65E6E8401E4BDFF300BE0E9F /* selectedTabBackground@2x.png */; };
 		65E6E84B1E4BF76C00BE0E9F /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6E84A1E4BF76C00BE0E9F /* ContactsTableViewController.swift */; };
 		8591D4187AF0F2F01EAA5FC5 /* Pods_PORGMUN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BB6F1C23FEB2BB1618D0B8 /* Pods_PORGMUN.framework */; };
 /* End PBXBuildFile section */
@@ -122,11 +116,6 @@
 		651901801E7590DE009C5A64 /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
 		651901821E7591EB009C5A64 /* MyriadPro-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Semibold.ttf"; sourceTree = "<group>"; };
 		6519686C1E27914200F0CD7D /* NovyPorg.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NovyPorg.gpx; sourceTree = "<group>"; };
-		654AE49A1E4BCF1500564EB4 /* calendar_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar_unselected.png; path = "../../../../../Škola/Septima B/PORGMUN/tab bar/calendar_unselected.png"; sourceTree = "<group>"; };
-		654AE49B1E4BCF1500564EB4 /* document_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = document_unselected.png; path = "../../../../../Škola/Septima B/PORGMUN/tab bar/document_unselected.png"; sourceTree = "<group>"; };
-		654AE49C1E4BCF1500564EB4 /* hand-shake_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hand-shake_unselected.png"; path = "../../../../../Škola/Septima B/PORGMUN/tab bar/hand-shake_unselected.png"; sourceTree = "<group>"; };
-		654AE49D1E4BCF1500564EB4 /* id-card_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "id-card_unselected.png"; path = "../../../../../Škola/Septima B/PORGMUN/tab bar/id-card_unselected.png"; sourceTree = "<group>"; };
-		654AE49E1E4BCF1500564EB4 /* newspaper_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = newspaper_unselected.png; path = "../../../../../Škola/Septima B/PORGMUN/tab bar/newspaper_unselected.png"; sourceTree = "<group>"; };
 		654AE4A41E4BD13B00564EB4 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		65587BC71E75970F00855365 /* MyriadPro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Italic.ttf"; sourceTree = "<group>"; };
 		65587BC91E759DAB00855365 /* ConferenceThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceThemeViewController.swift; sourceTree = "<group>"; };
@@ -198,7 +187,6 @@
 		65CA8CAE2054362B00737854 /* fa-facebook@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fa-facebook@3x.png"; sourceTree = "<group>"; };
 		65CA8CAF2054362B00737854 /* fa-instagram@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fa-instagram@3x.png"; sourceTree = "<group>"; };
 		65CA8CB02054362C00737854 /* fa-twitter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fa-twitter@3x.png"; sourceTree = "<group>"; };
-		65E6E8401E4BDFF300BE0E9F /* selectedTabBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "selectedTabBackground@2x.png"; path = "../../../../../Škola/Septima B/PORGMUN/selectedTabBackground@2x.png"; sourceTree = "<group>"; };
 		65E6E84A1E4BF76C00BE0E9F /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsTableViewController.swift; path = ../ContactsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,12 +249,6 @@
 		654AE4891E4BBF1600564EB4 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				654AE49A1E4BCF1500564EB4 /* calendar_unselected.png */,
-				654AE49B1E4BCF1500564EB4 /* document_unselected.png */,
-				654AE49C1E4BCF1500564EB4 /* hand-shake_unselected.png */,
-				654AE49D1E4BCF1500564EB4 /* id-card_unselected.png */,
-				65E6E8401E4BDFF300BE0E9F /* selectedTabBackground@2x.png */,
-				654AE49E1E4BCF1500564EB4 /* newspaper_unselected.png */,
 				65CA8BFC20507EB600737854 /* calendar.png */,
 				65CA8BFE20507EC700737854 /* newspaper.png */,
 				65CA8C0020507ECD00737854 /* id-card.png */,
@@ -465,7 +447,6 @@
 				65CA8C4D205304BD00737854 /* imf.jpg in Resources */,
 				65CA8CA62054226F00737854 /* imf1.pdf in Resources */,
 				65CA8C892054098E00737854 /* ProximaNova-Bold.otf in Resources */,
-				65E6E8411E4BDFF300BE0E9F /* selectedTabBackground@2x.png in Resources */,
 				65CA8CA22054226F00737854 /* au1.pdf in Resources */,
 				65CA8CA12054226F00737854 /* hsc1.pdf in Resources */,
 				65067AB81E2AA35100750469 /* porgmun.png in Resources */,
@@ -481,7 +462,6 @@
 				65CA8CA52054226F00737854 /* au2.pdf in Resources */,
 				65CA8C7F2053FBC300737854 /* leah.jpg in Resources */,
 				65CA8C812053FBC300737854 /* bara.jpg in Resources */,
-				654AE4A01E4BCF1500564EB4 /* document_unselected.png in Resources */,
 				65CA8C4C205304BD00737854 /* icj.jpg in Resources */,
 				65CA8CB32054362C00737854 /* fa-twitter@3x.png in Resources */,
 				65CA8C3620517EF600737854 /* fa-handshake@2x.png in Resources */,
@@ -496,7 +476,6 @@
 				650DAD881E57A0BE0082A9B4 /* logo@2x.png in Resources */,
 				65CA8C3820518F7200737854 /* fa-location@3x.png in Resources */,
 				65CA8C0B20507EF000737854 /* earth-usa.png in Resources */,
-				654AE49F1E4BCF1500564EB4 /* calendar_unselected.png in Resources */,
 				65CA8CA02054226F00737854 /* imf2.pdf in Resources */,
 				65CA8CB12054362C00737854 /* fa-facebook@3x.png in Resources */,
 				65CA8C3220517EF600737854 /* fa-book@3x.png in Resources */,
@@ -505,12 +484,10 @@
 				65CA8C882054029A00737854 /* barnes.jpg in Resources */,
 				65CA8C3A2051C87D00737854 /* feather-globe@3x.png in Resources */,
 				65CA8C832053FBC300737854 /* simon.jpg in Resources */,
-				654AE4A11E4BCF1500564EB4 /* hand-shake_unselected.png in Resources */,
 				65CA8C51205304BD00737854 /* hrc.jpg in Resources */,
 				65CA8C1320509B9400737854 /* ProximaNova-Semibold.otf in Resources */,
 				65067AC31E2B884400750469 /* Ban-Ki-moon.jpg in Resources */,
 				65CA8CAB2054226F00737854 /* hrc2.pdf in Resources */,
-				654AE4A21E4BCF1500564EB4 /* id-card_unselected.png in Resources */,
 				65CA8BFD20507EB600737854 /* calendar.png in Resources */,
 				65CA8C0520507EDB00737854 /* document.png in Resources */,
 				6519686D1E27914200F0CD7D /* NovyPorg.gpx in Resources */,
@@ -518,7 +495,6 @@
 				65CA8C9F2054226F00737854 /* disec2.pdf in Resources */,
 				65CA8BFF20507EC800737854 /* newspaper.png in Resources */,
 				65CA8CAD2054226F00737854 /* legal1.pdf in Resources */,
-				654AE4A31E4BCF1500564EB4 /* newspaper_unselected.png in Resources */,
 				65CA8CB22054362C00737854 /* fa-instagram@3x.png in Resources */,
 				65CA8C3420517EF600737854 /* fa-newspaper@2x.png in Resources */,
 				65067AB51E2AA35100750469 /* black.png in Resources */,
