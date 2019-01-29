@@ -218,23 +218,23 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     let index = Int((titlePlaceColor?[1])!)!
     
-    let startTime = timesString[...startTimeIndex]
-    let endTime = timesString[endTimeIndex...]
-    let placeName = titlePlaceColor?[0]
-    var address = mapPoints[index].title
+    let startTime = String(timesString[..<startTimeIndex])
+    let endTime = String(timesString[endTimeIndex...])
+    let placeName = titlePlaceColor![0]
+    var address = mapPoints[index].title!
     if address == "Wenceslas Square" {
-      address = "Meeting Point: " + address!
+      address = "Meeting Point: " + address
     }
     // let colorTagImage = UIImage(named: "\(mapPoints[index].color).png")
     
-    let colorTagImage = UIImage(named: "\(titlePlaceColor![2]).png")
+    let colorTagImage = UIImage(named: "\(titlePlaceColor![2]).png")!
     let coords = mapPoints[index].coordinate
     return [
       "startTime": startTime,
       "endTime": endTime,
-      "placeName": placeName!,
-      "address": address!,
-      "colorTagImage": colorTagImage!,
+      "placeName": placeName,
+      "address": address,
+      "colorTagImage": colorTagImage,
       "locationIndex": index,
       "coords": coords
     ]
