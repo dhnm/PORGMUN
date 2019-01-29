@@ -14,7 +14,7 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
   // ukládat zprávy do internal storage (UserDefaults/CoreData/Documents Storage)
   
   @IBAction func updateButton(_ sender: Any) {
-    openSafariVC(url: URL(string: "https://www.porgmun.cz")!)
+    openSafariViewController(url: URL(string: "https://www.porgmun.cz")!)
   }
   
   var posts = [Post]()
@@ -191,14 +191,14 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
     var index: Int = recognizer.view!.tag
     if index < 1000 {
       if let safeLink = posts[index].link {
-        openSafariVC(url: safeLink)
+        openSafariViewController(url: safeLink)
       }
       
     } else {
       index -= 1000
       //print(posts[index].albumURL!)
       if let safeLink = posts[index].albumURL {
-        openSafariVC(url: safeLink)
+        openSafariViewController(url: safeLink)
       }
     }
   }
@@ -381,10 +381,13 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
     return 0.00001
   }
   
-  func openSafariVC(url: URL) {
-    let safariVC = SFSafariViewController(url: url, entersReaderIfAvailable: false)
-    self.present(safariVC, animated: true, completion: nil)
-    safariVC.delegate = self
+  func openSafariViewController(url: URL) {
+    let safariViewController = SFSafariViewController(url: url, entersReaderIfAvailable: false)
+    if #available(iOS 10.0, *) {
+      safariViewController.preferredControlTintColor = .black
+    }
+    safariViewController.delegate = self
+    present(safariViewController, animated: true, completion: nil)
   }
   
   func attributedLabel(_ label: TTTAttributedLabel!, didSelectLinkWith url: URL!) {
@@ -392,7 +395,7 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
     let httpCheck = url.absoluteString[...url.absoluteString.index(url.absoluteString.startIndex, offsetBy: 4)]
     
     if httpCheck == "http" {
-      openSafariVC(url: url)
+      openSafariViewController(url: url)
       
     } else if mailtoCheck == "mailto:" {
       if MFMailComposeViewController.canSendMail() {
