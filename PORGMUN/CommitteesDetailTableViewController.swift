@@ -13,7 +13,7 @@ class CommitteesDetailTableViewController: UITableViewController {
   
   let quickLookController = QLPreviewController()
   var data = Committee(title: "", abbreviation: "", description: "", topics: [(name: "", description: "", file: nil)], countryMatrix: "")
-  var fileURLs = [NSURL]()
+  var fileURLs = [URL]()
   
   override func viewDidLoad() {
     super.viewDidLoad()

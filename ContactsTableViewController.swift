@@ -12,35 +12,35 @@ import MessageUI
 class ContactsTableViewController: UITableViewController, MFMailComposeViewControllerDelegate {
   
   @IBAction func facebookButton(_ sender: Any) {
-    let appURL = NSURL(string: "fb://page?id=1443688759205321")!
-    let webURL = NSURL(string: "https://www.facebook.com/porgmun")!
+    let appURL = URL(string: "fb://page?id=1443688759205321")!
+    let webURL = URL(string: "https://www.facebook.com/porgmun")!
     let application = UIApplication.shared
-    if application.canOpenURL(appURL as URL) {
-      application.open(appURL as URL)
+    if application.canOpenURL(appURL) {
+      application.open(appURL)
     } else {
-      application.open(webURL as URL)
+      application.open(webURL)
     }
   }
   
   @IBAction func instagramButton(_ sender: Any) {
-    let appURL = NSURL(string: "instagram://user?username=porgmun")!
-    let webURL = NSURL(string: "https://www.instagram.com/porgmun/")!
+    let appURL = URL(string: "instagram://user?username=porgmun")!
+    let webURL = URL(string: "https://www.instagram.com/porgmun/")!
     let application = UIApplication.shared
-    if application.canOpenURL(appURL as URL) {
-      application.open(appURL as URL)
+    if application.canOpenURL(appURL) {
+      application.open(appURL)
     } else {
       application.open(webURL as URL)
     }
   }
   
   @IBAction func twitterButton(_ sender: Any) {
-    let appURL = NSURL(string: "twitter://user?screen_name=porgmun")!
-    let webURL = NSURL(string: "https://www.twitter.com/porgmun")!
+    let appURL = URL(string: "twitter://user?screen_name=porgmun")!
+    let webURL = URL(string: "https://www.twitter.com/porgmun")!
     let application = UIApplication.shared
-    if application.canOpenURL(appURL as URL) {
-      application.open(appURL as URL)
+    if application.canOpenURL(appURL) {
+      application.open(appURL)
     } else {
-      application.open(webURL as URL)
+      application.open(webURL)
     }
   }
   
