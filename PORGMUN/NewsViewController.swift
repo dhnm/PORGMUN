@@ -34,7 +34,7 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
       print("Error making URL")
     }
     
-    tableView.refreshControl?.endRefreshing()
+    refreshControl?.endRefreshing()
     tableView.reloadData()
   }
   
@@ -132,7 +132,7 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
               }
               
               DispatchQueue.main.sync {
-                self.tableView.refreshControl?.endRefreshing()
+                self.refreshControl?.endRefreshing()
                 self.tableView.reloadData()
               }
             } catch {
@@ -157,9 +157,9 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
     
     let refreshControl = UIRefreshControl()
     refreshControl.addTarget(self, action: #selector(self.updateData), for: .valueChanged)
-    tableView.refreshControl = refreshControl
+    self.refreshControl = refreshControl
     
-    tableView.refreshControl?.beginRefreshing()
+    refreshControl.beginRefreshing()
     updateData()
     
     tableView.rowHeight = UITableView.automaticDimension

@@ -16,9 +16,9 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
     let webURL = URL(string: "https://www.facebook.com/porgmun")!
     let application = UIApplication.shared
     if application.canOpenURL(appURL) {
-      application.open(appURL)
+      application.openURL(appURL)
     } else {
-      application.open(webURL)
+      application.openURL(webURL)
     }
   }
   
@@ -27,9 +27,9 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
     let webURL = URL(string: "https://www.instagram.com/porgmun/")!
     let application = UIApplication.shared
     if application.canOpenURL(appURL) {
-      application.open(appURL)
+      application.openURL(appURL)
     } else {
-      application.open(webURL as URL)
+      application.openURL(webURL as URL)
     }
   }
   
@@ -38,9 +38,9 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
     let webURL = URL(string: "https://www.twitter.com/porgmun")!
     let application = UIApplication.shared
     if application.canOpenURL(appURL) {
-      application.open(appURL)
+      application.openURL(appURL)
     } else {
-      application.open(webURL)
+      application.openURL(webURL)
     }
   }
   
@@ -196,7 +196,7 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
           if let phoneCallURL = URL(string: "telprompt://\(phoneNumber)") {
             let application: UIApplication = UIApplication.shared
             if (application.canOpenURL(phoneCallURL)) {
-              application.open(phoneCallURL, options: [:], completionHandler: nil)
+              application.openURL(phoneCallURL)
               
             } else {
               UIPasteboard.general.string = String(phoneNumber)

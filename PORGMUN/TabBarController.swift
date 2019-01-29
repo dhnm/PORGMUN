@@ -61,7 +61,9 @@ class TabBarController: UITabBarController {
      self.tabBar.insertSubview(blurEffectView, at: 0)*/
     
     self.tabBar.tintColor = selectedColor // bottom bar selected icon color
-    self.tabBar.unselectedItemTintColor = unselectedColor
+    if #available(iOS 10.0, *) {
+      self.tabBar.unselectedItemTintColor = unselectedColor
+    }
     self.tabBar.isTranslucent = true
     
     UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: unselectedColor], for: .normal)

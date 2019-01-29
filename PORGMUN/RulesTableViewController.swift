@@ -121,7 +121,6 @@ class RulesTableViewController: UITableViewController, UISearchResultsUpdating {
     filteredRules = rulesDict
     
     searchController.searchResultsUpdater = self
-    searchController.obscuresBackgroundDuringPresentation = true
     searchController.hidesNavigationBarDuringPresentation = true
     searchController.dimsBackgroundDuringPresentation = false
     searchController.searchBar.placeholder = "Search Rules"
