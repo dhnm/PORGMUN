@@ -12,7 +12,7 @@ import QuickLook
 class CommitteesDetailTableViewController: UITableViewController {
   
   let quickLookController = QLPreviewController()
-  var data = Committee(title: "", abbreviation: "", description: "", topics: [(name: "", description: "", file: nil)], countryMatrix: "")
+  var data: Committee!
   var fileURLs = [URL]()
   
   override func viewDidLoad() {
@@ -77,7 +77,7 @@ class CommitteesDetailTableViewController: UITableViewController {
     } else {
       cell = tableView.dequeueReusableCell(withIdentifier: "ListItemCell", for: indexPath)
       if indexPath.section == 1 {
-        cell.textLabel?.text = data.description
+        cell.textLabel?.text = data.description_
         
       } else if indexPath.section == 2 {
         cell = tableView.dequeueReusableCell(withIdentifier: "TopicCell", for: indexPath)

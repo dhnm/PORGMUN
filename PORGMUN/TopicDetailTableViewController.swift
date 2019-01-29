@@ -11,7 +11,7 @@ import WebKit
 
 class TopicDetailTableViewController: UITableViewController, UIDocumentInteractionControllerDelegate, FileManagerDelegate {
   
-  var data: (name: String, description: String, file: String?) = (name: "", description: "", file: nil)
+  var data: Committee.Topic!
   var documentInteractionController: UIDocumentInteractionController!
   
   override func viewDidLoad() {
@@ -37,7 +37,7 @@ class TopicDetailTableViewController: UITableViewController, UIDocumentInteracti
       return URL.init(fileURLWithPath: destPath)
     }
     
-    if let fileName = data.file {
+    if let fileName = data.fileName {
       /*let fileSplit = fileName.components(separatedBy: ".")
        let fileURL = Bundle.main.url(forResource: fileSplit[0], withExtension: fileSplit[1])*/
       documentInteractionController = UIDocumentInteractionController(url: copyFiles(fileName: fileName))
@@ -49,10 +49,10 @@ class TopicDetailTableViewController: UITableViewController, UIDocumentInteracti
   
   override func numberOfSections(in tableView: UITableView) -> Int {
     var sections = 1
-    if data.description != "" {
+    if data.description_ != "" {
       sections += 1
     }
-    if data.file != nil {
+    if data.fileName != nil {
       sections += 1
     }
     return sections
@@ -74,13 +74,13 @@ class TopicDetailTableViewController: UITableViewController, UIDocumentInteracti
       
     } else if indexPath.section == 2 {
       cell.textLabel?.textAlignment = .justified
-      cell.textLabel?.text = data.description
+      cell.textLabel?.text = data.description_
       
     } else if indexPath.section == 1 {
       
-      if data.file == nil {
+      if data.fileName == nil {
         cell.textLabel?.textAlignment = .justified
-        cell.textLabel?.text = data.description
+        cell.textLabel?.text = data.description_
       } else {
         cell.isUserInteractionEnabled = true
         cell.accessoryType = .disclosureIndicator
