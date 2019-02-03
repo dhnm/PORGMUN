@@ -236,4 +236,22 @@ class ContactsHeaderCell: UITableViewCell {
   @IBOutlet weak var picture: UIImageView!
   @IBOutlet weak var occupationLabel: UILabel!
   @IBOutlet weak var nameLabel: UILabel!
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    occupationLabel.layer.shadowColor = UIColor.black.cgColor
+    occupationLabel.layer.shadowOpacity = 0.4
+    occupationLabel.layer.shadowOffset = CGSize(width: 2, height: 2)
+    occupationLabel.layer.shadowRadius = 4
+    occupationLabel.layer.rasterizationScale = UIScreen.main.scale
+    occupationLabel.layer.shouldRasterize = true
+    
+    nameLabel.layer.shadowColor = UIColor.black.cgColor
+    nameLabel.layer.shadowOpacity = 0.4
+    nameLabel.layer.shadowOffset = CGSize(width: 2, height: 2)
+    nameLabel.layer.shadowRadius = 4
+    nameLabel.layer.rasterizationScale = UIScreen.main.scale
+    nameLabel.layer.shouldRasterize = true
+  }
 }

@@ -56,7 +56,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFG-gH-uM7">
-                                                    <rect key="frame" x="48.5" y="5" width="318.5" height="20"/>
+                                                    <rect key="frame" x="48.5" y="5" width="263.5" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="Lj9-40-JXL"/>
                                                     </constraints>
@@ -65,7 +65,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMV-q1-V0w">
-                                                    <rect key="frame" x="338" y="22" width="29" height="18"/>
+                                                    <rect key="frame" x="283" y="22" width="29" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="c7B-Wx-KNP"/>
                                                     </constraints>
@@ -774,31 +774,29 @@ Budějovická	</string>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heads of Social Program" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeT-na-gDK">
-                                            <rect key="frame" x="143" y="241.5" width="161" height="39"/>
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
-                                            <nil key="textColor"/>
+                                            <rect key="frame" x="48" y="260" width="224" height="24.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sára Davidová" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73H-MC-7ql">
-                                            <rect key="frame" x="143" y="283.5" width="151" height="19.5"/>
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
-                                            <nil key="textColor"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sára Davidová" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73H-MC-7ql">
+                                            <rect key="frame" x="103" y="284.5" width="114.5" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="io0-rp-hCf" firstAttribute="leading" secondItem="c22-WI-BZ3" secondAttribute="leading" id="2RC-Eb-a3n"/>
-                                        <constraint firstItem="eeT-na-gDK" firstAttribute="top" secondItem="c22-WI-BZ3" secondAttribute="topMargin" constant="230" id="86I-5b-x09"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="73H-MC-7ql" secondAttribute="trailing" constant="10" id="CZM-eL-3FP"/>
+                                        <constraint firstItem="io0-rp-hCf" firstAttribute="bottom" secondItem="73H-MC-7ql" secondAttribute="bottom" constant="24" id="9sS-2B-2wO"/>
                                         <constraint firstItem="io0-rp-hCf" firstAttribute="leading" secondItem="c22-WI-BZ3" secondAttribute="leading" id="FM7-WO-ggl"/>
-                                        <constraint firstItem="eeT-na-gDK" firstAttribute="trailing" secondItem="c22-WI-BZ3" secondAttribute="trailingMargin" id="GFp-eK-VIo"/>
                                         <constraint firstAttribute="trailing" secondItem="io0-rp-hCf" secondAttribute="trailing" id="HGd-CO-1tq"/>
-                                        <constraint firstItem="eeT-na-gDK" firstAttribute="leading" secondItem="c22-WI-BZ3" secondAttribute="leadingMargin" constant="127" id="O5O-Ub-bA1"/>
-                                        <constraint firstItem="73H-MC-7ql" firstAttribute="leading" secondItem="c22-WI-BZ3" secondAttribute="leadingMargin" constant="127" id="bdG-y9-FwZ"/>
-                                        <constraint firstItem="73H-MC-7ql" firstAttribute="top" secondItem="eeT-na-gDK" secondAttribute="bottom" constant="3" id="bfT-CW-wU3"/>
+                                        <constraint firstItem="eeT-na-gDK" firstAttribute="centerX" secondItem="c22-WI-BZ3" secondAttribute="centerX" id="V9V-XB-hO0"/>
+                                        <constraint firstItem="73H-MC-7ql" firstAttribute="top" secondItem="eeT-na-gDK" secondAttribute="bottom" id="bfT-CW-wU3"/>
                                         <constraint firstItem="io0-rp-hCf" firstAttribute="top" secondItem="c22-WI-BZ3" secondAttribute="top" id="dsS-TB-G3M"/>
+                                        <constraint firstItem="73H-MC-7ql" firstAttribute="centerX" secondItem="c22-WI-BZ3" secondAttribute="centerX" id="i5o-EL-zKL"/>
                                         <constraint firstAttribute="bottom" secondItem="io0-rp-hCf" secondAttribute="bottom" id="tRv-yt-AjR"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -1325,10 +1323,10 @@ Budějovická	</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="481"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZE-ay-l9M" userLabel="Controller View">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="481"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="421"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHL-dy-Ut9" customClass="TTTAttributedLabel">
-                                                <rect key="frame" x="26" y="41" width="268" height="396"/>
+                                                <rect key="frame" x="26" y="41" width="268" height="336"/>
                                                 <string key="text">Theme of the Conference:
 Swinging Back to Democracy
 Striving for institutional change in an ever-changing society
