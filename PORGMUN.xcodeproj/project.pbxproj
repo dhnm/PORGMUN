@@ -30,7 +30,7 @@
 		655E39B61E2F80EC00DE1F75 /* MapPointDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E39B51E2F80EC00DE1F75 /* MapPointDetailViewController.swift */; };
 		65ACAB5A1E628C4E002F0376 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACAB591E628C4D002F0376 /* NewsViewController.swift */; };
 		65C3F3591E271456002F5052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3F3581E271456002F5052 /* AppDelegate.swift */; };
-		65C3F35D1E271456002F5052 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3F35C1E271456002F5052 /* MapViewController.swift */; };
+		65C3F35D1E271456002F5052 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3F35C1E271456002F5052 /* AgendaViewController.swift */; };
 		65C3F3601E271456002F5052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C3F35E1E271456002F5052 /* Main.storyboard */; };
 		65C3F3621E271456002F5052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C3F3611E271456002F5052 /* Assets.xcassets */; };
 		65CA8BFD20507EB600737854 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8BFC20507EB600737854 /* calendar.png */; };
@@ -125,7 +125,7 @@
 		65ACAB591E628C4D002F0376 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		65C3F3551E271456002F5052 /* PORGMUN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PORGMUN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C3F3581E271456002F5052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65C3F35C1E271456002F5052 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		65C3F35C1E271456002F5052 /* AgendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
 		65C3F35F1E271456002F5052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65C3F3611E271456002F5052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65C3F3661E271456002F5052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -306,7 +306,7 @@
 				2D6BD1552200B6A9000FBCB5 /* Data */,
 				65C3F3581E271456002F5052 /* AppDelegate.swift */,
 				654AE4A41E4BD13B00564EB4 /* TabBarController.swift */,
-				65C3F35C1E271456002F5052 /* MapViewController.swift */,
+				65C3F35C1E271456002F5052 /* AgendaViewController.swift */,
 				655E39B51E2F80EC00DE1F75 /* MapPointDetailViewController.swift */,
 				65ACAB591E628C4D002F0376 /* NewsViewController.swift */,
 				65067AA61E28513700750469 /* CommitteesTableViewController.swift */,
@@ -594,7 +594,7 @@
 				654AE4A51E4BD13B00564EB4 /* TabBarController.swift in Sources */,
 				65587BCA1E759DAB00855365 /* ConferenceThemeViewController.swift in Sources */,
 				655E39B61E2F80EC00DE1F75 /* MapPointDetailViewController.swift in Sources */,
-				65C3F35D1E271456002F5052 /* MapViewController.swift in Sources */,
+				65C3F35D1E271456002F5052 /* AgendaViewController.swift in Sources */,
 				65C3F3591E271456002F5052 /* AppDelegate.swift in Sources */,
 				65067AC11E2AFC7900750469 /* RulesDetailViewController.swift in Sources */,
 				6501997A1E64F084003BB3FE /* CommitteesDetailTableViewController.swift in Sources */,

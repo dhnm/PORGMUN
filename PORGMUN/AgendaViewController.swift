@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import Contacts
 
-class MapViewController: UIViewController, CLLocationManagerDelegate {
+class AgendaViewController: UIViewController, CLLocationManagerDelegate {
   
   @IBOutlet weak var mapView: MKMapView!
   @IBOutlet weak var tableView: UITableView!
@@ -283,7 +283,7 @@ class MapPointClass: NSObject, MKAnnotation {
   }
 }
 
-extension MapViewController: UITableViewDelegate, UITableViewDataSource {
+extension AgendaViewController: UITableViewDelegate, UITableViewDataSource {
   
   func numberOfSections(in tableView: UITableView) -> Int {
     return keysArray.count
@@ -376,7 +376,7 @@ extension MapViewController: UITableViewDelegate, UITableViewDataSource {
   }
 }
 
-extension MapViewController : MKMapViewDelegate {
+extension AgendaViewController : MKMapViewDelegate {
   
   func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
     if let annotation = annotation as? MapPointClass {
