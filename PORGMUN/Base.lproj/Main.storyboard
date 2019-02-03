@@ -125,11 +125,20 @@
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="A4r-Ic-kS9"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD5-mx-DdI">
+                                <rect key="frame" x="276" y="80" width="28" height="28"/>
+                                <state key="normal" image="fa-location.png"/>
+                                <connections>
+                                    <action selector="moveToMyLocation:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="PPE-mH-huE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZD5-mx-DdI" secondAttribute="trailing" constant="16" id="4v3-Dn-jOR"/>
                             <constraint firstItem="Rpy-Cs-OOF" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="5yK-1r-nPq"/>
                             <constraint firstItem="7ej-QO-yBn" firstAttribute="height" secondItem="QS5-Rx-YEW" secondAttribute="height" multiplier="0.4" id="IHF-lU-7el"/>
+                            <constraint firstItem="ZD5-mx-DdI" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="16" id="Jqk-eA-HuQ"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="7ej-QO-yBn" secondAttribute="bottom" id="U5f-Nd-iHM"/>
                             <constraint firstAttribute="trailing" secondItem="Rpy-Cs-OOF" secondAttribute="trailing" id="doQ-vv-bHs"/>
                             <constraint firstItem="Rpy-Cs-OOF" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="kdF-gW-njM"/>
@@ -138,13 +147,7 @@
                             <constraint firstAttribute="trailing" secondItem="7ej-QO-yBn" secondAttribute="trailing" id="sSY-Hf-CIa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Agenda" id="nz2-3l-YCN">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="fa-location.png" id="8bm-rp-Bhd">
-                            <connections>
-                                <action selector="moveToMyLocation:" destination="8rJ-Kc-sve" id="oB5-zK-63U"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Agenda" id="nz2-3l-YCN"/>
                     <connections>
                         <outlet property="mapView" destination="Rpy-Cs-OOF" id="A1l-af-1JA"/>
                         <outlet property="tableView" destination="7ej-QO-yBn" id="w7i-Q1-yUM"/>
@@ -583,7 +586,7 @@ Budějovická	</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Committee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yxn-ba-f4W">
-                                            <rect key="frame" x="75" y="6" width="79" height="19"/>
+                                            <rect key="frame" x="75" y="5" width="79" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
                                             <nil key="textColor"/>
@@ -594,7 +597,7 @@ Budějovická	</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vAH-Uo-gGm">
-                                            <rect key="frame" x="75" y="25" width="41" height="14"/>
+                                            <rect key="frame" x="75" y="24.5" width="40" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -832,14 +835,14 @@ Budějovická	</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="it@porgmun.cz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oqf-88-adO">
-                                            <rect key="frame" x="16" y="6" width="106.5" height="19"/>
+                                            <rect key="frame" x="16" y="5" width="103.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="App Feedback &amp; Bug Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OHg-KG-pwC">
-                                            <rect key="frame" x="16" y="25" width="154.5" height="14"/>
+                                            <rect key="frame" x="16" y="24.5" width="150.5" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                             <nil key="textColor"/>
