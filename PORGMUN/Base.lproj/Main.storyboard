@@ -584,7 +584,7 @@ Budějovická	</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Committee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yxn-ba-f4W">
-                                            <rect key="frame" x="75" y="5" width="79" height="19.5"/>
+                                            <rect key="frame" x="75" y="6" width="79" height="19"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
                                             <nil key="textColor"/>
@@ -595,7 +595,7 @@ Budějovická	</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vAH-Uo-gGm">
-                                            <rect key="frame" x="75" y="24.5" width="40" height="15"/>
+                                            <rect key="frame" x="75" y="25" width="41" height="14"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -767,21 +767,21 @@ Budějovická	</string>
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="329.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="io0-rp-hCf">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="330.5"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ban-Ki-moon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="io0-rp-hCf">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="330" id="nOs-z5-YJy"/>
+                                                <constraint firstAttribute="height" constant="320" id="nOs-z5-YJy"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heads of Social Program" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeT-na-gDK">
-                                            <rect key="frame" x="48" y="260" width="224" height="24.5"/>
+                                            <rect key="frame" x="48" y="249.5" width="224" height="24.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sára Davidová" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73H-MC-7ql">
-                                            <rect key="frame" x="103" y="284.5" width="114.5" height="22"/>
+                                            <rect key="frame" x="103" y="274" width="114.5" height="22"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -831,14 +831,14 @@ Budějovická	</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="it@porgmun.cz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oqf-88-adO">
-                                            <rect key="frame" x="16" y="5" width="103.5" height="19.5"/>
+                                            <rect key="frame" x="16" y="6" width="106.5" height="19"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="App Feedback &amp; Bug Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OHg-KG-pwC">
-                                            <rect key="frame" x="16" y="24.5" width="150.5" height="15"/>
+                                            <rect key="frame" x="16" y="25" width="154.5" height="14"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -1375,6 +1375,7 @@ New, hybrid threats, devaluation of national sovereignty in favour of globalizat
         </scene>
     </scenes>
     <resources>
+        <image name="Ban-Ki-moon.jpg" width="408" height="309"/>
         <image name="au.jpg" width="400" height="400"/>
         <image name="calendar.png" width="29" height="30"/>
         <image name="document.png" width="30" height="30"/>
@@ -1389,7 +1390,6 @@ New, hybrid threats, devaluation of national sovereignty in favour of globalizat
         <image name="id-card.png" width="30" height="30"/>
         <image name="newspaper.png" width="30" height="30"/>
         <image name="red.png" width="10" height="80"/>
-        <image name="simon.jpg" width="1000" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="pyf-uc-xg9"/>

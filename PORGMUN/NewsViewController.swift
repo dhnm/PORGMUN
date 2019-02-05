@@ -26,7 +26,7 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
       let errorPost = Post(data: (["message": "Error loading feed. Please check your internet connection."] as AnyObject))
       self.posts.insert(errorPost, at: 0)
     } else {
-      let errorPost = Post(data: (["message": "App Error. Please inform the PORGMUN Team asap."] as AnyObject))
+      let errorPost = Post(data: (["message": "App Error. Please inform the PORGMUN Team at it@porgmun.cz"] as AnyObject))
       self.posts.insert(errorPost, at: 0)
     }
     

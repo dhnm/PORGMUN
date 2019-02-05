@@ -50,29 +50,35 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
     [
       "ignore": "me"
     ], [
-      "name": "Sára Davidová",
-      "occupation": "Secretary-General",
-      "e-mail": "secretariat@porgmun.cz",
-      "phone": "+420 773 194 105",
-      "picture": "sara.jpg"
-    ], [
       "name": "Šimon Olmer",
-      "occupation": "Deputy Secretary-General",
+      "occupation": "Secretary-General",
       "e-mail": "olmer@porgmun.cz",
       "phone": "+420 725 552 226",
       "picture": "simon.jpg"
     ], [
-      "name": "Barbora Lišková\nLeah Koutná",
-      "occupation": "Heads of Registration",
-      "e-mail": "registration@porgmun.cz",
-      "phone": "+420 602 395 396",
-      "picture": "bara-leah.jpg"
-    ], [
-      "name": "Josef Bratršovský",
-      "occupation": "Student Chief Officer",
+      "name": "Barbora Lišková",
+      "occupation": "Deputy Secretary-General",
       "e-mail": "secretariat@porgmun.cz",
-      "phone": "+420 721 109 221",
-      "picture": "josef.jpg"
+      "phone": "+420 602 777 223",
+      "picture": "bara.jpg"
+    ], [
+        "name": "Vanesa Kerle",
+        "occupation": "Deputy Secretary-General",
+        "e-mail": "secretariat@porgmun.cz",
+        "phone": "+420 608 033 531",
+        "picture": "vanesa.jpg"
+    ], [
+      "name": "Ela Tarcalová",
+      "occupation": "Head of Registration",
+      "e-mail": "registration@porgmun.cz",
+      "phone": "+420 725 463 454",
+      "picture": "ela.jpg"
+    ], [
+        "name": "Lucie Čapková",
+        "occupation": "Student Chief Officer",
+        "e-mail": "capkova@porgmun.cz",
+        "phone": "+420 725 366 700",
+        "picture": "lucy.jpg"
     ], [
       "name": "Zach Barnes",
       "occupation": "Chief Supervisor",
@@ -100,10 +106,7 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
     if section == 0 {
       return 1
     }
-    var rows = 0
-    if data[section]["picture"] != "" {
-      rows += 1
-    }
+    var rows = 1
     if data[section]["phone"] != "" {
       rows += 1
     }

@@ -24,6 +24,11 @@
 		651901811E7590DE009C5A64 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 651901801E7590DE009C5A64 /* MyriadPro-Regular.otf */; };
 		6519686D1E27914200F0CD7D /* NovyPorg.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6519686C1E27914200F0CD7D /* NovyPorg.gpx */; };
 		654AE4A51E4BD13B00564EB4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654AE4A41E4BD13B00564EB4 /* TabBarController.swift */; };
+		65500B45220A1649009734C5 /* lucy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65500B40220A163D009734C5 /* lucy.jpg */; };
+		65500B46220A1649009734C5 /* simon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65500B41220A163E009734C5 /* simon.jpg */; };
+		65500B47220A1649009734C5 /* ela.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65500B42220A163F009734C5 /* ela.jpg */; };
+		65500B48220A1649009734C5 /* bara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65500B43220A1641009734C5 /* bara.jpg */; };
+		65500B49220A1649009734C5 /* vanesa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65500B44220A1649009734C5 /* vanesa.jpg */; };
 		65587BC61E7596D100855365 /* MyriadPro-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651901821E7591EB009C5A64 /* MyriadPro-Semibold.ttf */; };
 		65587BC81E75970F00855365 /* MyriadPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65587BC71E75970F00855365 /* MyriadPro-Italic.ttf */; };
 		65587BCA1E759DAB00855365 /* ConferenceThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65587BC91E759DAB00855365 /* ConferenceThemeViewController.swift */; };
@@ -64,14 +69,6 @@
 		65CA8C50205304BD00737854 /* legal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C45205304BD00737854 /* legal.jpg */; };
 		65CA8C51205304BD00737854 /* hrc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C46205304BD00737854 /* hrc.jpg */; };
 		65CA8C53205364D900737854 /* TopicDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA8C52205364D900737854 /* TopicDetailTableViewController.swift */; };
-		65CA8C7F2053FBC300737854 /* leah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C792053FBC200737854 /* leah.jpg */; };
-		65CA8C802053FBC300737854 /* josef.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C7A2053FBC200737854 /* josef.jpg */; };
-		65CA8C812053FBC300737854 /* bara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C7B2053FBC200737854 /* bara.jpg */; };
-		65CA8C822053FBC300737854 /* sara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C7C2053FBC300737854 /* sara.jpg */; };
-		65CA8C832053FBC300737854 /* simon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C7D2053FBC300737854 /* simon.jpg */; };
-		65CA8C842053FBC300737854 /* valentyna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C7E2053FBC300737854 /* valentyna.jpg */; };
-		65CA8C86205401A400737854 /* bara-leah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C85205401A400737854 /* bara-leah.jpg */; };
-		65CA8C882054029A00737854 /* barnes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C872054029900737854 /* barnes.jpg */; };
 		65CA8C892054098E00737854 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C1420509FB800737854 /* ProximaNova-Bold.otf */; };
 		65CA8C9D2054226F00737854 /* ecosoc2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C8C2054226900737854 /* ecosoc2.pdf */; };
 		65CA8C9E2054226F00737854 /* specpol1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C8D2054226A00737854 /* specpol1.pdf */; };
@@ -119,6 +116,11 @@
 		651901821E7591EB009C5A64 /* MyriadPro-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Semibold.ttf"; sourceTree = "<group>"; };
 		6519686C1E27914200F0CD7D /* NovyPorg.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NovyPorg.gpx; sourceTree = "<group>"; };
 		654AE4A41E4BD13B00564EB4 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		65500B40220A163D009734C5 /* lucy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lucy.jpg; sourceTree = "<group>"; };
+		65500B41220A163E009734C5 /* simon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = simon.jpg; sourceTree = "<group>"; };
+		65500B42220A163F009734C5 /* ela.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ela.jpg; sourceTree = "<group>"; };
+		65500B43220A1641009734C5 /* bara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bara.jpg; sourceTree = "<group>"; };
+		65500B44220A1649009734C5 /* vanesa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vanesa.jpg; sourceTree = "<group>"; };
 		65587BC71E75970F00855365 /* MyriadPro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Italic.ttf"; sourceTree = "<group>"; };
 		65587BC91E759DAB00855365 /* ConferenceThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceThemeViewController.swift; sourceTree = "<group>"; };
 		655E39B51E2F80EC00DE1F75 /* MapPointDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPointDetailViewController.swift; sourceTree = "<group>"; };
@@ -161,14 +163,6 @@
 		65CA8C45205304BD00737854 /* legal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = legal.jpg; sourceTree = "<group>"; };
 		65CA8C46205304BD00737854 /* hrc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hrc.jpg; sourceTree = "<group>"; };
 		65CA8C52205364D900737854 /* TopicDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailTableViewController.swift; sourceTree = "<group>"; };
-		65CA8C792053FBC200737854 /* leah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leah.jpg; sourceTree = "<group>"; };
-		65CA8C7A2053FBC200737854 /* josef.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = josef.jpg; sourceTree = "<group>"; };
-		65CA8C7B2053FBC200737854 /* bara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bara.jpg; sourceTree = "<group>"; };
-		65CA8C7C2053FBC300737854 /* sara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sara.jpg; sourceTree = "<group>"; };
-		65CA8C7D2053FBC300737854 /* simon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = simon.jpg; sourceTree = "<group>"; };
-		65CA8C7E2053FBC300737854 /* valentyna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = valentyna.jpg; sourceTree = "<group>"; };
-		65CA8C85205401A400737854 /* bara-leah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bara-leah.jpg"; sourceTree = "<group>"; };
-		65CA8C872054029900737854 /* barnes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = barnes.jpg; sourceTree = "<group>"; };
 		65CA8C8C2054226900737854 /* ecosoc2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ecosoc2.pdf; sourceTree = "<group>"; };
 		65CA8C8D2054226A00737854 /* specpol1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = specpol1.pdf; sourceTree = "<group>"; };
 		65CA8C8E2054226A00737854 /* disec2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = disec2.pdf; sourceTree = "<group>"; };
@@ -243,14 +237,11 @@
 		654AE4861E4B776600564EB4 /* People */ = {
 			isa = PBXGroup;
 			children = (
-				65CA8C7B2053FBC200737854 /* bara.jpg */,
-				65CA8C85205401A400737854 /* bara-leah.jpg */,
-				65CA8C7A2053FBC200737854 /* josef.jpg */,
-				65CA8C792053FBC200737854 /* leah.jpg */,
-				65CA8C7C2053FBC300737854 /* sara.jpg */,
-				65CA8C7D2053FBC300737854 /* simon.jpg */,
-				65CA8C7E2053FBC300737854 /* valentyna.jpg */,
-				65CA8C872054029900737854 /* barnes.jpg */,
+				65500B43220A1641009734C5 /* bara.jpg */,
+				65500B42220A163F009734C5 /* ela.jpg */,
+				65500B40220A163D009734C5 /* lucy.jpg */,
+				65500B41220A163E009734C5 /* simon.jpg */,
+				65500B44220A1649009734C5 /* vanesa.jpg */,
 				65067AC21E2B884400750469 /* Ban-Ki-moon.jpg */,
 			);
 			name = People;
@@ -453,8 +444,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65CA8C802053FBC300737854 /* josef.jpg in Resources */,
 				65587BC61E7596D100855365 /* MyriadPro-Semibold.ttf in Resources */,
+				65500B48220A1649009734C5 /* bara.jpg in Resources */,
 				65CA8C4D205304BD00737854 /* imf.jpg in Resources */,
 				65CA8CA62054226F00737854 /* imf1.pdf in Resources */,
 				65CA8C892054098E00737854 /* ProximaNova-Bold.otf in Resources */,
@@ -464,26 +455,24 @@
 				65CA8C0320507ED400737854 /* hand-shake.png in Resources */,
 				65CA8C47205304BD00737854 /* al.jpg in Resources */,
 				65CA8C4E205304BD00737854 /* ecosoc.jpg in Resources */,
-				65CA8C822053FBC300737854 /* sara.jpg in Resources */,
 				65CA8C1120509B9400737854 /* ProximaNova-Regular.otf in Resources */,
 				65067AB91E2AA35100750469 /* purple.png in Resources */,
 				65CA8C182051633900737854 /* logo-black@2x.png in Resources */,
 				65CA8CAC2054226F00737854 /* ecosoc1.pdf in Resources */,
 				65CA8CA92054226F00737854 /* specpol2.pdf in Resources */,
 				65CA8CA52054226F00737854 /* au2.pdf in Resources */,
-				65CA8C7F2053FBC300737854 /* leah.jpg in Resources */,
-				65CA8C812053FBC300737854 /* bara.jpg in Resources */,
 				65CA8C4C205304BD00737854 /* icj.jpg in Resources */,
 				65CA8CB32054362C00737854 /* fa-twitter@3x.png in Resources */,
 				65CA8C3620517EF600737854 /* fa-handshake@2x.png in Resources */,
 				65CA8C3320517EF600737854 /* fa-id@2x.png in Resources */,
 				65CA8CAA2054226F00737854 /* al1.pdf in Resources */,
 				65067AB71E2AA35100750469 /* orange.png in Resources */,
+				65500B49220A1649009734C5 /* vanesa.jpg in Resources */,
 				65067ABA1E2AA35100750469 /* red.png in Resources */,
 				651901811E7590DE009C5A64 /* MyriadPro-Regular.otf in Resources */,
+				65500B47220A1649009734C5 /* ela.jpg in Resources */,
 				65CA8C4F205304BD00737854 /* au.jpg in Resources */,
 				65CA8C0120507ECD00737854 /* id-card.png in Resources */,
-				65CA8C86205401A400737854 /* bara-leah.jpg in Resources */,
 				650DAD881E57A0BE0082A9B4 /* logo@2x.png in Resources */,
 				65CA8C3820518F7200737854 /* fa-location@3x.png in Resources */,
 				65CA8C0B20507EF000737854 /* earth-usa.png in Resources */,
@@ -492,9 +481,7 @@
 				65CA8C3220517EF600737854 /* fa-book@3x.png in Resources */,
 				65CA8CA32054226F00737854 /* hrc1.pdf in Resources */,
 				65CA8C1220509B9400737854 /* ProximaNova-RegularIt.otf in Resources */,
-				65CA8C882054029A00737854 /* barnes.jpg in Resources */,
 				65CA8C3A2051C87D00737854 /* feather-globe@3x.png in Resources */,
-				65CA8C832053FBC300737854 /* simon.jpg in Resources */,
 				65CA8C51205304BD00737854 /* hrc.jpg in Resources */,
 				65CA8C1320509B9400737854 /* ProximaNova-Semibold.otf in Resources */,
 				65067AC31E2B884400750469 /* Ban-Ki-moon.jpg in Resources */,
@@ -508,6 +495,7 @@
 				65CA8CAD2054226F00737854 /* legal1.pdf in Resources */,
 				65CA8CB22054362C00737854 /* fa-instagram@3x.png in Resources */,
 				65CA8C3420517EF600737854 /* fa-newspaper@2x.png in Resources */,
+				65500B45220A1649009734C5 /* lucy.jpg in Resources */,
 				65067AB51E2AA35100750469 /* black.png in Resources */,
 				65CA8C50205304BD00737854 /* legal.jpg in Resources */,
 				65CA8CA42054226F00737854 /* al2.pdf in Resources */,
@@ -520,10 +508,10 @@
 				65CA8C4A205304BD00737854 /* disec.jpg in Resources */,
 				65CA8CA82054226F00737854 /* legal2.pdf in Resources */,
 				65CA8C4B205304BD00737854 /* sc.jpg in Resources */,
+				65500B46220A1649009734C5 /* simon.jpg in Resources */,
 				65CA8C9D2054226F00737854 /* ecosoc2.pdf in Resources */,
 				2D6BD1572200B6BE000FBCB5 /* Committees.plist in Resources */,
 				65CA8C0920507EEA00737854 /* text-left.png in Resources */,
-				65CA8C842053FBC300737854 /* valentyna.jpg in Resources */,
 				65C3F3601E271456002F5052 /* Main.storyboard in Resources */,
 				65CA8C49205304BD00737854 /* hsc.jpg in Resources */,
 				65587BC81E75970F00855365 /* MyriadPro-Italic.ttf in Resources */,
