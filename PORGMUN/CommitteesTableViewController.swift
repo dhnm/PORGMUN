@@ -15,7 +15,7 @@ class CommitteesTableViewController: UITableViewController {
   let committeesArray = try! PropertyListDecoder().decode([Committee].self, from: Data(contentsOf: Bundle.main.url(forResource: "Committees", withExtension: "plist")!))
   
   override func numberOfSections(in tableView: UITableView) -> Int {
-    return 1
+    return 2
   }
   
   override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -23,7 +23,7 @@ class CommitteesTableViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    if section == 0 && false {
+    if section == 0 {
       return 1
     }
     return committeesArray.count
@@ -38,10 +38,10 @@ class CommitteesTableViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    if indexPath.section == 0 && false {
+    if indexPath.section == 0 {
       let cell = infoTableView.dequeueReusableCell(withIdentifier: "preambleCell", for: indexPath)
-      cell.imageView?.image = #imageLiteral(resourceName: "fa-book@3x.png")
-      cell.textLabel?.text = "Rules & Procedure"
+      // cell.imageView?.image = #imageLiteral(resourceName: "fa-book@3x.png")
+      cell.textLabel?.text = "Conference Theme"
       return cell
       
     } else {

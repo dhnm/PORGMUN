@@ -9,9 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="MyriadPro-Regular.otf">
-            <string>MyriadPro-Regular</string>
-        </array>
         <array key="ProximaNova-Bold.otf">
             <string>ProximaNova-Bold</string>
         </array>
@@ -551,13 +548,13 @@ Budějovická	</string>
         <scene sceneID="f1g-r9-4b8">
             <objects>
                 <tableViewController id="n1q-3m-vav" customClass="CommitteesTableViewController" customModule="PORGMUN" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zjf-RQ-eyp">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Zjf-RQ-eyp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="preambleCell" textLabel="GMm-J2-Wfz" style="IBUITableViewCellStyleDefault" id="ntk-CX-r2x" customClass="PreambleCell" customModule="PORGMUN" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ntk-CX-r2x" id="b6I-eS-NLv">
                                     <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
@@ -573,18 +570,18 @@ Budějovická	</string>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="DpH-IE-501" kind="show" id="pyf-uc-xg9"/>
+                                    <segue destination="53C-He-2Za" kind="show" id="hhF-i6-CTm"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="infoCell" textLabel="Yxn-ba-f4W" detailTextLabel="vAH-Uo-gGm" imageView="2B6-K5-gKe" style="IBUITableViewCellStyleSubtitle" id="RET-dU-tae">
-                                <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="99.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RET-dU-tae" id="qph-6Q-ixM">
                                     <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Committee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yxn-ba-f4W">
-                                            <rect key="frame" x="75" y="6" width="79" height="19"/>
+                                            <rect key="frame" x="75" y="5" width="79" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
                                             <nil key="textColor"/>
@@ -595,7 +592,7 @@ Budějovická	</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vAH-Uo-gGm">
-                                            <rect key="frame" x="75" y="25" width="41" height="14"/>
+                                            <rect key="frame" x="75" y="24.5" width="40" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -831,14 +828,14 @@ Budějovická	</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="it@porgmun.cz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oqf-88-adO">
-                                            <rect key="frame" x="16" y="6" width="106.5" height="19"/>
+                                            <rect key="frame" x="16" y="5" width="103.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="App Feedback &amp; Bug Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OHg-KG-pwC">
-                                            <rect key="frame" x="16" y="25" width="154.5" height="14"/>
+                                            <rect key="frame" x="16" y="24.5" width="150.5" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -1324,16 +1321,16 @@ Budějovická	</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="481"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZE-ay-l9M" userLabel="Controller View">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="421"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="656"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHL-dy-Ut9" customClass="TTTAttributedLabel">
-                                                <rect key="frame" x="26" y="41" width="268" height="336"/>
+                                                <rect key="frame" x="26" y="41" width="268" height="571"/>
                                                 <string key="text">Theme of the Conference:
 Swinging Back to Democracy
 Striving for institutional change in an ever-changing society
                                                              	
 New, hybrid threats, devaluation of national sovereignty in favour of globalization, political radicalization and the evident disconnect of the majority from leading political elites are all clear indicators that our current era is steadily rendering our conventional political system obsolete. The need for change is apparent. Essentially, Swinging back to democracy aims to address this issue by discussing the dissolution of the core democratic ideas of responsibility, decisiveness, and trust in the bureaucratic process and re-evaluating the way our society works or even debating on how it should work.</string>
-                                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1392,7 +1389,4 @@ New, hybrid threats, devaluation of national sovereignty in favour of globalizat
         <image name="newspaper.png" width="30" height="30"/>
         <image name="red.png" width="10" height="80"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="pyf-uc-xg9"/>
-    </inferredMetricsTieBreakers>
 </document>

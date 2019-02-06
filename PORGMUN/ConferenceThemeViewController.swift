@@ -16,13 +16,17 @@ class ConferenceThemeViewController: UIViewController, TTTAttributedLabelDelegat
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    mainLabel.font = UIFont(name: "MyriadPro-Regular", size: 16)
+    if #available(iOS 11.0, *) {
+        self.navigationItem.largeTitleDisplayMode = .never
+    }
+    
+    mainLabel.font = UIFont(name: "ProximaNova-Regular", size: 18)
     //mainLabel.textColor = .darkGray
     mainLabel.lineBreakMode = .byWordWrapping
     mainLabel.numberOfLines = 0
     mainLabel.delegate = self
     
-    let text: [String] = ["Theme of the Conference:", "\nSwinging Back to Democracy", "\nStriving for institutional change in an ever-changing society", "\n\nNew, hybrid threats, devaluation of national sovereignty in favour of globalization, political radicalization and the evident disconnect of the majority from leading political elites are all clear indicators that our current era is steadily rendering our conventional political system obsolete. The need for change is apparent. Essentially, Swinging back to democracy aims to address this issue by discussing the dissolution of the core democratic ideas of responsibility, decisiveness, and trust in the bureaucratic process and re-evaluating the way our society works or even debating on how it should work."]
+    let text: [String] = ["Theme of the Conference:", "\n\nEliminating Fear", "\n\nConflict and bias as part of dialogue","\n\nRadicalism, active efforts against cooperation, a lack of commitment to agreements, a lack of respect, and a disconnect of politics from reality seem to be the dominant traits of the current world order. These trends replace progress with stagnation and opposition with hostility, posing real threats to our future.\n\nThey are universal in any socio-political circumstances, because they share a common root. We have lost the ability to communicate and lead productive dialogue. Our culture is teaching us to avoid conflict and thereby, we have become afraid to engage with people that have a different perspective or come from a different background. Rather, we often deem them unworthy of our attention and inspire disrespect and polarisation.\n\nIf we want to grow, we must reconnect and engage in dialogue despite our biases or the possibility of conflict."]
     
     mainLabel.setText(text.joined(separator: ""), afterInheritingLabelAttributesAndConfiguringWith: { mutableAttributedString in
       let smallRange: NSRange = (mutableAttributedString!.string as NSString).range(of: text[0], options: .caseInsensitive)
@@ -31,9 +35,9 @@ class ConferenceThemeViewController: UIViewController, TTTAttributedLabelDelegat
       
       // Core Text APIs use C functions without a direct bridge to UIFont. See Apple's "Core Text Programming Guide" to learn how to configure string attributes.
       
-      let small = UIFont(name: "MyriadPro-Regular", size: 15)!
-      let bold = UIFont(name: "MyriadPro-Semibold", size: 18)!
-      let italic = UIFont(name: "MyriadPro-It", size: 16)!
+      let small = UIFont(name: "ProximaNova-Regular", size: 16)!
+      let bold = UIFont(name: "ProximaNova-Semibold", size: 26)!
+      let italic = UIFont(name: "ProximaNova-RegularIt", size: 18)!
       let smallFont = CTFontCreateWithName(small.fontName as CFString, small.pointSize, nil)
       let boldFont = CTFontCreateWithName(bold.fontName as CFString, bold.pointSize, nil)
       let italicFont = CTFontCreateWithName(italic.fontName as CFString, italic.pointSize, nil)
