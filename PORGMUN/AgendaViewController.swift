@@ -60,43 +60,25 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate {
                           UIFont(name: "ProximaNova-Regular", size: 15)!,
                           UIFont(name: "ProximaNova-Semibold", size: 15)!,
                           UIFont(name: "ProximaNova-Regular", size: 15)!]),
-    MapPointClass(title: "LUCERNA Marble Hall",
-                  address: "Štěpánská 704/61",
-                  color: "purple",
-                  coordinate: CLLocationCoordinate2D(latitude: 50.08088979999999, longitude: 14.42641530000003),
-                  directionsText: ["LUCERNA Marble Hall",
-                                   "\n\nAddress:", "\nŠtěpánská 61",
-                                   "\n\nMetro station:", "\nMůstek (Line A, Line B), exit Vodičkova",
-                                   "\n\nTram station:", "\nVáclavské náměstí (2, 3, 5, 6, 9, 14, 24, 91, 92, 94, 95, 96, 98)"],
-                  fonts: [UIFont(name: "ProximaNova-Semibold", size: 18)!,
-                          UIFont(name: "ProximaNova-Semibold", size: 15)!,
-                          UIFont(name: "ProximaNova-Regular", size: 15)!,
-                          UIFont(name: "ProximaNova-Semibold", size: 15)!,
-                          UIFont(name: "ProximaNova-Regular", size: 15)!,
-                          UIFont(name: "ProximaNova-Semibold", size: 15)!,
-                          UIFont(name: "ProximaNova-Regular", size: 15)!]),
-    MapPointClass(title: "GRID",
-                  address: "Opatovická 160/18",
+    MapPointClass(title: "Klub FAMU",
+                  address: "Smetanovo nábřeží 2",
                   color: "orange",
-                  coordinate: CLLocationCoordinate2D(latitude: 50.0795955, longitude: 14.418308600000046),
-                  directionsText: ["GRID",
-                                   "\n\nAddress:", "\t\tOpatovická 18",
-                                   "\n\nMetro station:", "\nNárodní třída (Line B)",
-                                   "\n\nTram station:", "\nNárodní třída (2, 9, 11, 13, 14, 18, 22, 23, 93, 97)"],
-                  fonts: [UIFont(name: "ProximaNova-Semibold", size: 18)!,
-                          UIFont(name: "ProximaNova-Semibold", size: 15)!,
-                          UIFont(name: "ProximaNova-Regular", size: 15)!,
-                          UIFont(name: "ProximaNova-Semibold", size: 15)!,
-                          UIFont(name: "ProximaNova-Regular", size: 15)!,
-                          UIFont(name: "ProximaNova-Semibold", size: 15)!,
-                          UIFont(name: "ProximaNova-Regular", size: 15)!]),
+                  coordinate: CLLocationCoordinate2D(latitude: 50.0817268, longitude: 14.4110277),
+                  directionsText: [],
+                  fonts: []),
+    MapPointClass(title: "Vnitroblock",
+                  address: "Tusarova 791/31",
+                  color: "purple",
+                  coordinate: CLLocationCoordinate2D(latitude: 50.1018732, longitude: 14.4492928),
+                  directionsText: [],
+                  fonts: []),
     ]
   
   @objc func titleTapped() {
-    let lat: CLLocationDegrees = 50.089139
-    let lon: CLLocationDegrees = 14.417630
+    let lat: CLLocationDegrees = 50.097239
+    let lon: CLLocationDegrees = 14.427630
     let initialLocation = CLLocation(latitude: lat, longitude: lon)
-    centerMapOnLocation(location: initialLocation, radius: 1000)
+    centerMapOnLocation(location: initialLocation, radius: 1600)
     print("tapped")
   }
   
@@ -150,7 +132,7 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate {
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     if let location = locations.last {
       let myLocation = CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-      centerMapOnLocation(location: myLocation, radius: 1000)
+      centerMapOnLocation(location: myLocation, radius: 1600)
     }
     self.mapView.showsUserLocation = true
     manager.stopUpdatingLocation()
@@ -174,41 +156,46 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate {
     
     checkLocationAuthorizationStatus()
     // let initialLocation = CLLocation(latitude: 50.062111, longitude: 14.437261)
-    let lat: CLLocationDegrees = 50.089139
-    let lon: CLLocationDegrees = 14.417630
+    let lat: CLLocationDegrees = 50.097239
+    let lon: CLLocationDegrees = 14.427630
     let initialLocation = CLLocation(latitude: lat, longitude: lon)
-    centerMapOnLocation(location: initialLocation, radius: 1000)
+    centerMapOnLocation(location: initialLocation, radius: 1600)
   }
   
   // table view
   
   let schedule = [
-    "Thursday 15th OPENING DAY": [
+    "Thursday 21st THE OPENING DAY": [
       "10:00–12:00": ["Registration", "1", "red"],
       "12:00-13:30": ["Opening Ceremony", "1", "red"],
-      "13:30-14:15": ["Break", "1", "red"],
-      "14:15-16:00": ["Opening Ceremony", "1", "red"],
-      "16:00-16:15": ["Meeting with Supervisors", "1", "red"],
+      "13:30-14:30": ["Lunch Break", "1", "red"],
+      "13:30-13:45": ["Meeting with Supervisors", "1", "red"],
+      "14:30-16:00": ["Opening Ceremony", "1", "red"],
       "16:15–18:45": ["Prague Tour and Icebreakers", "1", "red"],
-      "19:00–21:30": ["Gala Dinner", "2", "purple"],
+      "19:00–21:30": ["Gala Dinner", "3", "purple"],
     ],
-    "Friday 16th COMMITTEES IN SESSION": [
-      "09:00–17:00": ["Committees in Session and NGO Presentations", "0", "porgmun"],
+    "Friday 22nd COMMITTEES IN SESSION": [
+        "08:30-09:00": ["Chair's Briefing", "0", "porgmun"],
+      "09:00–15:00": ["Committee Sessions", "0", "porgmun"],
+      "09:15-09:30": ["Meeting with Supervisors", "0", "porgmun"],
       "12:00–14:00": ["Staggered Lunches", "0", "porgmun"]
     ],
-    "Saturday 17th COMMITTEES IN SESSION": [
-      "09:00–17:00": ["Committees in Session and NGO Presentations", "0", "porgmun"],
+    "Saturday 23rd COMMITTEES IN SESSION": [
+        "08:30-09:00": ["Chair's Briefing", "0", "porgmun"],
+      "09:00–17:00": ["Committees Sessions", "0", "porgmun"],
+      "09:15-09:30": ["Meeting with Supervisors", "0", "porgmun"],
       "12:00–14:00": ["Staggered Lunches", "0", "porgmun"],
-      "20:00–xx:xx": ["Official PORGMUN Party", "3", "orange"]
+      "20:00–24:00": ["Official PORGMUN Party", "2", "orange"]
     ],
-    "Sunday 18th CLOSING DAY": [
+    "Sunday 24th THE CLOSING DAY": [
       "09:00-11:30": ["Further Programme in Committees", "0", "porgmun"],
+      "09:15-09:30": ["Meeting with Supervisors", "0", "porgmun"],
       "11:30-13:00": ["Free Time for Lunch and Transfer", "0", "porgmun"],
-      "13:00-15:00": ["Closing Ceremony", "1", "red"]
+      "13:00-14:30": ["Closing Ceremony", "1", "red"]
     ]
   ]
   
-  let keysArray = ["Thursday 15th OPENING DAY", "Friday 16th COMMITTEES IN SESSION", "Saturday 17th COMMITTEES IN SESSION", "Sunday 18th CLOSING DAY"]
+  let keysArray = ["Thursday 21st THE OPENING DAY", "Friday 22nd COMMITTEES IN SESSION", "Saturday 23rd COMMITTEES IN SESSION", "Sunday 24th THE CLOSING DAY"]
   
   func dictionaryHandling(indexPath: IndexPath) -> [String: Any] {
     let eventsOnThisDate = schedule[keysArray[indexPath.section]]
@@ -330,7 +317,7 @@ extension AgendaViewController: UITableViewDelegate, UITableViewDataSource {
     
     let initialLocation = CLLocation(latitude: convertedLatitude, longitude: coords.longitude)
     
-    centerMapOnLocation(location: initialLocation, radius: 400)
+    centerMapOnLocation(location: initialLocation, radius: 600)
     
     // OPTION 2
     
