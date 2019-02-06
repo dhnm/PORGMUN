@@ -277,7 +277,7 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
       //            print(cell.messageLabel?.text)
       //            print(cell.messageLabel?.attributedText)
       
-      cell.messageLabel.font = UIFont(name: "ProximaNova-Regular", size: 16)
+      cell.messageLabel.font = UIFont(name: "ProximaNova-Regular", size: 18)
       //cell.messageLabel.textColor = UIColor.darkGray
       cell.messageLabel.lineBreakMode = .byWordWrapping
       cell.messageLabel.numberOfLines = 0
@@ -286,7 +286,7 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
       
       let linkAttributes: [NSAttributedString.Key: Any] = [
         .foregroundColor: UIColor.black,
-        .font: UIFont(name: "ProximaNova-Semibold", size: 16)!
+        .font: UIFont(name: "ProximaNova-Semibold", size: 18)!
       ]
       let activeLinkAttributes: [NSAttributedString.Key: Any] = [
         .foregroundColor: UIColor.black.withAlphaComponent(0.80),
@@ -301,7 +301,7 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
       cell.messageLabel.setText(text, afterInheritingLabelAttributesAndConfiguringWith: { mutableAttributedString in
         let boldRange = (mutableAttributedString!.string as NSString).range(of: "ipsum dolor", options: .caseInsensitive)
         // Core Text APIs use C functions without a direct bridge to UIFont. See Apple's "Core Text Programming Guide" to learn how to configure string attributes.
-        let boldFont = UIFont(name: "ProximaNova-Semibold", size: 16)!
+        let boldFont = UIFont(name: "ProximaNova-Semibold", size: 18)!
         let font = CTFontCreateWithName(boldFont.fontName as CFString, boldFont.pointSize, nil)
         mutableAttributedString?.addAttribute(NSAttributedString.Key(kCTFontAttributeName as String), value: font, range: boldRange)
         return mutableAttributedString!

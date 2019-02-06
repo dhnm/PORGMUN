@@ -114,7 +114,7 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
   
   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     if indexPath.section != 0 && indexPath.row == 0 && data[indexPath.section]["picture"] != "" {
-      return 285
+      return 300
     }
     return UITableView.automaticDimension
   }

@@ -128,6 +128,9 @@ class RulesTableViewController: UITableViewController, UISearchResultsUpdating {
       tableView.tableHeaderView = searchController.searchBar
     }
     definesPresentationContext = true
+    
+    tableView.rowHeight = UITableView.automaticDimension
+    tableView.estimatedRowHeight = 50.0
   }
   
   func updateSearchResults(for searchController: UISearchController) {

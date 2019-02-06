@@ -584,7 +584,7 @@ Budějovická	</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Committee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yxn-ba-f4W">
-                                            <rect key="frame" x="75" y="5" width="79" height="19.5"/>
+                                            <rect key="frame" x="75" y="6" width="79" height="19"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
                                             <nil key="textColor"/>
@@ -595,7 +595,7 @@ Budějovická	</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vAH-Uo-gGm">
-                                            <rect key="frame" x="75" y="24.5" width="40" height="15"/>
+                                            <rect key="frame" x="75" y="25" width="41" height="14"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -672,10 +672,10 @@ Budějovická	</string>
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Generic" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MDM-C4-Drv">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Generic" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MDM-C4-Drv">
                                             <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -692,7 +692,7 @@ Budějovická	</string>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Topic" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CeJ-I9-2g9">
                                             <rect key="frame" x="16" y="0.0" width="236" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -729,10 +729,10 @@ Budějovická	</string>
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2BP-T3-k5C">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2BP-T3-k5C">
                                             <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -760,37 +760,37 @@ Budějovická	</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsHeaderCell" rowHeight="285" id="O5e-qX-Icg" customClass="ContactsHeaderCell" customModule="PORGMUN" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="320" height="285"/>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsHeaderCell" rowHeight="300" id="O5e-qX-Icg" customClass="ContactsHeaderCell" customModule="PORGMUN" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="320" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="O5e-qX-Icg" id="c22-WI-BZ3">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="284.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="299.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ban-Ki-moon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="io0-rp-hCf">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="285"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="300.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="285" id="nOs-z5-YJy"/>
+                                                <constraint firstAttribute="height" constant="300" id="nOs-z5-YJy"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heads of Social Program" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeT-na-gDK">
-                                            <rect key="frame" x="48" y="219" width="224" height="24.5"/>
+                                            <rect key="frame" x="26" y="234.5" width="268.5" height="29.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="20"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="24"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sára Davidová" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73H-MC-7ql">
-                                            <rect key="frame" x="103" y="243.5" width="114.5" height="22"/>
+                                            <rect key="frame" x="96.5" y="264" width="127" height="24.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="io0-rp-hCf" firstAttribute="leading" secondItem="c22-WI-BZ3" secondAttribute="leading" id="2RC-Eb-a3n"/>
-                                        <constraint firstItem="io0-rp-hCf" firstAttribute="bottom" secondItem="73H-MC-7ql" secondAttribute="bottom" constant="20" id="9sS-2B-2wO"/>
+                                        <constraint firstItem="io0-rp-hCf" firstAttribute="bottom" secondItem="73H-MC-7ql" secondAttribute="bottom" constant="12" id="9sS-2B-2wO"/>
                                         <constraint firstItem="io0-rp-hCf" firstAttribute="leading" secondItem="c22-WI-BZ3" secondAttribute="leading" id="FM7-WO-ggl"/>
                                         <constraint firstAttribute="trailing" secondItem="io0-rp-hCf" secondAttribute="trailing" id="HGd-CO-1tq"/>
                                         <constraint firstItem="eeT-na-gDK" firstAttribute="centerX" secondItem="c22-WI-BZ3" secondAttribute="centerX" id="V9V-XB-hO0"/>
@@ -807,7 +807,7 @@ Budějovická	</string>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactItemCell" textLabel="Pr9-ia-f58" style="IBUITableViewCellStyleDefault" id="Sqq-mG-PMm">
-                                <rect key="frame" x="0.0" y="340.5" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="355.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sqq-mG-PMm" id="UKy-Lv-fVC">
                                     <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
@@ -824,21 +824,21 @@ Budějovická	</string>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FeedbackCell" textLabel="oqf-88-adO" detailTextLabel="OHg-KG-pwC" style="IBUITableViewCellStyleSubtitle" id="LPb-YN-da2">
-                                <rect key="frame" x="0.0" y="384.5" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="399.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LPb-YN-da2" id="d4f-Yf-f4r">
                                     <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="it@porgmun.cz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oqf-88-adO">
-                                            <rect key="frame" x="16" y="5" width="103.5" height="19.5"/>
+                                            <rect key="frame" x="16" y="6" width="106.5" height="19"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="App Feedback &amp; Bug Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OHg-KG-pwC">
-                                            <rect key="frame" x="16" y="24.5" width="150.5" height="15"/>
+                                            <rect key="frame" x="16" y="25" width="154.5" height="14"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -988,19 +988,19 @@ Budějovická	</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="168.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhW-Zm-J0L" userLabel="Controller View">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="463"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecO-fu-mbK">
-                                                <rect key="frame" x="32" y="41" width="256" height="22"/>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
+                                                <rect key="frame" x="32" y="41" width="256" height="32"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UOd-oF-qUu">
-                                                <rect key="frame" x="26" y="91" width="268" height="328"/>
+                                                <rect key="frame" x="26" y="93" width="268" height="411"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
@@ -1012,7 +1012,7 @@ Budějovická	</string>
                                             <constraint firstAttribute="trailing" secondItem="UOd-oF-qUu" secondAttribute="trailing" constant="26" id="c79-yM-7wo"/>
                                             <constraint firstItem="ecO-fu-mbK" firstAttribute="top" secondItem="mhW-Zm-J0L" secondAttribute="top" constant="41" id="na4-ZY-pxs"/>
                                             <constraint firstItem="ecO-fu-mbK" firstAttribute="leading" secondItem="mhW-Zm-J0L" secondAttribute="leading" constant="32" id="w95-3q-vH1"/>
-                                            <constraint firstItem="UOd-oF-qUu" firstAttribute="top" secondItem="ecO-fu-mbK" secondAttribute="bottom" constant="28" id="zsv-J2-Ong"/>
+                                            <constraint firstItem="UOd-oF-qUu" firstAttribute="top" secondItem="ecO-fu-mbK" secondAttribute="bottom" constant="20" id="zsv-J2-Ong"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1048,22 +1048,22 @@ Budějovická	</string>
         <scene sceneID="57k-EX-pSw">
             <objects>
                 <tableViewController id="DpH-IE-501" customClass="RulesTableViewController" customModule="PORGMUN" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="5a3-rN-LTy">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="5a3-rN-LTy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="rulesCell" textLabel="vrJ-eZ-Siy" style="IBUITableViewCellStyleDefault" id="NDP-78-4sU">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NDP-78-4sU" id="YDZ-p3-m0d">
-                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vrJ-eZ-Siy">
-                                            <rect key="frame" x="16" y="0.0" width="269" height="43.5"/>
+                                            <rect key="frame" x="16" y="0.0" width="269" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -1095,7 +1095,7 @@ Budějovická	</string>
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-1374" y="-807"/>
+            <point key="canvasLocation" x="-1374.375" y="-807.04225352112678"/>
         </scene>
         <!--News-->
         <scene sceneID="242-Hg-FGa">
@@ -1203,7 +1203,8 @@ Budějovická	</string>
                                             <attributedString key="attributedText">
                                                 <fragment content="Message of Me">
                                                     <attributes>
-                                                        <font key="NSFont" metaFont="system" size="17"/>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
