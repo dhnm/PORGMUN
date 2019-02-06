@@ -222,6 +222,7 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate {
     return [
       "startTime": startTime,
       "endTime": endTime,
+      "timesString": timesString,
       "placeName": placeName,
       "address": address,
       "colorTagImage": colorTagImage,
@@ -237,7 +238,6 @@ class EventTableViewCell: UITableViewCell {
   @IBOutlet weak var subtitleLabel: UILabel!
   @IBOutlet weak var colorTagImage: UIImageView!
   @IBOutlet weak var startTime: UILabel!
-  @IBOutlet weak var endTime: UILabel!
 }
 
 class MapPointClass: NSObject, MKAnnotation {
@@ -290,8 +290,7 @@ extension AgendaViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as! EventTableViewCell
     let computed = dictionaryHandling(indexPath: indexPath)
-    cell.startTime?.text = computed["startTime"] as! String?
-    cell.endTime?.text = computed["endTime"] as! String?
+    cell.startTime?.text = computed["timesString"] as! String?
     cell.titleLabel?.text = computed["placeName"] as! String?
     cell.subtitleLabel?.text = computed["address"] as! String?
     cell.colorTagImage?.image = computed["colorTagImage"] as! UIImage?

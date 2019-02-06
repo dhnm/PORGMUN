@@ -15,6 +15,9 @@
         <array key="ProximaNova-Regular.otf">
             <string>ProximaNova-Regular</string>
         </array>
+        <array key="ProximaNova-RegularIt.otf">
+            <string>ProximaNova-RegularIt</string>
+        </array>
         <array key="ProximaNova-Semibold.otf">
             <string>ProximaNova-Semibold</string>
         </array>
@@ -35,80 +38,69 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Rpy-Cs-OOF">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </mapView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="7ej-QO-yBn">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="68" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="7ej-QO-yBn">
                                 <rect key="frame" x="0.0" y="292" width="320" height="227"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="eventCell" id="hGm-pZ-5s2" customClass="EventTableViewCell" customModule="PORGMUN" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="eventCell" rowHeight="69" id="hGm-pZ-5s2" customClass="EventTableViewCell" customModule="PORGMUN" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="320" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hGm-pZ-5s2" id="pFt-gd-dCb">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red.png" translatesAutoresizingMaskIntoConstraints="NO" id="GT3-DO-3Vk">
-                                                    <rect key="frame" x="0.0" y="0.0" width="11" height="44.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="11" height="80.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="11" id="caS-Hq-a1K"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFG-gH-uM7">
-                                                    <rect key="frame" x="48.5" y="5" width="263.5" height="20"/>
+                                                    <rect key="frame" x="15" y="24.5" width="299" height="20"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="Lj9-40-JXL"/>
+                                                        <constraint firstAttribute="height" constant="20" id="V5n-08-F9j"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMV-q1-V0w">
-                                                    <rect key="frame" x="283" y="22" width="29" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="12:00-14:30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvt-oA-zWD">
+                                                    <rect key="frame" x="15" y="7.5" width="299" height="14"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="18" id="c7B-Wx-KNP"/>
+                                                        <constraint firstAttribute="height" constant="14" id="czU-5I-qpd"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="12:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvt-oA-zWD">
-                                                    <rect key="frame" x="17" y="7" width="26.5" height="14"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMV-q1-V0w">
+                                                    <rect key="frame" x="15" y="47.5" width="299" height="14"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="14" id="N0W-bz-5t4"/>
+                                                        <constraint firstAttribute="height" constant="14" id="L88-Az-bBe"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="11"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="13:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgQ-6F-EHf">
-                                                    <rect key="frame" x="17" y="23" width="26.5" height="12"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="12" id="l4g-wW-Tbd"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="11"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-RegularIt" family="Proxima Nova" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="cFG-gH-uM7" secondAttribute="trailing" constant="8" id="05E-7W-QWd"/>
-                                                <constraint firstItem="cFG-gH-uM7" firstAttribute="leading" secondItem="hgQ-6F-EHf" secondAttribute="trailing" constant="5" id="3Be-RG-ynZ"/>
-                                                <constraint firstItem="cFG-gH-uM7" firstAttribute="leading" secondItem="fvt-oA-zWD" secondAttribute="trailing" constant="5" id="3rd-ys-NeR"/>
-                                                <constraint firstItem="hgQ-6F-EHf" firstAttribute="top" secondItem="fvt-oA-zWD" secondAttribute="bottom" constant="2" id="54Y-6x-0fD"/>
+                                                <constraint firstItem="bMV-q1-V0w" firstAttribute="leading" secondItem="GT3-DO-3Vk" secondAttribute="trailing" constant="4" id="1lT-Qd-vIP"/>
                                                 <constraint firstItem="fvt-oA-zWD" firstAttribute="top" secondItem="pFt-gd-dCb" secondAttribute="top" constant="7" id="Aoq-UF-epV"/>
-                                                <constraint firstAttribute="bottom" secondItem="bMV-q1-V0w" secondAttribute="bottom" constant="3.5" id="K8b-JJ-czI"/>
-                                                <constraint firstItem="hgQ-6F-EHf" firstAttribute="leading" secondItem="GT3-DO-3Vk" secondAttribute="trailing" constant="6" id="NWD-xT-NlK"/>
-                                                <constraint firstItem="cFG-gH-uM7" firstAttribute="top" secondItem="pFt-gd-dCb" secondAttribute="top" constant="5" id="Pe0-mc-gmq"/>
-                                                <constraint firstItem="fvt-oA-zWD" firstAttribute="leading" secondItem="GT3-DO-3Vk" secondAttribute="trailing" constant="6" id="QCS-iM-Tc9"/>
-                                                <constraint firstItem="bMV-q1-V0w" firstAttribute="top" secondItem="cFG-gH-uM7" secondAttribute="bottom" constant="-3" id="ecs-H0-Ef8"/>
+                                                <constraint firstAttribute="trailing" secondItem="bMV-q1-V0w" secondAttribute="trailing" constant="6" id="Fun-Rr-uE7"/>
+                                                <constraint firstAttribute="bottom" secondItem="bMV-q1-V0w" secondAttribute="bottom" constant="7" id="PRI-e3-7Pp"/>
+                                                <constraint firstAttribute="trailing" secondItem="fvt-oA-zWD" secondAttribute="trailing" constant="6" id="bsj-kR-wU8"/>
+                                                <constraint firstItem="fvt-oA-zWD" firstAttribute="leading" secondItem="GT3-DO-3Vk" secondAttribute="trailing" constant="4" id="bwp-ro-mZ8"/>
+                                                <constraint firstItem="cFG-gH-uM7" firstAttribute="top" secondItem="fvt-oA-zWD" secondAttribute="bottom" constant="3" id="f2X-N4-rUS"/>
+                                                <constraint firstAttribute="trailing" secondItem="cFG-gH-uM7" secondAttribute="trailing" constant="6" id="hMj-fc-tVu"/>
+                                                <constraint firstItem="bMV-q1-V0w" firstAttribute="top" secondItem="cFG-gH-uM7" secondAttribute="bottom" constant="3" id="iD5-2s-s91"/>
                                                 <constraint firstItem="GT3-DO-3Vk" firstAttribute="top" secondItem="pFt-gd-dCb" secondAttribute="top" id="jP7-on-9kR"/>
                                                 <constraint firstItem="GT3-DO-3Vk" firstAttribute="leading" secondItem="pFt-gd-dCb" secondAttribute="leading" id="mWv-za-tu1"/>
-                                                <constraint firstAttribute="trailing" secondItem="bMV-q1-V0w" secondAttribute="trailing" constant="8" id="n7S-mD-Rg5"/>
-                                                <constraint firstAttribute="bottom" secondItem="GT3-DO-3Vk" secondAttribute="bottom" constant="-1" id="x9n-Kd-0Rg"/>
+                                                <constraint firstItem="cFG-gH-uM7" firstAttribute="leading" secondItem="GT3-DO-3Vk" secondAttribute="trailing" constant="4" id="uxa-ls-D3D"/>
+                                                <constraint firstAttribute="bottom" secondItem="GT3-DO-3Vk" secondAttribute="bottom" id="x9n-Kd-0Rg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="colorTagImage" destination="GT3-DO-3Vk" id="kVQ-wS-NTn"/>
-                                            <outlet property="endTime" destination="hgQ-6F-EHf" id="FZK-xt-od9"/>
                                             <outlet property="startTime" destination="fvt-oA-zWD" id="6dR-eI-Yc8"/>
                                             <outlet property="subtitleLabel" destination="bMV-q1-V0w" id="ku1-0U-i0A"/>
                                             <outlet property="titleLabel" destination="cFG-gH-uM7" id="49Z-oT-woi"/>
