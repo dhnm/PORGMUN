@@ -18,6 +18,10 @@ class CommitteesDetailTableViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    if #available(iOS 11.0, *) {
+        self.navigationItem.largeTitleDisplayMode = .never
+    }
+    
     self.title = data.abbreviation
   }
   

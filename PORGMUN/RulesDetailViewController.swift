@@ -18,6 +18,10 @@ class RulesDetailViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    if #available(iOS 11.0, *) {
+        self.navigationItem.largeTitleDisplayMode = .never
+    }
+    
     textView.text = data.text
     titleLabel.text = data.title
   }
