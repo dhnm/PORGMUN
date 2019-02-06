@@ -76,7 +76,6 @@ class TopicDetailTableViewController: UITableViewController, UIDocumentInteracti
         } else if indexPath.section == 1 {
             
             if data.fileName == nil {
-                cell.textLabel?.textAlignment = .justified
                 cell.textLabel?.text = data.description_
             } else {
                 cell.isUserInteractionEnabled = true

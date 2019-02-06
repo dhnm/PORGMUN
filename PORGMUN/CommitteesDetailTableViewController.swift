@@ -84,6 +84,7 @@ class CommitteesDetailTableViewController: UITableViewController {
         cell.textLabel?.text = data.topics[indexPath.row].name
         
       } else if indexPath.section == 3 {
+        cell.textLabel?.textAlignment = .justified
         cell.textLabel?.text = data.countryMatrix
       }
     }
