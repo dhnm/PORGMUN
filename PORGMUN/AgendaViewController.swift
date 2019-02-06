@@ -106,6 +106,9 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate {
     let logo = #imageLiteral(resourceName: "logo-black@2x.png")
     let imageView = UIImageView(image: logo)
     self.navigationItem.titleView = imageView
+    if #available(iOS 11.0, *) {
+        self.navigationItem.largeTitleDisplayMode = .never
+    }
     
     let titleTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.titleTapped))
     

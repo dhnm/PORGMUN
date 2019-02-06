@@ -151,10 +151,6 @@ class NewsViewController: UITableViewController, TTTAttributedLabelDelegate, SFS
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let logo = #imageLiteral(resourceName: "logo-black@2x.png")
-    let imageView = UIImageView(image:logo)
-    self.navigationItem.titleView = imageView
-    
     let refreshControl = UIRefreshControl()
     refreshControl.addTarget(self, action: #selector(self.updateData), for: .valueChanged)
     self.refreshControl = refreshControl

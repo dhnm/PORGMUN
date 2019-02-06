@@ -90,10 +90,6 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    let logo = #imageLiteral(resourceName: "logo-black@2x.png")
-    let imageView = UIImageView(image: logo)
-    self.navigationItem.titleView = imageView
   }
   
   // MARK: - Table view data source

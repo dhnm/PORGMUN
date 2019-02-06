@@ -33,6 +33,10 @@ class TabBarController: UITabBarController {
     UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.black] // top bar text color
     UINavigationBar.appearance().isTranslucent = true
     
+    if #available(iOS 11.0, *) {
+        UINavigationBar.appearance().prefersLargeTitles = true
+    }
+    
     // TAB BAR
     
     self.tabBar.items?[0].image = #imageLiteral(resourceName: "fa-calendar@3x.png").withRenderingMode(.alwaysTemplate)

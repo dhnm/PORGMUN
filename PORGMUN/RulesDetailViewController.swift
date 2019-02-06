@@ -18,10 +18,6 @@ class RulesDetailViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let logo = #imageLiteral(resourceName: "logo-black@2x.png")
-    let imageView = UIImageView(image:logo)
-    self.navigationItem.titleView = imageView
-    
     textView.text = data.text
     titleLabel.text = data.title
   }

@@ -17,10 +17,6 @@ class TopicDetailTableViewController: UITableViewController, UIDocumentInteracti
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let logo = #imageLiteral(resourceName: "logo-black@2x.png")
-    let imageView = UIImageView(image:logo)
-    self.navigationItem.titleView = imageView
-    
     func copyFiles(fileName: String) -> URL {
       let filemgr = FileManager.default
       filemgr.delegate = self
