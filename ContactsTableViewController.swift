@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class ContactsTableViewController: UITableViewController, MFMailComposeViewControllerDelegate {
+class ContactsTableViewController: UITableViewController, MFMailComposeViewControllerDelegate, UITabBarControllerDelegate {
     
     @IBAction func facebookButton(_ sender: Any) {
         let appURL = URL(string: "fb://page?id=1443688759205321")!
@@ -90,6 +90,29 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.tabBarController?.delegate = self
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBarController?.delegate = nil
+    }
+    
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        
+        if tabBarController.selectedViewController == viewController {
+            // self.tableView?.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+            var safeAreaInsetsTop: CGFloat = 0
+            if #available(iOS 11.0, *) {
+                safeAreaInsetsTop = self.tableView.adjustedContentInset.top
+                print("sAIT", safeAreaInsetsTop)
+            }
+            self.tableView.setContentOffset(CGPoint(x: 0.0, y: -safeAreaInsetsTop), animated: true)
+        }
+        
+        return true
     }
     
     // MARK: - Table view data source

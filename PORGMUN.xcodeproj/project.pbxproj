@@ -61,7 +61,7 @@
 		65587BC81E75970F00855365 /* MyriadPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65587BC71E75970F00855365 /* MyriadPro-Italic.ttf */; };
 		65587BCA1E759DAB00855365 /* ConferenceThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65587BC91E759DAB00855365 /* ConferenceThemeViewController.swift */; };
 		655E39B61E2F80EC00DE1F75 /* MapPointDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E39B51E2F80EC00DE1F75 /* MapPointDetailViewController.swift */; };
-		65ACAB5A1E628C4E002F0376 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACAB591E628C4D002F0376 /* NewsViewController.swift */; };
+		65ACAB5A1E628C4E002F0376 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACAB591E628C4D002F0376 /* NewsTableViewController.swift */; };
 		65C3F3591E271456002F5052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3F3581E271456002F5052 /* AppDelegate.swift */; };
 		65C3F35D1E271456002F5052 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3F35C1E271456002F5052 /* AgendaViewController.swift */; };
 		65C3F3601E271456002F5052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C3F35E1E271456002F5052 /* Main.storyboard */; };
@@ -163,7 +163,7 @@
 		65587BC71E75970F00855365 /* MyriadPro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Italic.ttf"; sourceTree = "<group>"; };
 		65587BC91E759DAB00855365 /* ConferenceThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceThemeViewController.swift; sourceTree = "<group>"; };
 		655E39B51E2F80EC00DE1F75 /* MapPointDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPointDetailViewController.swift; sourceTree = "<group>"; };
-		65ACAB591E628C4D002F0376 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		65ACAB591E628C4D002F0376 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		65C3F3551E271456002F5052 /* PORGMUN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PORGMUN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C3F3581E271456002F5052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65C3F35C1E271456002F5052 /* AgendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
@@ -332,7 +332,7 @@
 				654AE4A41E4BD13B00564EB4 /* TabBarController.swift */,
 				65C3F35C1E271456002F5052 /* AgendaViewController.swift */,
 				655E39B51E2F80EC00DE1F75 /* MapPointDetailViewController.swift */,
-				65ACAB591E628C4D002F0376 /* NewsViewController.swift */,
+				65ACAB591E628C4D002F0376 /* NewsTableViewController.swift */,
 				65067AA61E28513700750469 /* CommitteesTableViewController.swift */,
 				65587BC91E759DAB00855365 /* ConferenceThemeViewController.swift */,
 				650199791E64F084003BB3FE /* CommitteesDetailTableViewController.swift */,
@@ -622,7 +622,7 @@
 				65067AAD1E2A4BCC00750469 /* RulesTableViewController.swift in Sources */,
 				65067AA71E28513700750469 /* CommitteesTableViewController.swift in Sources */,
 				65E6E84B1E4BF76C00BE0E9F /* ContactsTableViewController.swift in Sources */,
-				65ACAB5A1E628C4E002F0376 /* NewsViewController.swift in Sources */,
+				65ACAB5A1E628C4E002F0376 /* NewsTableViewController.swift in Sources */,
 				654AE4A51E4BD13B00564EB4 /* TabBarController.swift in Sources */,
 				65587BCA1E759DAB00855365 /* ConferenceThemeViewController.swift in Sources */,
 				655E39B61E2F80EC00DE1F75 /* MapPointDetailViewController.swift in Sources */,

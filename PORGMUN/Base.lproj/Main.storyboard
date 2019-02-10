@@ -1160,7 +1160,7 @@ Budějovická	</string>
         <!--News-->
         <scene sceneID="eLk-mM-swb">
             <objects>
-                <tableViewController id="8AW-xD-bUu" customClass="NewsViewController" customModule="PORGMUN" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="8AW-xD-bUu" customClass="NewsTableViewController" customModule="PORGMUN" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="240" sectionHeaderHeight="18" sectionFooterHeight="18" id="yGv-EL-GSn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import Contacts
 
-class AgendaViewController: UIViewController, CLLocationManagerDelegate {
+class AgendaViewController: UIViewController, CLLocationManagerDelegate, UITabBarControllerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var tableView: UITableView!
@@ -156,6 +156,22 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        self.tabBarController?.delegate = self
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBarController?.delegate = nil
+    }
+    
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        
+        if tabBarController.selectedViewController == viewController {
+            self.tableView?.setContentOffset(.zero, animated: true)
+            centerMapOnDefaultLocation()
+        }
+        
+        return true
     }
     
     // table view
