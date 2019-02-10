@@ -136,6 +136,8 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
                     cell.detailTextLabel?.text = contact["occupation"]
                     cell.accessoryType = .none
                     cell.isUserInteractionEnabled = false
+                    
+                    cell.accessoryView = nil
                 }
                 
             } else {
