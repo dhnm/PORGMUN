@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -27,26 +28,22 @@
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController title="Agenda" id="8rJ-Kc-sve" customClass="AgendaViewController" customModule="PORGMUN" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Rpy-Cs-OOF">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="68" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="7ej-QO-yBn">
-                                <rect key="frame" x="0.0" y="292" width="320" height="227"/>
+                                <rect key="frame" x="0.0" y="454.5" width="414" height="358.5"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="eventCell" rowHeight="69" id="hGm-pZ-5s2" customClass="EventTableViewCell" customModule="PORGMUN" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="320" height="69"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hGm-pZ-5s2" id="pFt-gd-dCb">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="68.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red.png" translatesAutoresizingMaskIntoConstraints="NO" id="GT3-DO-3Vk">
@@ -56,7 +53,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFG-gH-uM7">
-                                                    <rect key="frame" x="15" y="24.5" width="299" height="20"/>
+                                                    <rect key="frame" x="15" y="24.5" width="787" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="V5n-08-F9j"/>
                                                     </constraints>
@@ -65,7 +62,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="12:00-14:30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvt-oA-zWD">
-                                                    <rect key="frame" x="15" y="7.5" width="299" height="14"/>
+                                                    <rect key="frame" x="15" y="7.5" width="787" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="czU-5I-qpd"/>
                                                     </constraints>
@@ -74,7 +71,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMV-q1-V0w">
-                                                    <rect key="frame" x="15" y="47.5" width="299" height="14"/>
+                                                    <rect key="frame" x="15" y="47.5" width="787" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="L88-Az-bBe"/>
                                                     </constraints>
@@ -113,14 +110,14 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNW-Oc-Iso">
-                                <rect key="frame" x="262" y="234" width="42" height="42"/>
+                                <rect key="frame" x="356" y="396.5" width="42" height="42"/>
                                 <state key="normal" backgroundImage="button_geo_fence.png"/>
                                 <connections>
                                     <action selector="moveToDefaultLocation:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="e2A-t0-uyR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD5-mx-DdI">
-                                <rect key="frame" x="204" y="234" width="42" height="42"/>
+                                <rect key="frame" x="298" y="396.5" width="42" height="42"/>
                                 <state key="normal" backgroundImage="button_define_location.png"/>
                                 <connections>
                                     <action selector="moveToMyLocation:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="PPE-mH-huE"/>
@@ -132,16 +129,17 @@
                             <constraint firstItem="7ej-QO-yBn" firstAttribute="top" secondItem="ZD5-mx-DdI" secondAttribute="bottom" constant="16" id="2q8-lN-6Bo"/>
                             <constraint firstItem="7ej-QO-yBn" firstAttribute="top" secondItem="pNW-Oc-Iso" secondAttribute="bottom" constant="16" id="5w9-s2-0DB"/>
                             <constraint firstItem="Rpy-Cs-OOF" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="5yK-1r-nPq"/>
-                            <constraint firstAttribute="trailing" secondItem="pNW-Oc-Iso" secondAttribute="trailing" constant="16" id="Fox-ai-j2A"/>
+                            <constraint firstItem="66H-Vf-uEs" firstAttribute="trailing" secondItem="pNW-Oc-Iso" secondAttribute="trailing" constant="16" id="Fox-ai-j2A"/>
                             <constraint firstItem="7ej-QO-yBn" firstAttribute="height" secondItem="QS5-Rx-YEW" secondAttribute="height" multiplier="0.4" id="IHF-lU-7el"/>
                             <constraint firstItem="pNW-Oc-Iso" firstAttribute="leading" secondItem="ZD5-mx-DdI" secondAttribute="trailing" constant="16" id="Tdr-E1-Bux"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="7ej-QO-yBn" secondAttribute="bottom" id="U5f-Nd-iHM"/>
-                            <constraint firstAttribute="trailing" secondItem="Rpy-Cs-OOF" secondAttribute="trailing" id="doQ-vv-bHs"/>
-                            <constraint firstItem="Rpy-Cs-OOF" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="kdF-gW-njM"/>
-                            <constraint firstItem="7ej-QO-yBn" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="mVu-xH-Hpv"/>
+                            <constraint firstItem="66H-Vf-uEs" firstAttribute="bottom" secondItem="7ej-QO-yBn" secondAttribute="bottom" id="U5f-Nd-iHM"/>
+                            <constraint firstItem="Rpy-Cs-OOF" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="a2i-33-AjB"/>
+                            <constraint firstItem="Rpy-Cs-OOF" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailing" id="bCh-uS-Fcc"/>
+                            <constraint firstItem="7ej-QO-yBn" firstAttribute="leading" secondItem="66H-Vf-uEs" secondAttribute="leading" id="mVu-xH-Hpv"/>
                             <constraint firstAttribute="bottom" secondItem="Rpy-Cs-OOF" secondAttribute="bottom" id="na0-U1-tiO"/>
-                            <constraint firstAttribute="trailing" secondItem="7ej-QO-yBn" secondAttribute="trailing" id="sSY-Hf-CIa"/>
+                            <constraint firstItem="66H-Vf-uEs" firstAttribute="trailing" secondItem="7ej-QO-yBn" secondAttribute="trailing" id="sSY-Hf-CIa"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="66H-Vf-uEs"/>
                     </view>
                     <navigationItem key="navigationItem" title="Agenda" id="nz2-3l-YCN"/>
                     <connections>
@@ -550,26 +548,26 @@ Budějovická	</string>
             <objects>
                 <tableViewController id="n1q-3m-vav" customClass="CommitteesTableViewController" customModule="PORGMUN" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Zjf-RQ-eyp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="preambleCell" textLabel="GMm-J2-Wfz" imageView="j3a-ts-DZq" style="IBUITableViewCellStyleDefault" id="ntk-CX-r2x" customClass="PreambleCell" customModule="PORGMUN" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ntk-CX-r2x" id="b6I-eS-NLv">
-                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Theme of the Conference" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GMm-J2-Wfz">
-                                            <rect key="frame" x="54" y="0.0" width="231" height="43.5"/>
+                                            <rect key="frame" x="58" y="0.0" width="318" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="speech_bubble.png" id="j3a-ts-DZq">
-                                            <rect key="frame" x="16" y="10" width="23" height="23"/>
+                                            <rect key="frame" x="20" y="10" width="23" height="23"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -579,25 +577,25 @@ Budějovická	</string>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="infoCell" textLabel="Yxn-ba-f4W" detailTextLabel="vAH-Uo-gGm" imageView="2B6-K5-gKe" style="IBUITableViewCellStyleSubtitle" id="RET-dU-tae">
-                                <rect key="frame" x="0.0" y="99.5" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="99.5" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RET-dU-tae" id="qph-6Q-ixM">
-                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Committee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yxn-ba-f4W">
-                                            <rect key="frame" x="75" y="6" width="79" height="19"/>
+                                            <rect key="frame" x="79" y="5" width="79" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="au.jpg" id="2B6-K5-gKe">
-                                            <rect key="frame" x="16" y="0.0" width="44" height="43.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vAH-Uo-gGm">
-                                            <rect key="frame" x="75" y="25" width="41" height="14"/>
+                                            <rect key="frame" x="79" y="24.5" width="40" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -630,22 +628,22 @@ Budějovická	</string>
             <objects>
                 <tableViewController id="eAc-ba-ZPa" customClass="CommitteesDetailTableViewController" customModule="PORGMUN" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6eJ-Ot-jzv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeaderCell" rowHeight="143" id="huE-c0-cAi" customClass="CommitteesCustomCell" customModule="PORGMUN" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="143"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="143"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="huE-c0-cAi" id="43z-BN-S5N">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="142.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="142.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hsc.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="W0X-BS-7Pq">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="142.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="142.5"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disarmament and International Security Committee" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fer-b7-zGo">
-                                            <rect key="frame" x="32" y="11" width="256" height="121"/>
+                                            <rect key="frame" x="36" y="11" width="342" height="121"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="28"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -668,14 +666,14 @@ Budějovická	</string>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListItemCell" textLabel="MDM-C4-Drv" style="IBUITableViewCellStyleDefault" id="FsP-8z-bMY">
-                                <rect key="frame" x="0.0" y="171" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="171" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FsP-8z-bMY" id="xPP-fa-qiq">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Generic" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MDM-C4-Drv">
-                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                             <nil key="textColor"/>
@@ -685,14 +683,14 @@ Budějovická	</string>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="TopicCell" textLabel="CeJ-I9-2g9" style="IBUITableViewCellStyleDefault" id="soK-yB-zsd">
-                                <rect key="frame" x="0.0" y="215" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="215" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="soK-yB-zsd" id="3MB-Nv-eKa">
-                                    <rect key="frame" x="0.0" y="0.0" width="252" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Topic" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CeJ-I9-2g9">
-                                            <rect key="frame" x="16" y="0.0" width="236" height="43.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="322" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                             <nil key="textColor"/>
@@ -720,19 +718,19 @@ Budějovická	</string>
             <objects>
                 <tableViewController id="1zn-wc-2zR" customClass="TopicDetailTableViewController" customModule="PORGMUN" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="g7j-dT-aYO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopicGenericCell" textLabel="2BP-T3-k5C" style="IBUITableViewCellStyleDefault" id="rHJ-EX-eJY">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rHJ-EX-eJY" id="wds-6T-5Mr">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2BP-T3-k5C">
-                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                             <nil key="textColor"/>
@@ -758,32 +756,32 @@ Budějovická	</string>
             <objects>
                 <tableViewController id="yTc-B7-2Vz" customClass="ContactsTableViewController" customModule="PORGMUN" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="PjE-Hy-JU5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsHeaderCell" rowHeight="300" id="O5e-qX-Icg" customClass="ContactsHeaderCell" customModule="PORGMUN" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="320" height="300"/>
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="O5e-qX-Icg" id="c22-WI-BZ3">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="299.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="299.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ban-Ki-moon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="io0-rp-hCf">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="300.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="300" id="nOs-z5-YJy"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heads of Social Program" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeT-na-gDK">
-                                            <rect key="frame" x="37" y="235.5" width="246" height="26"/>
+                                            <rect key="frame" x="84" y="233.5" width="246" height="27"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="22"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sára Davidová" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73H-MC-7ql">
-                                            <rect key="frame" x="101.5" y="261.5" width="117" height="21"/>
+                                            <rect key="frame" x="150" y="260.5" width="114.5" height="22"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -809,14 +807,14 @@ Budějovická	</string>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactItemCell" textLabel="Pr9-ia-f58" style="IBUITableViewCellStyleDefault" id="Sqq-mG-PMm">
-                                <rect key="frame" x="0.0" y="355.5" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="355.5" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sqq-mG-PMm" id="UKy-Lv-fVC">
-                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pr9-ia-f58">
-                                            <rect key="frame" x="16" y="0.0" width="269" height="43.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="356" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
@@ -826,21 +824,21 @@ Budějovická	</string>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FeedbackCell" textLabel="oqf-88-adO" detailTextLabel="OHg-KG-pwC" style="IBUITableViewCellStyleSubtitle" id="LPb-YN-da2">
-                                <rect key="frame" x="0.0" y="399.5" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="399.5" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LPb-YN-da2" id="d4f-Yf-f4r">
-                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="it@porgmun.cz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oqf-88-adO">
-                                            <rect key="frame" x="16" y="4" width="113" height="20"/>
+                                            <rect key="frame" x="20" y="3" width="110" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="App Feedback &amp; Bug Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OHg-KG-pwC">
-                                            <rect key="frame" x="16" y="24" width="180" height="16.5"/>
+                                            <rect key="frame" x="20" y="24" width="175" height="17.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
                                             <nil key="textColor"/>
@@ -860,7 +858,7 @@ Budějovická	</string>
                         <rightBarButtonItems>
                             <barButtonItem image="twitter.png" style="plain" id="s9e-Jc-Yk9">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tJb-VQ-Tvy">
-                                    <rect key="frame" x="276" y="8" width="28" height="28"/>
+                                    <rect key="frame" x="366" y="8" width="28" height="28"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <state key="normal" image="twitter.png"/>
@@ -874,7 +872,7 @@ Budějovická	</string>
                             </barButtonItem>
                             <barButtonItem image="instagram.png" style="plain" id="dF2-sn-1Lf">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ISr-UP-ODg">
-                                    <rect key="frame" x="240" y="8" width="28" height="28"/>
+                                    <rect key="frame" x="330" y="8" width="28" height="28"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <state key="normal" image="instagram.png"/>
@@ -888,7 +886,7 @@ Budějovická	</string>
                             </barButtonItem>
                             <barButtonItem image="facebook.png" style="plain" id="G1f-au-jfl">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tBD-YM-SJ9">
-                                    <rect key="frame" x="204" y="8" width="28" height="28"/>
+                                    <rect key="frame" x="294" y="8" width="28" height="28"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <state key="normal" image="facebook.png"/>
@@ -943,7 +941,7 @@ Budějovická	</string>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="glF-yd-TZa">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -962,7 +960,7 @@ Budějovická	</string>
                     <tabBarItem key="tabBarItem" tag="1" title="Agenda" image="planner.png" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nms-zV-pDB">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -978,65 +976,62 @@ Budějovická	</string>
         <scene sceneID="Tka-bk-c2Z">
             <objects>
                 <viewController id="cXO-Nz-JpH" customClass="RulesDetailViewController" customModule="PORGMUN" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fSH-hI-mP8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Piq-mI-GHk"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xBo-Wy-cRw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="168.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMV-DI-d97">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="168.5"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhW-Zm-J0L" userLabel="Controller View">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="961.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecO-fu-mbK">
-                                                <rect key="frame" x="32" y="41" width="256" height="32"/>
+                                                <rect key="frame" x="26" y="24" width="362" height="32"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UOd-oF-qUu">
-                                                <rect key="frame" x="26" y="93" width="268" height="411"/>
+                                                <rect key="frame" x="22" y="74" width="370" height="849.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="UOd-oF-qUu" secondAttribute="bottom" constant="44" id="2I0-Rh-hhk"/>
-                                            <constraint firstAttribute="trailing" secondItem="ecO-fu-mbK" secondAttribute="trailing" constant="32" id="8Xd-JH-sLi"/>
-                                            <constraint firstItem="UOd-oF-qUu" firstAttribute="leading" secondItem="mhW-Zm-J0L" secondAttribute="leading" constant="26" id="9UP-O8-Xyh"/>
-                                            <constraint firstAttribute="trailing" secondItem="UOd-oF-qUu" secondAttribute="trailing" constant="26" id="c79-yM-7wo"/>
-                                            <constraint firstItem="ecO-fu-mbK" firstAttribute="top" secondItem="mhW-Zm-J0L" secondAttribute="top" constant="41" id="na4-ZY-pxs"/>
-                                            <constraint firstItem="ecO-fu-mbK" firstAttribute="leading" secondItem="mhW-Zm-J0L" secondAttribute="leading" constant="32" id="w95-3q-vH1"/>
-                                            <constraint firstItem="UOd-oF-qUu" firstAttribute="top" secondItem="ecO-fu-mbK" secondAttribute="bottom" constant="20" id="zsv-J2-Ong"/>
+                                            <constraint firstAttribute="bottom" secondItem="UOd-oF-qUu" secondAttribute="bottom" constant="38" id="2ft-Ov-YhD"/>
+                                            <constraint firstItem="ecO-fu-mbK" firstAttribute="leading" secondItem="mhW-Zm-J0L" secondAttribute="leading" constant="26" id="8Fn-Rq-o8d"/>
+                                            <constraint firstItem="UOd-oF-qUu" firstAttribute="leading" secondItem="mhW-Zm-J0L" secondAttribute="leading" constant="22" id="EEL-pF-CLU"/>
+                                            <constraint firstItem="ecO-fu-mbK" firstAttribute="top" secondItem="mhW-Zm-J0L" secondAttribute="top" constant="24" id="K52-QJ-iT6"/>
+                                            <constraint firstAttribute="trailing" secondItem="ecO-fu-mbK" secondAttribute="trailing" constant="26" id="Ovl-hU-RAi"/>
+                                            <constraint firstAttribute="trailing" secondItem="UOd-oF-qUu" secondAttribute="trailing" constant="22" id="UHf-ey-F09"/>
+                                            <constraint firstItem="UOd-oF-qUu" firstAttribute="top" secondItem="ecO-fu-mbK" secondAttribute="bottom" constant="18" id="zsv-J2-Ong"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="mhW-Zm-J0L" secondAttribute="bottom" id="HB6-C9-tVa"/>
-                                    <constraint firstItem="mhW-Zm-J0L" firstAttribute="top" secondItem="LMV-DI-d97" secondAttribute="top" id="Hkx-CQ-bhi"/>
-                                    <constraint firstItem="mhW-Zm-J0L" firstAttribute="leading" secondItem="LMV-DI-d97" secondAttribute="leading" id="I1F-Ny-wMj"/>
-                                    <constraint firstAttribute="trailing" secondItem="mhW-Zm-J0L" secondAttribute="trailing" id="N79-ZU-Q3D"/>
+                                    <constraint firstItem="mhW-Zm-J0L" firstAttribute="leading" secondItem="LMV-DI-d97" secondAttribute="leading" id="0vi-oH-vnf"/>
+                                    <constraint firstAttribute="trailing" secondItem="mhW-Zm-J0L" secondAttribute="trailing" id="15g-Sf-8ku"/>
+                                    <constraint firstItem="mhW-Zm-J0L" firstAttribute="width" secondItem="LMV-DI-d97" secondAttribute="width" id="6m4-sD-Gci"/>
+                                    <constraint firstItem="mhW-Zm-J0L" firstAttribute="height" secondItem="LMV-DI-d97" secondAttribute="height" priority="250" id="RP3-2j-8Gl"/>
+                                    <constraint firstAttribute="bottom" secondItem="mhW-Zm-J0L" secondAttribute="bottom" id="n5B-tE-0NP"/>
+                                    <constraint firstItem="mhW-Zm-J0L" firstAttribute="top" secondItem="LMV-DI-d97" secondAttribute="top" id="uXa-uy-Ijg"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LMV-DI-d97" firstAttribute="top" secondItem="xBo-Wy-cRw" secondAttribute="top" id="2Qn-bE-nkR"/>
-                            <constraint firstItem="mhW-Zm-J0L" firstAttribute="width" secondItem="xBo-Wy-cRw" secondAttribute="width" id="3Nu-QG-biD"/>
-                            <constraint firstAttribute="trailing" secondItem="LMV-DI-d97" secondAttribute="trailing" id="5tJ-qV-C0s"/>
-                            <constraint firstAttribute="bottom" secondItem="LMV-DI-d97" secondAttribute="bottom" id="pni-jv-1fr"/>
-                            <constraint firstItem="LMV-DI-d97" firstAttribute="leading" secondItem="xBo-Wy-cRw" secondAttribute="leading" id="yte-oj-2KB"/>
+                            <constraint firstItem="t3E-TP-UZx" firstAttribute="trailing" secondItem="LMV-DI-d97" secondAttribute="trailing" id="5tJ-qV-C0s"/>
+                            <constraint firstItem="LMV-DI-d97" firstAttribute="top" secondItem="t3E-TP-UZx" secondAttribute="top" id="HxS-8K-BFr"/>
+                            <constraint firstItem="LMV-DI-d97" firstAttribute="bottom" secondItem="t3E-TP-UZx" secondAttribute="bottom" id="LpD-BX-n0k"/>
+                            <constraint firstItem="LMV-DI-d97" firstAttribute="leading" secondItem="t3E-TP-UZx" secondAttribute="leading" id="yte-oj-2KB"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="t3E-TP-UZx"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="168.5"/>
                     <connections>
                         <outlet property="textView" destination="UOd-oF-qUu" id="uBr-TL-aMP"/>
                         <outlet property="titleLabel" destination="ecO-fu-mbK" id="WAt-lh-bZt"/>
@@ -1044,26 +1039,26 @@ Budějovická	</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcW-e3-F5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2351.25" y="-947.00704225352115"/>
+            <point key="canvasLocation" x="-2352.1739130434785" y="-948.21428571428567"/>
         </scene>
         <!--Rules-->
         <scene sceneID="57k-EX-pSw">
             <objects>
                 <tableViewController id="DpH-IE-501" customClass="RulesTableViewController" customModule="PORGMUN" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="5a3-rN-LTy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="rulesCell" textLabel="vrJ-eZ-Siy" style="IBUITableViewCellStyleDefault" id="NDP-78-4sU">
-                                <rect key="frame" x="0.0" y="28" width="320" height="80"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NDP-78-4sU" id="YDZ-p3-m0d">
-                                    <rect key="frame" x="0.0" y="0.0" width="286" height="79.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vrJ-eZ-Siy">
-                                            <rect key="frame" x="16" y="0.0" width="269" height="79.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="356" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                             <nil key="textColor"/>
@@ -1112,7 +1107,7 @@ Budějovická	</string>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="caQ-B1-rDg">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1131,7 +1126,7 @@ Budějovická	</string>
                     <tabBarItem key="tabBarItem" title="Contact" image="conference.png" id="ou0-1b-PuT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Elq-Jd-SPT">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1150,7 +1145,7 @@ Budějovická	</string>
                     <tabBarItem key="tabBarItem" title="Rules" image="order.png" id="Fda-vh-Fez"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Om-j8-LZ6">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1314,10 +1309,6 @@ Budějovická	</string>
         <scene sceneID="axA-E9-8Qn">
             <objects>
                 <viewController id="53C-He-2Za" customClass="ConferenceThemeViewController" customModule="PORGMUN" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="utC-cI-tFI"/>
-                        <viewControllerLayoutGuide type="bottom" id="sed-nI-yUW"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1cn-U2-YUz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="481"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1326,15 +1317,15 @@ Budějovická	</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="481"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZE-ay-l9M" userLabel="Controller View">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="609.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="656"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHL-dy-Ut9" customClass="TTTAttributedLabel">
-                                                <rect key="frame" x="26" y="41" width="268" height="524.5"/>
-                                                <string key="text">Theme of the Conference:
+                                                <rect key="frame" x="26" y="41" width="268" height="571"/>
+                                                <mutableString key="text">Theme of the Conference:
 Swinging Back to Democracy
 Striving for institutional change in an ever-changing society
                                                              	
-New, hybrid threats, devaluation of national sovereignty in favour of globalization, political radicalization and the evident disconnect of the majority from leading political elites are all clear indicators that our current era is steadily rendering our conventional political system obsolete. The need for change is apparent. Essentially, Swinging back to democracy aims to address this issue by discussing the dissolution of the core democratic ideas of responsibility, decisiveness, and trust in the bureaucratic process and re-evaluating the way our society works or even debating on how it should work.</string>
+New, hybrid threats, devaluation of national sovereignty in favour of globalization, political radicalization and the evident disconnect of the majority from leading political elites are all clear indicators that our current era is steadily rendering our conventional political system obsolete. The need for change is apparent. Essentially, Swinging back to democracy aims to address this issue by discussing the dissolution of the core democratic ideas of responsibility, decisiveness, and trust in the bureaucratic process and re-evaluating the way our society works or even debating on how it should work.</mutableString>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1344,30 +1335,31 @@ New, hybrid threats, devaluation of national sovereignty in favour of globalizat
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="IHL-dy-Ut9" secondAttribute="trailing" constant="26" id="20G-Cf-J8g"/>
                                             <constraint firstItem="IHL-dy-Ut9" firstAttribute="leading" secondItem="qZE-ay-l9M" secondAttribute="leading" constant="26" id="B15-3D-kVJ"/>
-                                            <constraint firstAttribute="bottom" secondItem="IHL-dy-Ut9" secondAttribute="bottom" constant="44" id="m39-HX-wjB"/>
-                                            <constraint firstItem="IHL-dy-Ut9" firstAttribute="top" secondItem="qZE-ay-l9M" secondAttribute="top" constant="41" id="wQC-Ef-JSq"/>
+                                            <constraint firstAttribute="bottom" secondItem="IHL-dy-Ut9" secondAttribute="bottom" constant="38" id="m39-HX-wjB"/>
+                                            <constraint firstItem="IHL-dy-Ut9" firstAttribute="top" secondItem="qZE-ay-l9M" secondAttribute="top" constant="26" id="wQC-Ef-JSq"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="qZE-ay-l9M" firstAttribute="width" secondItem="66x-Pl-gFC" secondAttribute="width" id="0m6-1z-2Vc"/>
                                     <constraint firstAttribute="bottom" secondItem="qZE-ay-l9M" secondAttribute="bottom" id="93s-Oz-how"/>
                                     <constraint firstAttribute="trailing" secondItem="qZE-ay-l9M" secondAttribute="trailing" id="BB4-M0-uTb"/>
                                     <constraint firstItem="qZE-ay-l9M" firstAttribute="leading" secondItem="66x-Pl-gFC" secondAttribute="leading" id="es9-6d-qsw"/>
                                     <constraint firstItem="qZE-ay-l9M" firstAttribute="top" secondItem="66x-Pl-gFC" secondAttribute="top" id="ge5-Rm-axK"/>
+                                    <constraint firstItem="qZE-ay-l9M" firstAttribute="height" secondItem="66x-Pl-gFC" secondAttribute="height" priority="250" id="ldf-5g-nvx"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="66x-Pl-gFC" secondAttribute="trailing" id="Cbq-fp-zKL"/>
-                            <constraint firstItem="66x-Pl-gFC" firstAttribute="leading" secondItem="1cn-U2-YUz" secondAttribute="leading" id="L5g-BA-URx"/>
-                            <constraint firstItem="qZE-ay-l9M" firstAttribute="width" secondItem="1cn-U2-YUz" secondAttribute="width" id="PfE-NB-fSR"/>
-                            <constraint firstAttribute="bottom" secondItem="66x-Pl-gFC" secondAttribute="bottom" id="UOt-6o-OQO"/>
-                            <constraint firstItem="66x-Pl-gFC" firstAttribute="top" secondItem="1cn-U2-YUz" secondAttribute="top" id="YeG-Xz-CZq"/>
+                            <constraint firstItem="66x-Pl-gFC" firstAttribute="trailing" secondItem="LBw-KE-veJ" secondAttribute="trailing" id="2YX-yZ-7Ai"/>
+                            <constraint firstItem="LBw-KE-veJ" firstAttribute="top" secondItem="66x-Pl-gFC" secondAttribute="top" id="AuE-cy-Rqd"/>
+                            <constraint firstItem="66x-Pl-gFC" firstAttribute="leading" secondItem="LBw-KE-veJ" secondAttribute="leading" id="T16-GP-KtO"/>
+                            <constraint firstItem="LBw-KE-veJ" firstAttribute="bottom" secondItem="66x-Pl-gFC" secondAttribute="bottom" id="ut6-7w-Aw5"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="LBw-KE-veJ"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="481"/>
                     <connections>
                         <outlet property="mainLabel" destination="IHL-dy-Ut9" id="CHs-JT-uYy"/>
                     </connections>

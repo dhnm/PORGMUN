@@ -29,7 +29,7 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate {
     
     func centerMapOnLocation(location: CLLocation, radius: Int) {
         let regionRadius = CLLocationDistance(radius)
-        let latitude = location.coordinate.latitude - 0.075 * (Double(radius)/6000)
+        let latitude = location.coordinate.latitude - 0.062 * (Double(radius)/6000)
         let convertedLocation = CLLocation(latitude: latitude, longitude: location.coordinate.longitude)
         let coordinateRegion = MKCoordinateRegion(center: convertedLocation.coordinate, latitudinalMeters: regionRadius * 3.0, longitudinalMeters: regionRadius * 3.0)
         mapView.setRegion(coordinateRegion, animated: true)
@@ -81,7 +81,7 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate {
         ]
     
     @objc func titleTapped() {
-        let lat: CLLocationDegrees = 50.097239
+        let lat: CLLocationDegrees = 50.096000
         let lon: CLLocationDegrees = 14.427630
         let initialLocation = CLLocation(latitude: lat, longitude: lon)
         centerMapOnLocation(location: initialLocation, radius: 1600)
@@ -158,7 +158,7 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidAppear(animated)
         
         // let initialLocation = CLLocation(latitude: 50.062111, longitude: 14.437261)
-        let lat: CLLocationDegrees = 50.097239
+        let lat: CLLocationDegrees = 50.096000
         let lon: CLLocationDegrees = 14.427630
         let initialLocation = CLLocation(latitude: lat, longitude: lon)
         centerMapOnLocation(location: initialLocation, radius: 1600)
