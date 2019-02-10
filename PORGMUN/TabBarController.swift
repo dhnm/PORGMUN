@@ -39,41 +39,41 @@ class TabBarController: UITabBarController {
     
     // TAB BAR
     
-    self.tabBar.items?[0].image = #imageLiteral(resourceName: "fa-calendar@3x.png").withRenderingMode(.alwaysTemplate)
-    self.tabBar.items?[0].selectedImage = #imageLiteral(resourceName: "fa-calendar@3x.png").withRenderingMode(.alwaysTemplate)
-    
-    self.tabBar.items?[1].image = #imageLiteral(resourceName: "fa-newspaper@2x.png").withRenderingMode(.alwaysTemplate)
-    self.tabBar.items?[1].selectedImage = #imageLiteral(resourceName: "fa-newspaper@2x.png").withRenderingMode(.alwaysTemplate)
-    
-    self.tabBar.items?[2].image = #imageLiteral(resourceName: "fa-handshake@2x.png").withRenderingMode(.alwaysTemplate)
-    self.tabBar.items?[2].selectedImage = #imageLiteral(resourceName: "fa-handshake@2x.png").withRenderingMode(.alwaysTemplate)
-    
-    self.tabBar.items?[3].image = #imageLiteral(resourceName: "fa-book@3x.png").withRenderingMode(.alwaysTemplate)
-    self.tabBar.items?[3].selectedImage = #imageLiteral(resourceName: "fa-book@3x.png").withRenderingMode(.alwaysTemplate)
-    
-    self.tabBar.items?[4].image = #imageLiteral(resourceName: "fa-id@2x.png").withRenderingMode(.alwaysTemplate)
-    self.tabBar.items?[4].selectedImage = #imageLiteral(resourceName: "fa-id@2x.png").withRenderingMode(.alwaysTemplate)
-    
-    let numberOfItems = CGFloat(tabBar.items!.count)
-    let tabBarItemSize = CGSize(width: tabBar.frame.width / numberOfItems, height: tabBar.frame.height)
-    
-    self.tabBar.selectionIndicatorImage = UIImage.imageWithColor(color: UIColor.lightText.withAlphaComponent(0.15), size: tabBarItemSize)
-    
-    self.tabBar.barTintColor = .white // botom bar bg color
-    /*self.tabBar.backgroundImage = UIImage.imageWithColor(color: UIColor.clear, size: CGSize(width: 1, height: 1))
-     blurEffectView.frame = self.tabBar.bounds
-     self.tabBar.insertSubview(blurEffectView, at: 0)*/
-    
-    self.tabBar.tintColor = selectedColor // bottom bar selected icon color
-    if #available(iOS 10.0, *) {
-      self.tabBar.unselectedItemTintColor = unselectedColor
-    }
-    self.tabBar.isTranslucent = true
-    
-    UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: unselectedColor], for: .normal)
-    UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: selectedColor], for: .selected)
-    UITabBarItem.appearance().setTitleTextAttributes([.font: UIFont(name: "ProximaNova-Regular", size: 10)!], for: .normal)
-    UITabBarItem.appearance().setTitleTextAttributes([.font: UIFont(name: "ProximaNova-Regular", size: 10)!], for: .selected)
+//    self.tabBar.items?[0].image = #imageLiteral(resourceName: "fa-calendar@3x.png").withRenderingMode(.alwaysTemplate)
+//    self.tabBar.items?[0].selectedImage = #imageLiteral(resourceName: "fa-calendar@3x.png").withRenderingMode(.alwaysTemplate)
+//    
+//    self.tabBar.items?[1].image = #imageLiteral(resourceName: "fa-newspaper@2x.png").withRenderingMode(.alwaysTemplate)
+//    self.tabBar.items?[1].selectedImage = #imageLiteral(resourceName: "fa-newspaper@2x.png").withRenderingMode(.alwaysTemplate)
+//    
+//    self.tabBar.items?[2].image = #imageLiteral(resourceName: "fa-handshake@2x.png").withRenderingMode(.alwaysTemplate)
+//    self.tabBar.items?[2].selectedImage = #imageLiteral(resourceName: "fa-handshake@2x.png").withRenderingMode(.alwaysTemplate)
+//    
+//    self.tabBar.items?[3].image = #imageLiteral(resourceName: "fa-book@3x.png").withRenderingMode(.alwaysTemplate)
+//    self.tabBar.items?[3].selectedImage = #imageLiteral(resourceName: "fa-book@3x.png").withRenderingMode(.alwaysTemplate)
+//    
+//    self.tabBar.items?[4].image = #imageLiteral(resourceName: "fa-id@2x.png").withRenderingMode(.alwaysTemplate)
+//    self.tabBar.items?[4].selectedImage = #imageLiteral(resourceName: "fa-id@2x.png").withRenderingMode(.alwaysTemplate)
+//    
+//    let numberOfItems = CGFloat(tabBar.items!.count)
+//    let tabBarItemSize = CGSize(width: tabBar.frame.width / numberOfItems, height: tabBar.frame.height)
+//    
+//    self.tabBar.selectionIndicatorImage = UIImage.imageWithColor(color: UIColor.lightText.withAlphaComponent(0.15), size: tabBarItemSize)
+//    
+//    self.tabBar.barTintColor = .white // botom bar bg color
+//    /*self.tabBar.backgroundImage = UIImage.imageWithColor(color: UIColor.clear, size: CGSize(width: 1, height: 1))
+//     blurEffectView.frame = self.tabBar.bounds
+//     self.tabBar.insertSubview(blurEffectView, at: 0)*/
+//    
+//    self.tabBar.tintColor = selectedColor // bottom bar selected icon color
+//    if #available(iOS 10.0, *) {
+//      self.tabBar.unselectedItemTintColor = unselectedColor
+//    }
+//    self.tabBar.isTranslucent = true
+//    
+//    UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: unselectedColor], for: .normal)
+//    UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: selectedColor], for: .selected)
+//    UITabBarItem.appearance().setTitleTextAttributes([.font: UIFont(name: "ProximaNova-Regular", size: 10)!], for: .normal)
+//    UITabBarItem.appearance().setTitleTextAttributes([.font: UIFont(name: "ProximaNova-Regular", size: 10)!], for: .selected)
   }
 }
 

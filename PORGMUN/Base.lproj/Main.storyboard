@@ -112,9 +112,16 @@
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="A4r-Ic-kS9"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNW-Oc-Iso">
+                                <rect key="frame" x="262" y="234" width="42" height="42"/>
+                                <state key="normal" backgroundImage="button_geo_fence.png"/>
+                                <connections>
+                                    <action selector="moveToDefaultLocation:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="e2A-t0-uyR"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD5-mx-DdI">
-                                <rect key="frame" x="276" y="80" width="28" height="28"/>
-                                <state key="normal" image="fa-location.png"/>
+                                <rect key="frame" x="204" y="234" width="42" height="42"/>
+                                <state key="normal" backgroundImage="button_define_location.png"/>
                                 <connections>
                                     <action selector="moveToMyLocation:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="PPE-mH-huE"/>
                                 </connections>
@@ -122,10 +129,12 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ZD5-mx-DdI" secondAttribute="trailing" constant="16" id="4v3-Dn-jOR"/>
+                            <constraint firstItem="7ej-QO-yBn" firstAttribute="top" secondItem="ZD5-mx-DdI" secondAttribute="bottom" constant="16" id="2q8-lN-6Bo"/>
+                            <constraint firstItem="7ej-QO-yBn" firstAttribute="top" secondItem="pNW-Oc-Iso" secondAttribute="bottom" constant="16" id="5w9-s2-0DB"/>
                             <constraint firstItem="Rpy-Cs-OOF" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="5yK-1r-nPq"/>
+                            <constraint firstAttribute="trailing" secondItem="pNW-Oc-Iso" secondAttribute="trailing" constant="16" id="Fox-ai-j2A"/>
                             <constraint firstItem="7ej-QO-yBn" firstAttribute="height" secondItem="QS5-Rx-YEW" secondAttribute="height" multiplier="0.4" id="IHF-lU-7el"/>
-                            <constraint firstItem="ZD5-mx-DdI" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="16" id="Jqk-eA-HuQ"/>
+                            <constraint firstItem="pNW-Oc-Iso" firstAttribute="leading" secondItem="ZD5-mx-DdI" secondAttribute="trailing" constant="16" id="Tdr-E1-Bux"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="7ej-QO-yBn" secondAttribute="bottom" id="U5f-Nd-iHM"/>
                             <constraint firstAttribute="trailing" secondItem="Rpy-Cs-OOF" secondAttribute="trailing" id="doQ-vv-bHs"/>
                             <constraint firstItem="Rpy-Cs-OOF" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="kdF-gW-njM"/>
@@ -545,7 +554,7 @@ Budějovická	</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="preambleCell" textLabel="GMm-J2-Wfz" style="IBUITableViewCellStyleDefault" id="ntk-CX-r2x" customClass="PreambleCell" customModule="PORGMUN" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="preambleCell" textLabel="GMm-J2-Wfz" imageView="j3a-ts-DZq" style="IBUITableViewCellStyleDefault" id="ntk-CX-r2x" customClass="PreambleCell" customModule="PORGMUN" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ntk-CX-r2x" id="b6I-eS-NLv">
@@ -553,12 +562,16 @@ Budějovická	</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Theme of the Conference" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GMm-J2-Wfz">
-                                            <rect key="frame" x="16" y="0.0" width="269" height="43.5"/>
+                                            <rect key="frame" x="54" y="0.0" width="231" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="speech_bubble.png" id="j3a-ts-DZq">
+                                            <rect key="frame" x="16" y="10" width="23" height="23"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
@@ -763,14 +776,14 @@ Budějovická	</string>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heads of Social Program" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeT-na-gDK">
-                                            <rect key="frame" x="37" y="233.5" width="246" height="27"/>
+                                            <rect key="frame" x="37" y="235.5" width="246" height="26"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="22"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sára Davidová" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73H-MC-7ql">
-                                            <rect key="frame" x="103" y="260.5" width="114.5" height="22"/>
+                                            <rect key="frame" x="101.5" y="261.5" width="117" height="21"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -805,7 +818,7 @@ Budějovická	</string>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pr9-ia-f58">
                                             <rect key="frame" x="16" y="0.0" width="269" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -820,16 +833,16 @@ Budějovická	</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="it@porgmun.cz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oqf-88-adO">
-                                            <rect key="frame" x="16" y="6" width="106.5" height="19"/>
+                                            <rect key="frame" x="16" y="4" width="113" height="20"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="App Feedback &amp; Bug Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OHg-KG-pwC">
-                                            <rect key="frame" x="16" y="25" width="154.5" height="14"/>
+                                            <rect key="frame" x="16" y="24" width="180" height="16.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -845,12 +858,12 @@ Budějovická	</string>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Contact" id="t2Q-An-EcU">
                         <rightBarButtonItems>
-                            <barButtonItem image="fa-book.png" style="plain" id="s9e-Jc-Yk9">
+                            <barButtonItem image="twitter.png" style="plain" id="s9e-Jc-Yk9">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tJb-VQ-Tvy">
                                     <rect key="frame" x="276" y="8" width="28" height="28"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                    <state key="normal" image="fa-twitter.png"/>
+                                    <state key="normal" image="twitter.png"/>
                                     <connections>
                                         <action selector="twitterButton:" destination="yTc-B7-2Vz" eventType="touchUpInside" id="X5d-dX-DA6"/>
                                     </connections>
@@ -859,12 +872,12 @@ Budějovická	</string>
                                     <action selector="twitterButton:" destination="8AW-xD-bUu" id="2NY-xo-ktC"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="fa-book.png" style="plain" id="dF2-sn-1Lf">
+                            <barButtonItem image="instagram.png" style="plain" id="dF2-sn-1Lf">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ISr-UP-ODg">
                                     <rect key="frame" x="240" y="8" width="28" height="28"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                    <state key="normal" image="fa-instagram.png"/>
+                                    <state key="normal" image="instagram.png"/>
                                     <connections>
                                         <action selector="instagramButton:" destination="yTc-B7-2Vz" eventType="touchUpInside" id="uUX-lp-0U6"/>
                                     </connections>
@@ -873,12 +886,12 @@ Budějovická	</string>
                                     <action selector="instagramButton:" destination="8AW-xD-bUu" id="SCA-Lo-Rod"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="fa-book.png" style="plain" id="G1f-au-jfl">
+                            <barButtonItem image="facebook.png" style="plain" id="G1f-au-jfl">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tBD-YM-SJ9">
                                     <rect key="frame" x="204" y="8" width="28" height="28"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                    <state key="normal" image="fa-facebook.png"/>
+                                    <state key="normal" image="facebook.png"/>
                                     <connections>
                                         <action selector="facebookButton:" destination="yTc-B7-2Vz" eventType="touchUpInside" id="kiz-0J-Dg0"/>
                                     </connections>
@@ -921,7 +934,7 @@ Budějovická	</string>
         <scene sceneID="5E8-Df-wAg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ygn-8v-VfV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Committees" image="hand-shake.png" id="Cd3-Jq-gyh">
+                    <tabBarItem key="tabBarItem" title="Committees" image="collaboration.png" id="Cd3-Jq-gyh">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.99189006979695427" green="0.99189006979695427" blue="0.99189006979695427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -946,7 +959,7 @@ Budějovická	</string>
         <scene sceneID="GZi-TR-NRc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XAg-9W-Tjv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="1" title="Agenda" image="calendar.png" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Agenda" image="planner.png" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nms-zV-pDB">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -1090,7 +1103,7 @@ Budějovická	</string>
         <scene sceneID="242-Hg-FGa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pby-wb-jeH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="News" image="newspaper.png" id="acW-dT-cKf">
+                    <tabBarItem key="tabBarItem" title="News" image="news.png" id="acW-dT-cKf">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.96252379441624369" green="0.96252379441624369" blue="0.96252379441624369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1115,7 +1128,7 @@ Budějovická	</string>
         <scene sceneID="FJh-Dn-NJK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FkB-Rn-pZA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contact" image="id-card.png" id="ou0-1b-PuT"/>
+                    <tabBarItem key="tabBarItem" title="Contact" image="conference.png" id="ou0-1b-PuT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Elq-Jd-SPT">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -1134,7 +1147,7 @@ Budějovická	</string>
         <scene sceneID="jhK-E0-1jq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y6e-vH-lMQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Rules" image="document.png" id="Fda-vh-Fez"/>
+                    <tabBarItem key="tabBarItem" title="Rules" image="order.png" id="Fda-vh-Fez"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Om-j8-LZ6">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -1285,7 +1298,7 @@ Budějovická	</string>
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="News" id="EaC-BP-rYp">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="feather-globe.png" id="mKN-Zq-tV3">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="globe_earth.png" id="mKN-Zq-tV3">
                             <connections>
                                 <action selector="updateButton:" destination="8AW-xD-bUu" id="CtA-CP-hmU"/>
                             </connections>
@@ -1313,10 +1326,10 @@ Budějovická	</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="481"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZE-ay-l9M" userLabel="Controller View">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="656"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="609.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHL-dy-Ut9" customClass="TTTAttributedLabel">
-                                                <rect key="frame" x="26" y="41" width="268" height="571"/>
+                                                <rect key="frame" x="26" y="41" width="268" height="524.5"/>
                                                 <string key="text">Theme of the Conference:
 Swinging Back to Democracy
 Striving for institutional change in an ever-changing society
@@ -1367,18 +1380,19 @@ New, hybrid threats, devaluation of national sovereignty in favour of globalizat
     <resources>
         <image name="Ban-Ki-moon.jpg" width="408" height="309"/>
         <image name="au.jpg" width="400" height="400"/>
-        <image name="calendar.png" width="29" height="30"/>
-        <image name="document.png" width="30" height="30"/>
-        <image name="fa-book.png" width="28" height="28"/>
-        <image name="fa-facebook.png" width="28" height="28"/>
-        <image name="fa-instagram.png" width="28" height="28"/>
-        <image name="fa-location.png" width="28" height="28"/>
-        <image name="fa-twitter.png" width="28" height="28"/>
-        <image name="feather-globe.png" width="28" height="28"/>
-        <image name="hand-shake.png" width="30" height="30"/>
+        <image name="button_define_location.png" width="42" height="42"/>
+        <image name="button_geo_fence.png" width="42" height="42"/>
+        <image name="collaboration.png" width="23" height="23"/>
+        <image name="conference.png" width="23" height="23"/>
+        <image name="facebook.png" width="23" height="23"/>
+        <image name="globe_earth.png" width="24" height="24"/>
         <image name="hsc.jpg" width="400" height="397"/>
-        <image name="id-card.png" width="30" height="30"/>
-        <image name="newspaper.png" width="30" height="30"/>
+        <image name="instagram.png" width="23" height="23"/>
+        <image name="news.png" width="23" height="23"/>
+        <image name="order.png" width="23" height="23"/>
+        <image name="planner.png" width="23" height="23"/>
         <image name="red.png" width="10" height="80"/>
+        <image name="speech_bubble.png" width="23" height="23"/>
+        <image name="twitter.png" width="23" height="23"/>
     </resources>
 </document>
