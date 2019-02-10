@@ -22,14 +22,14 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
     }
     @IBAction func moveToDefaultLocation(_ sender: Any) {
-        self.titleTapped()
+        self.centerMapOnDefaultLocation()
     }
     
     var selectedPin = MapPointClass(title: "", address: "", color: "", coordinate: CLLocationCoordinate2D(latitude: 0, longitude: 0), directionsText: [""], fonts: [UIFont()])
     
     func centerMapOnLocation(location: CLLocation, radius: Int) {
         let regionRadius = CLLocationDistance(radius)
-        let latitude = location.coordinate.latitude - 0.062 * (Double(radius)/6000)
+        let latitude = location.coordinate.latitude - 0.042 * (Double(radius)/6000)
         let convertedLocation = CLLocation(latitude: latitude, longitude: location.coordinate.longitude)
         let coordinateRegion = MKCoordinateRegion(center: convertedLocation.coordinate, latitudinalMeters: regionRadius * 3.0, longitudinalMeters: regionRadius * 3.0)
         mapView.setRegion(coordinateRegion, animated: true)
@@ -70,22 +70,21 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate {
                       address: "Smetanovo nábřeží 2",
                       color: "orange",
                       coordinate: CLLocationCoordinate2D(latitude: 50.0817268, longitude: 14.4110277),
-                      directionsText: [],
-                      fonts: []),
+                      directionsText: ["Instructions not available. Please, use the Apple Maps button above."],
+                      fonts: [UIFont(name: "ProximaNova-RegularIt", size: 15)!]),
         MapPointClass(title: "Vnitroblock",
                       address: "Tusarova 791/31",
                       color: "purple",
                       coordinate: CLLocationCoordinate2D(latitude: 50.1018732, longitude: 14.4492928),
-                      directionsText: [],
-                      fonts: []),
+                      directionsText: ["Instructions not available. Please, use the Apple Maps button above."],
+                      fonts: [UIFont(name: "ProximaNova-RegularIt", size: 15)!]),
         ]
     
-    @objc func titleTapped() {
-        let lat: CLLocationDegrees = 50.096000
+    @objc func centerMapOnDefaultLocation() {
+        let lat: CLLocationDegrees = 50.090000
         let lon: CLLocationDegrees = 14.427630
         let initialLocation = CLLocation(latitude: lat, longitude: lon)
         centerMapOnLocation(location: initialLocation, radius: 1600)
-        print("tapped")
     }
     
     override func viewDidLoad() {
@@ -98,7 +97,7 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate {
             self.navigationItem.largeTitleDisplayMode = .never
         }
         
-        //    let titleTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.titleTapped))
+        //    let titleTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.centerMapOnDefaultLocation))
         //
         //    self.navigationItem.titleView?.isUserInteractionEnabled = true
         //    self.navigationItem.titleView?.addGestureRecognizer(titleTapRecognizer)
@@ -108,6 +107,7 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate {
         mapView.delegate = self
         locationManager.delegate = self
         //        mapView.isHidden = true
+        self.centerMapOnDefaultLocation()
         
         // blurred tableView
         
@@ -156,12 +156,6 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        // let initialLocation = CLLocation(latitude: 50.062111, longitude: 14.437261)
-        let lat: CLLocationDegrees = 50.096000
-        let lon: CLLocationDegrees = 14.427630
-        let initialLocation = CLLocation(latitude: lat, longitude: lon)
-        centerMapOnLocation(location: initialLocation, radius: 1600)
     }
     
     // table view

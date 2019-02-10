@@ -29,13 +29,13 @@ class MapPointDetailViewController: UITableViewController, TTTAttributedLabelDel
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     
-    if !connectedToNetwork() {
-      showMHDCell.isUserInteractionEnabled = false
-      connectedBool = false
-    } else {
-      showMHDCell.isUserInteractionEnabled = true
-      connectedBool = true
-    }
+//    if !connectedToNetwork() {
+//      showMHDCell.isUserInteractionEnabled = false
+//      connectedBool = false
+//    } else {
+//      showMHDCell.isUserInteractionEnabled = true
+//      connectedBool = true
+//    }
     
     offlineDirections.setText(location.directionsText.joined(separator: ""), afterInheritingLabelAttributesAndConfiguringWith: { mutableAttributedString in
       var ranges = [NSRange]()
