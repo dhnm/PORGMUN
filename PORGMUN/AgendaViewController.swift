@@ -25,14 +25,16 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate, UITabBa
         self.centerMapOnDefaultLocation()
     }
     
+    var viewFirstAppear = true
+    
     var selectedPin = MapPointClass(title: "", address: "", color: "", coordinate: CLLocationCoordinate2D(latitude: 0, longitude: 0), directionsText: [""], fonts: [UIFont()])
     
-    func centerMapOnLocation(location: CLLocation, radius: Int) {
+    func centerMapOnLocation(location: CLLocation, radius: Int, animated: Bool = true) {
         let regionRadius = CLLocationDistance(radius)
         let latitude = location.coordinate.latitude - 0.042 * (Double(radius)/6000)
         let convertedLocation = CLLocation(latitude: latitude, longitude: location.coordinate.longitude)
         let coordinateRegion = MKCoordinateRegion(center: convertedLocation.coordinate, latitudinalMeters: regionRadius * 3.0, longitudinalMeters: regionRadius * 3.0)
-        mapView.setRegion(coordinateRegion, animated: true)
+        mapView.setRegion(coordinateRegion, animated: animated)
     }
     
     let mapPoints = [
@@ -80,11 +82,11 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate, UITabBa
                       fonts: [UIFont(name: "ProximaNova-RegularIt", size: 15)!]),
         ]
     
-    @objc func centerMapOnDefaultLocation() {
+    @objc func centerMapOnDefaultLocation(animated: Bool = true) {
         let lat: CLLocationDegrees = 50.090000
         let lon: CLLocationDegrees = 14.427630
         let initialLocation = CLLocation(latitude: lat, longitude: lon)
-        centerMapOnLocation(location: initialLocation, radius: 1600)
+        centerMapOnLocation(location: initialLocation, radius: 1600, animated: animated)
     }
     
     override func viewDidLoad() {
@@ -107,7 +109,6 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate, UITabBa
         mapView.delegate = self
         locationManager.delegate = self
         //        mapView.isHidden = true
-        self.centerMapOnDefaultLocation()
         
         // blurred tableView
         
@@ -156,6 +157,11 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate, UITabBa
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        if (self.viewFirstAppear) {
+            self.centerMapOnDefaultLocation(animated: false)
+            self.viewFirstAppear = false
+        }
         
         self.tabBarController?.delegate = self
     }

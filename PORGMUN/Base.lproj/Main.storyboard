@@ -53,7 +53,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFG-gH-uM7">
-                                                    <rect key="frame" x="15" y="24.5" width="787" height="20"/>
+                                                    <rect key="frame" x="15" y="24.5" width="393" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="V5n-08-F9j"/>
                                                     </constraints>
@@ -62,7 +62,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="12:00-14:30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvt-oA-zWD">
-                                                    <rect key="frame" x="15" y="7.5" width="787" height="14"/>
+                                                    <rect key="frame" x="15" y="7.5" width="393" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="czU-5I-qpd"/>
                                                     </constraints>
@@ -71,7 +71,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMV-q1-V0w">
-                                                    <rect key="frame" x="15" y="47.5" width="787" height="14"/>
+                                                    <rect key="frame" x="15" y="47.5" width="393" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="L88-Az-bBe"/>
                                                     </constraints>
@@ -157,21 +157,21 @@
             <objects>
                 <tableViewController id="Ctd-la-hub" customClass="MapPointDetailViewController" customModule="PORGMUN" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="oDu-jU-Qer">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="" id="M2A-85-ylh">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="h7n-Pm-BjF">
-                                        <rect key="frame" x="0.0" y="35" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="35" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h7n-Pm-BjF" id="1k8-FK-O2z">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSl-Mv-BFD">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                     <state key="normal" title="Open Maps with Transport Directions"/>
                                                     <connections>
@@ -192,14 +192,14 @@
                             <tableViewSection headerTitle="Offline directions" id="RJM-yS-I2p">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="357" id="L7n-Ds-hb2">
-                                        <rect key="frame" x="0.0" y="135" width="320" height="357"/>
+                                        <rect key="frame" x="0.0" y="135" width="414" height="357"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L7n-Ds-hb2" id="sbd-jQ-UPz">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="356.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="356.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bt4-k8-oXS" customClass="TTTAttributedLabel">
-                                                    <rect key="frame" x="34" y="23" width="252" height="311"/>
+                                                    <rect key="frame" x="38" y="23" width="338" height="311"/>
                                                     <attributedString key="attributedText">
                                                         <fragment>
                                                             <string key="content">Gymnázium Nový PORG
@@ -995,7 +995,7 @@ Budějovická	</string>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UOd-oF-qUu">
                                                 <rect key="frame" x="22" y="74" width="370" height="849.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -1162,19 +1162,19 @@ Budějovická	</string>
             <objects>
                 <tableViewController id="8AW-xD-bUu" customClass="NewsTableViewController" customModule="PORGMUN" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="240" sectionHeaderHeight="18" sectionFooterHeight="18" id="yGv-EL-GSn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellWithImage" rowHeight="284" id="LCB-36-hew" customClass="CustomTableViewCell" customModule="PORGMUN" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="320" height="284"/>
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="284"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LCB-36-hew" id="jIw-8S-nGW">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="283.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="283.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ja6-in-uwB">
-                                            <rect key="frame" x="36" y="11" width="268" height="17"/>
+                                            <rect key="frame" x="40" y="11" width="354" height="17"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="17" id="H3i-s2-oLS"/>
                                             </constraints>
@@ -1183,20 +1183,20 @@ Budějovická	</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fI9-6q-5k5">
-                                            <rect key="frame" x="16" y="12" width="16" height="16"/>
+                                            <rect key="frame" x="20" y="12" width="16" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="A06-mo-qrW"/>
                                                 <constraint firstAttribute="width" constant="16" id="YkL-ng-G4O"/>
                                             </constraints>
                                         </imageView>
                                         <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MdK-JQ-tod">
-                                            <rect key="frame" x="0.0" y="38" width="320" height="20"/>
+                                            <rect key="frame" x="0.0" y="38" width="414" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="aDM-Q0-jbB"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh1-lH-6Hk" customClass="TTTAttributedLabel">
-                                            <rect key="frame" x="24" y="70" width="272" height="198"/>
+                                            <rect key="frame" x="28" y="70" width="358" height="198"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Message of Me">
                                                     <attributes>
@@ -1233,14 +1233,14 @@ Budějovická	</string>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellWithText" rowHeight="244" id="dyI-UQ-YR9" customClass="CustomTableViewCell" customModule="PORGMUN" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="339.5" width="320" height="244"/>
+                                <rect key="frame" x="0.0" y="339.5" width="414" height="244"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dyI-UQ-YR9" id="OQU-eW-cQi">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="243.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="243.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZD-X7-ijt">
-                                            <rect key="frame" x="36" y="11" width="268" height="17"/>
+                                            <rect key="frame" x="40" y="11" width="354" height="17"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="17" id="WmE-eZ-08J"/>
                                             </constraints>
@@ -1249,14 +1249,14 @@ Budějovická	</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w47-mi-auX">
-                                            <rect key="frame" x="16" y="12" width="16" height="16"/>
+                                            <rect key="frame" x="20" y="12" width="16" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="8Qk-0T-6lT"/>
                                                 <constraint firstAttribute="width" constant="16" id="Cf3-FL-qTt"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olw-AR-pv9" customClass="TTTAttributedLabel">
-                                            <rect key="frame" x="24" y="38" width="272" height="190"/>
+                                            <rect key="frame" x="28" y="38" width="358" height="190"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Message of Me">
                                                     <attributes>
@@ -1310,22 +1310,22 @@ Budějovická	</string>
             <objects>
                 <viewController id="53C-He-2Za" customClass="ConferenceThemeViewController" customModule="PORGMUN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1cn-U2-YUz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="481"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66x-Pl-gFC">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="481"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZE-ay-l9M" userLabel="Controller View">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="656"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="481"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHL-dy-Ut9" customClass="TTTAttributedLabel">
-                                                <rect key="frame" x="26" y="41" width="268" height="571"/>
-                                                <mutableString key="text">Theme of the Conference:
+                                                <rect key="frame" x="26" y="26" width="362" height="417"/>
+                                                <string key="text">Theme of the Conference:
 Swinging Back to Democracy
 Striving for institutional change in an ever-changing society
                                                              	
-New, hybrid threats, devaluation of national sovereignty in favour of globalization, political radicalization and the evident disconnect of the majority from leading political elites are all clear indicators that our current era is steadily rendering our conventional political system obsolete. The need for change is apparent. Essentially, Swinging back to democracy aims to address this issue by discussing the dissolution of the core democratic ideas of responsibility, decisiveness, and trust in the bureaucratic process and re-evaluating the way our society works or even debating on how it should work.</mutableString>
+New, hybrid threats, devaluation of national sovereignty in favour of globalization, political radicalization and the evident disconnect of the majority from leading political elites are all clear indicators that our current era is steadily rendering our conventional political system obsolete. The need for change is apparent. Essentially, Swinging back to democracy aims to address this issue by discussing the dissolution of the core democratic ideas of responsibility, decisiveness, and trust in the bureaucratic process and re-evaluating the way our society works or even debating on how it should work.</string>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
