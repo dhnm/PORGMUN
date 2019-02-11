@@ -39,7 +39,7 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
     }
     
     func callAPI() {
-        let graphURL = URL(string: "https://graph.facebook.com/v2.8/1443688759205321/posts?&fields=id,story,message,created_time,link,attachments,admin_creator,status_type,type,description,from,story_tags,icon,source,full_picture,name&access_token=\(accessToken)")
+        let graphURL = URL(string: "https://graph.facebook.com/v3.2/1443688759205321/posts?&fields=id,story,message,created_time,link,attachments,status_type,type,description,from,story_tags,icon,full_picture,name&access_token=\(accessToken)")
         
         if let graphURLSafe = graphURL {
             let task = URLSession.shared.dataTask(with: graphURLSafe) { data, response, error in
@@ -55,7 +55,7 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
                                 for (index, aData) in dataFromJson.enumerated() {
                                     let aPost = Post(data: aData)
                                     self.posts.append(aPost)
-                                    
+ 
                                     if let imageURLSafe = aPost.imageURL {
                                         URLSession.shared.dataTask(with: imageURLSafe) { (data, response, error) in
                                             
@@ -89,7 +89,7 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
                                         let postId = aData["id"] as! String
                                         let photoId = postId.components(separatedBy: "_")[1]
                                         //print(photoId)
-                                        let urlString = "https://graph.facebook.com/v2.8/\(photoId)?fields=album&access_token=\(self.accessToken)"
+                                        let urlString = "https://graph.facebook.com/v3.2/\(photoId)?fields=album&access_token=\(self.accessToken)"
                                         //print(urlString)
                                         let fetchAlbumURL = URL(string: urlString)
                                         
@@ -392,9 +392,9 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
     }
     
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        //if !connectedToNetwork() {
-        //return 0.00001
-        //}
+        if !connectedToNetwork() {
+            return 0.00001
+        }
         return 18.0
     }
     
