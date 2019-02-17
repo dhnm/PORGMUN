@@ -34,7 +34,12 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
             print("Error making URL")
         }
         
-        refreshControl?.endRefreshing()
+        if #available(iOS 10.0, *) {
+            self.tableView.refreshControl?.endRefreshing()
+        } else {
+            self.refreshControl?.endRefreshing()
+        }
+
         tableView.reloadData()
     }
     
@@ -132,7 +137,12 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
                             }
                             
                             DispatchQueue.main.sync {
-                                self.refreshControl?.endRefreshing()
+                                if #available(iOS 10.0, *) {
+                                    self.tableView.refreshControl?.endRefreshing()
+                                } else {
+                                    self.refreshControl?.endRefreshing()
+                                }
+                                
                                 self.tableView.reloadData()
                             }
                         } catch {
@@ -154,19 +164,22 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(self.updateData), for: .valueChanged)
         if #available(iOS 10.0, *) {
-            tableView.refreshControl = refreshControl
+            self.tableView.refreshControl = refreshControl
         } else {
             self.refreshControl = refreshControl
         }
-        
-        refreshControl.beginRefreshing()
-        updateData()
         
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 500.0
     }
     
     @objc func updateData() {
+        if #available(iOS 10.0, *) {
+            self.tableView.refreshControl?.beginRefreshing()
+        } else {
+            self.refreshControl?.beginRefreshing()
+        }
+        
         if connectedToNetwork() {
             posts = [Post]()
             callAPI()
@@ -175,10 +188,18 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
         }
     }
     
+    var viewFirstAppear = true
+    
     override func viewDidAppear(_ animated: Bool) {
-        tableView.reloadData()
+        self.tableView.reloadData()
         
         self.tabBarController?.delegate = self
+        
+        if self.viewFirstAppear {
+            self.viewFirstAppear = false
+            
+            self.updateData()
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
