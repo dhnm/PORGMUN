@@ -458,24 +458,38 @@ extension AgendaViewController : MKMapViewDelegate {
                 
             } else {
                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-                view.canShowCallout = true
-                view.calloutOffset = CGPoint(x: -8, y: -6)
-                view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure) as UIView
+                
+                var assignedTint: UIColor = .red
                 
                 switch annotation.color {
                 case "porgmun":
-                    view.pinTintColor = UIColor(red:0.00, green:0.36, blue:0.64, alpha:1.00)
+                    assignedTint = UIColor(red:0.00, green:0.36, blue:0.64, alpha:1.00)
                     
                 case "orange":
-                    view.pinTintColor = .orange
+                    assignedTint = .orange
                     
                 case "purple":
-                    view.pinTintColor = .purple
+                    assignedTint = .purple
                     
                 default:
-                    view.pinTintColor = .red
+                    assignedTint = .red
                     
                 }
+                
+                view.pinTintColor = assignedTint
+                
+                view.canShowCallout = true
+                view.calloutOffset = CGPoint(x: -8, y: -6)
+                
+                let accessoryButton = UIButton(type: .custom)
+                accessoryButton.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+                accessoryButton.contentVerticalAlignment = .center
+                accessoryButton.contentHorizontalAlignment = .center
+                var accessoryImage = UIImage(named: "train")?.withRenderingMode(.alwaysTemplate)
+                accessoryButton.tintColor = .white
+                accessoryButton.backgroundColor = assignedTint
+                accessoryButton.setImage(accessoryImage, for: .normal)
+                view.leftCalloutAccessoryView = accessoryButton
             }
             return view
         }
@@ -483,6 +497,10 @@ extension AgendaViewController : MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        invokeSegue(view)
+
+        if let location = view.annotation as? MapPointClass {
+            location.mapItem().openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeTransit])
+        }
+        
     }
 }

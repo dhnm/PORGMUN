@@ -35,6 +35,8 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
     var reloadButton = UIBarButtonItem()
     let accessToken = "356238391442895|73e76b8d3524e3651fb22675682b54d0".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
     
+    var pagingNextUrl: URL?
+    
     func triggerError(_ code: Int) {
         if code == 1 {
             let errorPost = Post(data: (["message": "Error loading feed. Please check your internet connection."] as AnyObject))
@@ -60,8 +62,11 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
         }
     }
     
-    func callAPI() {
-        let graphURL = URL(string: "https://graph.facebook.com/v3.2/1443688759205321/posts?&fields=id,story,message,created_time,link,attachments,status_type,type,description,from,story_tags,icon,full_picture,name&access_token=\(accessToken)&limit=5")
+    func callAPI(overrideUrl: URL? = nil) {
+        var graphURL = URL(string: "https://graph.facebook.com/v3.2/1443688759205321/posts?&fields=id,story,message,created_time,link,attachments,status_type,type,description,from,story_tags,icon,full_picture,name&access_token=\(accessToken)&limit=6")
+        if overrideUrl != nil {
+            graphURL = overrideUrl
+        }
         
         if let graphURLSafe = graphURL {
             let task = URLSession.shared.dataTask(with: graphURLSafe) { data, response, error in
@@ -71,6 +76,12 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
                     if let urlContent = data {
                         do {
                             let jsonResult = try JSONSerialization.jsonObject(with: urlContent, options: .mutableContainers) as AnyObject
+                            
+                            if let paging = jsonResult["paging"] as? [String: AnyObject] {
+                                if let newPagingNextUrl = paging["next"] as? String {
+                                    self.pagingNextUrl = URL(string: newPagingNextUrl)
+                                }
+                            }
                             
                             if let dataFromJson = jsonResult["data"] as? Array<AnyObject> {
                                 
@@ -98,8 +109,15 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
                                                 if let imageSafe = image {
                                                     DispatchQueue.main.sync {
                                                         //self.posts.append(aPost)
-                                                        //self.posts[index] = aPost
-                                                        self.posts[index].image = (imageSafe, imageSafe.size.width, imageSafe.size.height)
+                                                        //self.posts[index + self.posts.count] = aPost
+                                                        self.posts[Int(
+                                                            Double(index) +
+                                                            (
+                                                                ceil(
+                                                                    Double(self.posts.count) /
+                                                                6 ) - 1
+                                                            ) * 6
+                                                        )].image = (imageSafe, imageSafe.size.width, imageSafe.size.height)
                                                         self.tableView.reloadData()
                                                     }
                                                 }
@@ -107,7 +125,7 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
                                             }.resume()
                                     }
                                     
-                                    if aPost.album {
+                                    if false, aPost.album {
                                         let postId = aData["id"] as! String
                                         let photoId = postId.components(separatedBy: "_")[1]
                                         //print(photoId)
@@ -161,7 +179,9 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
                                 }
                                 
                                 self.tableView.reloadData()
-                                self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
+                                if (self.posts.count <= 6) {
+                                    self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
+                                }
                             }
                         } catch {
                             self.triggerError(0)
@@ -495,6 +515,18 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.00001
+    }
+    
+    override open func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        print("IAMHERE", pagingNextUrl != nil, posts.count < 200, posts.count % 6 == 0, indexPath.row == posts.count - 1, indexPath.row, posts.count - 1)
+        if pagingNextUrl != nil, posts.count < 200, posts.count % 6 == 0, indexPath.section == posts.count - 1 {
+            if connectedToNetwork() {
+                callAPI(overrideUrl: pagingNextUrl)
+            } else {
+                triggerError(1)
+            }
+            pagingNextUrl = nil
+        }
     }
     
     func openSafariViewController(url: URL) {
