@@ -80,6 +80,12 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate, UITabBa
                       coordinate: CLLocationCoordinate2D(latitude: 50.1018732, longitude: 14.4492928),
                       directionsText: ["Instructions not available. Please, use the Apple Maps button above."],
                       fonts: [UIFont(name: "ProximaNova-RegularIt", size: 15)!]),
+        MapPointClass(title: "Chamber of Deputies, Hall 205",
+                      address: "Sněmovní 1",
+                      color: "brown",
+                      coordinate: CLLocationCoordinate2D(latitude: 50.0887854, longitude: 14.4028628),
+                      directionsText: ["Instructions not available. Please, use the Apple Maps button above."],
+                      fonts: [UIFont(name: "ProximaNova-RegularIt", size: 15)!]),
         ]
     
     @objc func centerMapOnDefaultLocation(animated: Bool = true) {
@@ -182,43 +188,57 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate, UITabBa
     
     // table view
     
-    let schedule = [
-        "Thursday 21st THE OPENING DAY": [
-            "10:00–12:00": ["Registration", "1", "red"],
-            "12:00-13:30": ["Opening Ceremony", "1", "red"],
-            "13:30-14:30": ["Lunch Break", "1", "red"],
-            "13:30-13:45": ["Meeting with Supervisors", "1", "red"],
-            "14:30-16:00": ["Opening Ceremony", "1", "red"],
-            "16:15–18:45": ["Prague Tour and Icebreakers", "1", "red"],
-            "19:00–21:30": ["Gala Dinner", "3", "purple"],
+    let eventDays = [
+        [
+            "dateString": "Thursday 21st",
+             "title": "The Opening Day",
+             "schedule": [
+                    "10:00–12:00": ["Registration", "4", "red"],
+                    "12:00-13:30": ["Opening Ceremony", "4", "red"],
+                    "13:30-14:30": ["Lunch Break", "4", "red"],
+                    "13:30-13:45": ["Meeting with Supervisors", "4", "red"],
+                    "14:30-16:00": ["Opening Ceremony", "4", "red"],
+                    "16:15–18:45": ["Prague Tour and Icebreakers", "4", "red"],
+                    "19:00–21:30": ["Gala Dinner", "3", "purple"],
+                ]
         ],
-        "Friday 22nd COMMITTEES IN SESSION": [
-            "08:30-09:00": ["Chair's Briefing", "0", "porgmun"],
-            "09:00–15:00": ["Committee Sessions", "0", "porgmun"],
-            "09:15-09:30": ["Meeting with Supervisors", "0", "porgmun"],
-            "12:00–14:00": ["Staggered Lunches", "0", "porgmun"]
+        [
+            "dateString": "Friday 22nd",
+            "title": "Committees in Session",
+            "schedule": [
+                "08:30-09:00": ["Chair's Briefing", "0", "porgmun"],
+                "09:00–15:00": ["Committee Sessions", "0", "porgmun"],
+                "09:15-09:30": ["Meeting with Supervisors", "0", "porgmun"],
+                "12:00–14:00": ["Staggered Lunches", "0", "porgmun"]
+            ]
         ],
-        "Saturday 23rd COMMITTEES IN SESSION": [
-            "08:30-09:00": ["Chair's Briefing", "0", "porgmun"],
-            "09:00–17:00": ["Committees Sessions", "0", "porgmun"],
-            "09:15-09:30": ["Meeting with Supervisors", "0", "porgmun"],
-            "12:00–14:00": ["Staggered Lunches", "0", "porgmun"],
-            "20:00–24:00": ["Official PORGMUN Party", "2", "orange"]
+        [
+            "dateString": "Saturday 23rd",
+            "title": "Committees in Session",
+            "schedule": [
+                "08:30-09:00": ["Chair's Briefing", "0", "porgmun"],
+                "09:00–17:00": ["Committees Sessions", "0", "porgmun"],
+                "09:15-09:30": ["Meeting with Supervisors", "0", "porgmun"],
+                "12:00–14:00": ["Staggered Lunches", "0", "porgmun"],
+                "20:00–24:00": ["Official PORGMUN Party", "2", "orange"]
+            ]
         ],
-        "Sunday 24th THE CLOSING DAY": [
-            "09:00-11:30": ["Further Programme in Committees", "0", "porgmun"],
-            "09:15-09:30": ["Meeting with Supervisors", "0", "porgmun"],
-            "11:30-13:00": ["Free Time for Lunch and Transfer", "0", "porgmun"],
-            "13:00-14:30": ["Closing Ceremony", "1", "red"]
+        [
+            "dateString": "Sunday 24th",
+            "title": "The Closing Day",
+            "schedule": [
+                "09:00-11:30": ["Further Programme in Committees", "0", "porgmun"],
+                "09:15-09:30": ["Meeting with Supervisors", "0", "porgmun"],
+                "11:30-13:00": ["Free Time for Lunch and Transfer", "0", "porgmun"],
+                "13:00-14:30": ["Closing Ceremony", "1", "red"]
+            ]
         ]
     ]
     
-    let keysArray = ["Thursday 21st THE OPENING DAY", "Friday 22nd COMMITTEES IN SESSION", "Saturday 23rd COMMITTEES IN SESSION", "Sunday 24th THE CLOSING DAY"]
-    
     func dictionaryHandling(indexPath: IndexPath) -> [String: Any] {
-        let eventsOnThisDate = schedule[keysArray[indexPath.section]]
-        let timesOfEvents = Array(eventsOnThisDate!.keys).sorted(by: { (s1: String, s2: String) -> Bool in return s1 < s2 } )
-        let titlePlaceColor = eventsOnThisDate![timesOfEvents[indexPath.row]]
+        let eventsOnThisDate = eventDays[indexPath.section]["schedule"] as! [String: [String]]
+        let timesOfEvents = Array(eventsOnThisDate.keys).sorted(by: { (s1: String, s2: String) -> Bool in return s1 < s2 } )
+        let titlePlaceColor = eventsOnThisDate[timesOfEvents[indexPath.row]]
         
         let timesString = timesOfEvents[indexPath.row]
         let startTimeIndex = timesString.index(timesString.startIndex, offsetBy: 5)
@@ -294,15 +314,15 @@ class MapPointClass: NSObject, MKAnnotation {
 extension AgendaViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return keysArray.count
+        return eventDays.count
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return keysArray[section]
-    }
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return keysArray[section]
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (schedule[keysArray[section]]?.count)!
+        return (eventDays[section]["schedule"] as! [String: [String]]).count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -357,17 +377,44 @@ extension AgendaViewController: UITableViewDelegate, UITableViewDataSource {
     //}
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == 0 {
-            return tableView.sectionHeaderHeight + tableView.sectionFooterHeight
-        }
-        return tableView.sectionHeaderHeight
+        return 61
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        if section == keysArray.count - 1 {
-            return .leastNormalMagnitude
+        return .leastNormalMagnitude
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        
+        let dateLabel = UILabel()
+        dateLabel.text = eventDays[section]["dateString"] as? String
+        dateLabel.font = UIFont(name: "ProximaNova-Semibold", size: 15)
+        dateLabel.textAlignment = .center
+        dateLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(dateLabel)
+        
+        let dayTitleLabel = UILabel()
+        dayTitleLabel.text = (eventDays[section]["title"] as? String)!.uppercased()
+        dayTitleLabel.font = UIFont(name: "ProximaNova-Bold", size: 20)
+        dayTitleLabel.textAlignment = .center
+        dayTitleLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(dayTitleLabel)
+        
+        DispatchQueue.main.async { [unowned self] in
+            NSLayoutConstraint.activate([
+                dateLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 12),
+                dateLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                dateLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                dateLabel.bottomAnchor.constraint(equalTo: dayTitleLabel.topAnchor, constant: 2),
+                dayTitleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                dayTitleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            ])
         }
-        return tableView.sectionFooterHeight
+        
+        return view
     }
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){

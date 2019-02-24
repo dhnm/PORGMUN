@@ -47,6 +47,7 @@ class CommitteesTableViewController: UITableViewController, UITabBarControllerDe
         } else {
             let cell = infoTableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath)
             cell.textLabel?.text = committeesArray[indexPath.row].title
+            cell.textLabel?.adjustsFontSizeToFitWidth = true
             cell.detailTextLabel?.text = committeesArray[indexPath.row].abbreviation
             cell.imageView?.image = UIImage(named: committeesArray[indexPath.row].abbreviation.lowercased() + ".jpg")
             return cell
@@ -60,8 +61,16 @@ class CommitteesTableViewController: UITableViewController, UITabBarControllerDe
      print("5")
      } */
     
+    var largeTitleHeight: CGFloat = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DispatchQueue.main.async { [unowned self] in
+            if let titleHeight = self.navigationController?.navigationBar.titleHeight {
+                self.largeTitleHeight = titleHeight
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -76,8 +85,18 @@ class CommitteesTableViewController: UITableViewController, UITabBarControllerDe
         
         if tabBarController.selectedViewController == viewController {
             var topContentInsets: CGFloat = 0
+            let isLandscape = UIDevice.current.orientation.isValidInterfaceOrientation
+                ? UIDevice.current.orientation.isLandscape
+                : UIApplication.shared.statusBarOrientation.isLandscape
+            
+            let currentTitleHeight = self.navigationController?.navigationBar.titleHeight ?? largeTitleHeight
+            
             if #available(iOS 11.0, *) {
-                topContentInsets = self.tableView.adjustedContentInset.top
+                if !isLandscape, currentTitleHeight < largeTitleHeight {
+                    topContentInsets = self.tableView.adjustedContentInset.top + largeTitleHeight
+                } else {
+                    topContentInsets = self.tableView.adjustedContentInset.top
+                }
             } else {
                 topContentInsets = self.tableView.contentInset.top
             }

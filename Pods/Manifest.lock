@@ -1,12 +1,28 @@
 PODS:
+  - Cache (5.2.0)
+  - Imaginary (4.2.0):
+    - Cache (~> 5.0)
+  - Lightbox (2.3.0):
+    - Imaginary (~> 4.0)
   - TTTAttributedLabel (2.0.0)
 
 DEPENDENCIES:
+  - Lightbox
   - TTTAttributedLabel
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Cache
+    - Imaginary
+    - Lightbox
+    - TTTAttributedLabel
+
 SPEC CHECKSUMS:
+  Cache: 807c5d86d01a177f06ede9865add3aea269bbfd4
+  Imaginary: dae33d06dbc2ada22f98afef5eb45cc061311a2c
+  Lightbox: d317750e4132bfb871a5307cfe0a2c7d6a583c65
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: b702ab7e4ba01a0bfb49f873d0b502b0fe1bbdef
+PODFILE CHECKSUM: 8777d471d8aa83a8db0e3244f87bcb6ec14c3ba0
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.6.1

@@ -984,16 +984,16 @@ Budějovická	</string>
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhW-Zm-J0L" userLabel="Controller View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="943"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="961.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecO-fu-mbK">
-                                                <rect key="frame" x="26" y="24" width="362" height="30.5"/>
+                                                <rect key="frame" x="26" y="24" width="362" height="32"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UOd-oF-qUu">
-                                                <rect key="frame" x="22" y="72.5" width="370" height="832.5"/>
+                                                <rect key="frame" x="22" y="74" width="370" height="849.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
@@ -1166,11 +1166,11 @@ Budějovická	</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellWithImage" rowHeight="284" id="LCB-36-hew" customClass="CustomTableViewCell" customModule="PORGMUN" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="414" height="284"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellWithImage" rowHeight="418" id="LCB-36-hew" customClass="CustomTableViewCell" customModule="PORGMUN" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="418"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LCB-36-hew" id="jIw-8S-nGW">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="283.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="417.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ja6-in-uwB">
@@ -1189,14 +1189,8 @@ Budějovická	</string>
                                                 <constraint firstAttribute="width" constant="16" id="YkL-ng-G4O"/>
                                             </constraints>
                                         </imageView>
-                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MdK-JQ-tod">
-                                            <rect key="frame" x="0.0" y="38" width="414" height="20"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="20" id="aDM-Q0-jbB"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh1-lH-6Hk" customClass="TTTAttributedLabel">
-                                            <rect key="frame" x="28" y="70" width="358" height="198"/>
+                                            <rect key="frame" x="28" y="48" width="358" height="19.5"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Message of Me">
                                                     <attributes>
@@ -1207,17 +1201,42 @@ Budějovická	</string>
                                             </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MdK-JQ-tod">
+                                            <rect key="frame" x="0.0" y="87.5" width="414" height="310"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="310" id="aDM-Q0-jbB"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_gallery_indicator.png" translatesAutoresizingMaskIntoConstraints="NO" id="N6W-ro-HX6">
+                                            <rect key="frame" x="364" y="95.5" width="42" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="42" id="vx0-fs-0iH"/>
+                                                <constraint firstAttribute="height" constant="42" id="wn1-5u-b5V"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6G-g0-1dW">
+                                            <rect key="frame" x="364" y="99.5" width="37" height="38"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="MdK-JQ-tod" firstAttribute="top" secondItem="fI9-6q-5k5" secondAttribute="bottom" constant="10" id="0R4-VR-5cT"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="lh1-lH-6Hk" secondAttribute="bottom" constant="5" id="6Pb-I4-04C"/>
+                                        <constraint firstAttribute="bottom" secondItem="MdK-JQ-tod" secondAttribute="bottom" constant="20" id="0R4-VR-5cT"/>
                                         <constraint firstItem="ja6-in-uwB" firstAttribute="trailing" secondItem="jIw-8S-nGW" secondAttribute="trailingMargin" id="9zd-ny-EGy"/>
                                         <constraint firstAttribute="trailing" secondItem="MdK-JQ-tod" secondAttribute="trailing" id="Ds9-6a-uPf"/>
+                                        <constraint firstItem="N6W-ro-HX6" firstAttribute="trailing" secondItem="Y6G-g0-1dW" secondAttribute="trailing" constant="5" id="H1l-8b-BTo"/>
                                         <constraint firstItem="fI9-6q-5k5" firstAttribute="top" secondItem="jIw-8S-nGW" secondAttribute="topMargin" constant="1" id="L1V-AU-uBr"/>
+                                        <constraint firstItem="Y6G-g0-1dW" firstAttribute="top" secondItem="N6W-ro-HX6" secondAttribute="top" constant="4" id="OMs-jf-Fme"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="lh1-lH-6Hk" secondAttribute="trailing" constant="8" id="Oa1-d4-5EM"/>
-                                        <constraint firstItem="lh1-lH-6Hk" firstAttribute="top" secondItem="MdK-JQ-tod" secondAttribute="bottom" constant="12" id="a5B-Kf-V5P"/>
+                                        <constraint firstItem="Y6G-g0-1dW" firstAttribute="leading" secondItem="N6W-ro-HX6" secondAttribute="leading" id="RbL-WS-P6l"/>
+                                        <constraint firstItem="N6W-ro-HX6" firstAttribute="top" secondItem="MdK-JQ-tod" secondAttribute="topMargin" id="V5s-oj-XWt"/>
+                                        <constraint firstItem="MdK-JQ-tod" firstAttribute="top" secondItem="lh1-lH-6Hk" secondAttribute="bottom" constant="20" id="a5B-Kf-V5P"/>
                                         <constraint firstItem="MdK-JQ-tod" firstAttribute="leading" secondItem="jIw-8S-nGW" secondAttribute="leading" id="avQ-Uc-WRT"/>
+                                        <constraint firstItem="lh1-lH-6Hk" firstAttribute="top" secondItem="ja6-in-uwB" secondAttribute="bottom" constant="20" id="fgs-xA-MGM"/>
                                         <constraint firstItem="lh1-lH-6Hk" firstAttribute="leading" secondItem="jIw-8S-nGW" secondAttribute="leadingMargin" constant="8" id="kJw-Yu-RXq"/>
+                                        <constraint firstItem="N6W-ro-HX6" firstAttribute="trailing" secondItem="MdK-JQ-tod" secondAttribute="trailingMargin" id="kgo-Xi-XqE"/>
+                                        <constraint firstItem="Y6G-g0-1dW" firstAttribute="bottom" secondItem="N6W-ro-HX6" secondAttribute="bottom" id="mi9-1K-kqc"/>
                                         <constraint firstItem="fI9-6q-5k5" firstAttribute="leading" secondItem="jIw-8S-nGW" secondAttribute="leadingMargin" id="qG4-ua-qeu"/>
                                         <constraint firstItem="ja6-in-uwB" firstAttribute="top" secondItem="jIw-8S-nGW" secondAttribute="topMargin" id="spz-7G-9YO"/>
                                         <constraint firstItem="ja6-in-uwB" firstAttribute="leading" secondItem="fI9-6q-5k5" secondAttribute="trailing" constant="4" id="tA9-Xm-FDu"/>
@@ -1226,6 +1245,8 @@ Budějovická	</string>
                                 <connections>
                                     <outlet property="contView" destination="jIw-8S-nGW" id="Yso-CS-afu"/>
                                     <outlet property="dateLabel" destination="ja6-in-uwB" id="ATp-cI-p5w"/>
+                                    <outlet property="galleryCountLabel" destination="Y6G-g0-1dW" id="qWG-Nt-PA3"/>
+                                    <outlet property="galleryIndicatorImage" destination="N6W-ro-HX6" id="X5i-Sc-sfQ"/>
                                     <outlet property="messageLabel" destination="lh1-lH-6Hk" id="tFP-u0-4vV"/>
                                     <outlet property="postIcon" destination="fI9-6q-5k5" id="Vmq-5y-Hxw"/>
                                     <outlet property="postImage" destination="MdK-JQ-tod" id="TDr-Fz-obu"/>
@@ -1233,7 +1254,7 @@ Budějovická	</string>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellWithText" rowHeight="244" id="dyI-UQ-YR9" customClass="CustomTableViewCell" customModule="PORGMUN" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="339.5" width="414" height="244"/>
+                                <rect key="frame" x="0.0" y="473.5" width="414" height="244"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dyI-UQ-YR9" id="OQU-eW-cQi">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="243.5"/>
@@ -1303,7 +1324,7 @@ Budějovická	</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEg-kh-eJ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4560" y="-1101.7605633802816"/>
+            <point key="canvasLocation" x="4559.420289855073" y="-1102.2321428571429"/>
         </scene>
         <!--Conference Theme View Controller-->
         <scene sceneID="axA-E9-8Qn">
@@ -1373,6 +1394,7 @@ New, hybrid threats, devaluation of national sovereignty in favour of globalizat
         <image name="Ban-Ki-moon.jpg" width="408" height="309"/>
         <image name="au.jpg" width="400" height="400"/>
         <image name="button_define_location.png" width="42" height="42"/>
+        <image name="button_gallery_indicator.png" width="42" height="42"/>
         <image name="button_geo_fence.png" width="42" height="42"/>
         <image name="collaboration.png" width="23" height="23"/>
         <image name="conference.png" width="23" height="23"/>

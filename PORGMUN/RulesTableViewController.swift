@@ -111,6 +111,8 @@ class RulesTableViewController: UITableViewController, UISearchResultsUpdating, 
     
     let searchController = UISearchController(searchResultsController: nil)
     
+    var largeTitleHeight: CGFloat = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -131,6 +133,12 @@ class RulesTableViewController: UITableViewController, UISearchResultsUpdating, 
         
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 50.0
+        
+        DispatchQueue.main.async { [unowned self] in
+            if let titleHeight = self.navigationController?.navigationBar.titleHeight {
+                self.largeTitleHeight = titleHeight
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -145,8 +153,18 @@ class RulesTableViewController: UITableViewController, UISearchResultsUpdating, 
         
         if tabBarController.selectedViewController == viewController {
             var topContentInsets: CGFloat = 0
+            let isLandscape = UIDevice.current.orientation.isValidInterfaceOrientation
+                ? UIDevice.current.orientation.isLandscape
+                : UIApplication.shared.statusBarOrientation.isLandscape
+            
+            let currentTitleHeight = self.navigationController?.navigationBar.titleHeight ?? largeTitleHeight
+            
             if #available(iOS 11.0, *) {
-                topContentInsets = self.tableView.adjustedContentInset.top
+                if !isLandscape, currentTitleHeight < largeTitleHeight {
+                    topContentInsets = self.tableView.adjustedContentInset.top + largeTitleHeight
+                } else {
+                    topContentInsets = self.tableView.adjustedContentInset.top
+                }
             } else {
                 topContentInsets = self.tableView.contentInset.top
             }

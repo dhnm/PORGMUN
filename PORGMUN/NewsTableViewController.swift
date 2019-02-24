@@ -9,6 +9,20 @@ import SafariServices
 import MessageUI
 import SystemConfiguration
 
+import Lightbox
+
+extension UIRefreshControl {
+    
+    func beginRefreshingManually() {
+        DispatchQueue.main.async { [unowned self] in
+            if let scrollView = self.superview as? UIScrollView {
+                scrollView.setContentOffset(CGPoint(x: 0, y: scrollView.contentOffset.y - self.frame.height), animated: true)
+            }
+            self.beginRefreshing()
+        }
+    }
+}
+
 class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate, SFSafariViewControllerDelegate, MFMailComposeViewControllerDelegate, UITabBarControllerDelegate {
     
     // ukládat zprávy do internal storage (UserDefaults/CoreData/Documents Storage)
@@ -34,17 +48,20 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
             print("Error making URL")
         }
         
-        if #available(iOS 10.0, *) {
-            self.tableView.refreshControl?.endRefreshing()
-        } else {
-            self.refreshControl?.endRefreshing()
+        DispatchQueue.main.async { [unowned self] in
+            if #available(iOS 10.0, *) {
+                self.tableView.refreshControl?.endRefreshing()
+            } else {
+                self.refreshControl?.endRefreshing()
+            }
+            
+            self.tableView.reloadData()
+            self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
         }
-
-        tableView.reloadData()
     }
     
     func callAPI() {
-        let graphURL = URL(string: "https://graph.facebook.com/v3.2/1443688759205321/posts?&fields=id,story,message,created_time,link,attachments,status_type,type,description,from,story_tags,icon,full_picture,name&access_token=\(accessToken)")
+        let graphURL = URL(string: "https://graph.facebook.com/v3.2/1443688759205321/posts?&fields=id,story,message,created_time,link,attachments,status_type,type,description,from,story_tags,icon,full_picture,name&access_token=\(accessToken)&limit=5")
         
         if let graphURLSafe = graphURL {
             let task = URLSession.shared.dataTask(with: graphURLSafe) { data, response, error in
@@ -144,6 +161,7 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
                                 }
                                 
                                 self.tableView.reloadData()
+                                self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
                             }
                         } catch {
                             self.triggerError(0)
@@ -158,6 +176,8 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
         }
     }
     
+    var largeTitleHeight: CGFloat = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -169,15 +189,23 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
             self.refreshControl = refreshControl
         }
         
+        self.updateData()
+        
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 500.0
+        
+        DispatchQueue.main.async { [unowned self] in
+            if let titleHeight = self.navigationController?.navigationBar.titleHeight {
+                self.largeTitleHeight = titleHeight
+            }
+        }
     }
     
     @objc func updateData() {
         if #available(iOS 10.0, *) {
-            self.tableView.refreshControl?.beginRefreshing()
+            self.tableView.refreshControl?.beginRefreshingManually()
         } else {
-            self.refreshControl?.beginRefreshing()
+            self.refreshControl?.beginRefreshingManually()
         }
         
         if connectedToNetwork() {
@@ -194,12 +222,6 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
         self.tableView.reloadData()
         
         self.tabBarController?.delegate = self
-        
-        if self.viewFirstAppear {
-            self.viewFirstAppear = false
-            
-            self.updateData()
-        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -210,8 +232,18 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
         
         if tabBarController.selectedViewController == viewController {
             var topContentInsets: CGFloat = 0
+            let isLandscape = UIDevice.current.orientation.isValidInterfaceOrientation
+                ? UIDevice.current.orientation.isLandscape
+                : UIApplication.shared.statusBarOrientation.isLandscape
+            
+            let currentTitleHeight = self.navigationController?.navigationBar.titleHeight ?? largeTitleHeight
+            
             if #available(iOS 11.0, *) {
-                topContentInsets = self.tableView.adjustedContentInset.top
+                if !isLandscape, currentTitleHeight < largeTitleHeight {
+                    topContentInsets = self.tableView.adjustedContentInset.top + largeTitleHeight
+                } else {
+                    topContentInsets = self.tableView.adjustedContentInset.top
+                }
             } else {
                 topContentInsets = self.tableView.contentInset.top
             }
@@ -232,12 +264,38 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
     @objc func handleTap(_ recognizer: UITapGestureRecognizer) {
         var index: Int = recognizer.view!.tag
         if index < 1000 {
+            let imageView = recognizer.view as! UIImageView
+            let image = imageView.image!
+            let lightboxImage = LightboxImage(image: image)
+            
+            let controller = LightboxController(images: [lightboxImage])
+            
+            controller.dynamicBackground = true
+            present(controller, animated: true, completion: nil)
+            
+            return
             if let safeLink = posts[index].link {
                 openSafariViewController(url: safeLink)
             }
             
         } else {
             index -= 1000
+            
+            let imageView = recognizer.view as! UIImageView
+            var lightboxImages: [LightboxImage] = []
+            
+            for imageURLString in posts[index].albumImageURLs! {
+                if let imageURL = URL(string: imageURLString) {
+                    lightboxImages.append(LightboxImage(imageURL: imageURL))
+                }
+            }
+            
+            let controller = LightboxController(images: lightboxImages)
+            
+            controller.dynamicBackground = true
+            present(controller, animated: true, completion: nil)
+            
+            return
             //print(posts[index].albumURL!)
             if let safeLink = posts[index].albumURL {
                 openSafariViewController(url: safeLink)
@@ -259,14 +317,14 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
             let imageTuple = image
             cell.postImage.image = imageTuple.img
             cell.postImage.tag = indexPath.section
-            let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
-            cell.postImage.addGestureRecognizer(tap)
-            cell.postImage.isUserInteractionEnabled = true
             
             //cell.postImage?.image = UIImage(data: data!)
             
             //let imageHeightInDevice = cell.postImage.frame.width / ((theImage.size.width) / (theImage.size.height))
-            let imageHeightInDevice = cell.postImage.frame.width / (imageTuple.width / imageTuple.height)
+            var imageHeightInDevice = cell.postImage.frame.width / (imageTuple.width / imageTuple.height)
+            if imageHeightInDevice < 58, post.album {
+                imageHeightInDevice = 58 // so the gallery indicator doesn't get cropped
+            }
             cell.postImageHeightConstraint.constant = imageHeightInDevice
             cell.layoutIfNeeded()
             //} else {
@@ -312,7 +370,23 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
             //}
             if post.album {
                 cell.postImage.tag = indexPath.section + 1000
+                
+                cell.galleryCountLabel.isHidden = false
+                cell.galleryIndicatorImage.isHidden = false
+                cell.galleryCountLabel.text = String(post.albumImageURLs!.count)
+            } else {
+                cell.galleryCountLabel.isHidden = true
+                cell.galleryIndicatorImage.isHidden = true
             }
+            
+            let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
+            cell.postImage.addGestureRecognizer(tap)
+//            cell.postImage.isUserInteractionEnabled = true
+//            cell.galleryCountLabel.addGestureRecognizer(tap)
+//            cell.galleryCountLabel.isUserInteractionEnabled = true
+//            cell.galleryIndicatorImage.addGestureRecognizer(tap)
+//            cell.galleryIndicatorImage.isUserInteractionEnabled = true
+            
         } else {
             cell = tableView.dequeueReusableCell(withIdentifier: "CellWithText", for: indexPath) as! CustomTableViewCell
         }
@@ -354,9 +428,9 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
             })
             
             //cell.messageLabel?.text = attributedMessage as? String
-            
         } else if let storySafe = post.story {
             cell.messageLabel?.text = storySafe
+            cell.messageLabel?.text = ""
         } else {
             cell.messageLabel?.text = ""
         }
@@ -470,6 +544,9 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var postIcon: UIImageView!
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var postImageHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var galleryIndicatorImage: UIImageView!
+    @IBOutlet weak var galleryCountLabel: UILabel!
+    
 }
 
 //
@@ -492,6 +569,7 @@ class Post: NSObject {
     var album: Bool = false
     var story: String?
     var albumURL: URL?
+    var albumImageURLs: [String]?
     
     init(data: AnyObject) {
         if let imageURLString = data["full_picture"] as? String {
@@ -507,15 +585,33 @@ class Post: NSObject {
         if let iconUrlSring = data["icon"] as? String {
             iconURL = URL(string: iconUrlSring)
         }
-        if let statusType = data["status_type"] as? String {
-            if statusType == "added_photos" {
+        if let type = data["type"] as? String {
+            if type == "photo" {
                 if let attachments = data["attachments"] as? [String: Array<AnyObject>] {
                     if let arrayContent = attachments["data"]?[0] {
                         let subattachments = arrayContent["subattachments"] as AnyObject
-                        if (subattachments["data"] as? Array<AnyObject>) != nil {
+                        if let subattachmentsArray = subattachments["data"] as? Array<AnyObject> {
                             //print("a")
                             //print(subattdata)
-                            album = true
+                            for subattachment in subattachmentsArray {
+                                if let saMedia = subattachment["media"] as? [String: AnyObject] {
+                                    if let saImage = saMedia["image"] {
+                                        if saImage["src"] as? String != nil {
+                                            if albumImageURLs != nil {
+                                                albumImageURLs!.append(saImage["src"] as! String)
+                                            } else {
+                                                albumImageURLs = [saImage["src"] as! String]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            if albumImageURLs != nil {
+                                if albumImageURLs!.count > 1 {
+                                    album = true
+                                }
+                            }
                         }
                     }
                 }

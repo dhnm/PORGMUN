@@ -89,3 +89,14 @@ extension UIImage {
         return image
     }
 }
+
+extension UINavigationBar
+{
+    var titleHeight: CGFloat {
+        let maxSize = self.subviews
+            .filter { $0.frame.origin.y > 0 }
+            .max { $0.frame.origin.y < $1.frame.origin.y }
+            .map { $0.frame.size }
+        return maxSize?.height ?? 0
+    }
+}

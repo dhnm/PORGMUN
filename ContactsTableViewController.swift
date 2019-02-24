@@ -88,8 +88,16 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
         ]
     ]
     
+    var largeTitleHeight: CGFloat = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DispatchQueue.main.async { [unowned self] in
+            if let titleHeight = self.navigationController?.navigationBar.titleHeight {
+                self.largeTitleHeight = titleHeight
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -103,13 +111,23 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         
         if tabBarController.selectedViewController == viewController {
-            // self.tableView?.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
-            var safeAreaInsetsTop: CGFloat = 0
+            var topContentInsets: CGFloat = 0
+            let isLandscape = UIDevice.current.orientation.isValidInterfaceOrientation
+                ? UIDevice.current.orientation.isLandscape
+                : UIApplication.shared.statusBarOrientation.isLandscape
+            
+            let currentTitleHeight = self.navigationController?.navigationBar.titleHeight ?? largeTitleHeight
+            
             if #available(iOS 11.0, *) {
-                safeAreaInsetsTop = self.tableView.adjustedContentInset.top
-                print("sAIT", safeAreaInsetsTop)
+                if !isLandscape, currentTitleHeight < largeTitleHeight {
+                    topContentInsets = self.tableView.adjustedContentInset.top + largeTitleHeight
+                } else {
+                    topContentInsets = self.tableView.adjustedContentInset.top
+                }
+            } else {
+                topContentInsets = self.tableView.contentInset.top
             }
-            self.tableView.setContentOffset(CGPoint(x: 0.0, y: -safeAreaInsetsTop), animated: true)
+            self.tableView.setContentOffset(CGPoint(x: 0.0, y: -topContentInsets), animated: true)
         }
         
         return true

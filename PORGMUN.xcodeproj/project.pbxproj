@@ -27,6 +27,8 @@
 		65312D7F2210168C006F49B6 /* button_geo_fence@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65312D7B22101687006F49B6 /* button_geo_fence@2x.png */; };
 		65312D802210168C006F49B6 /* button_define_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65312D7C22101688006F49B6 /* button_define_location@2x.png */; };
 		65312D812210168C006F49B6 /* button_geo_fence@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65312D7D2210168B006F49B6 /* button_geo_fence@3x.png */; };
+		6533D7E522228DE0004E5184 /* button_gallery_indicator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6533D7E422228DDC004E5184 /* button_gallery_indicator@3x.png */; };
+		6533D7E722228E09004E5184 /* button_gallery_indicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6533D7E622228E08004E5184 /* button_gallery_indicator@2x.png */; };
 		654AE4A51E4BD13B00564EB4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654AE4A41E4BD13B00564EB4 /* TabBarController.swift */; };
 		65500B45220A1649009734C5 /* lucy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65500B40220A163D009734C5 /* lucy.jpg */; };
 		65500B46220A1649009734C5 /* simon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65500B41220A163E009734C5 /* simon.jpg */; };
@@ -130,6 +132,8 @@
 		65312D7B22101687006F49B6 /* button_geo_fence@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_geo_fence@2x.png"; sourceTree = "<group>"; };
 		65312D7C22101688006F49B6 /* button_define_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_define_location@2x.png"; sourceTree = "<group>"; };
 		65312D7D2210168B006F49B6 /* button_geo_fence@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_geo_fence@3x.png"; sourceTree = "<group>"; };
+		6533D7E422228DDC004E5184 /* button_gallery_indicator@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_gallery_indicator@3x.png"; sourceTree = "<group>"; };
+		6533D7E622228E08004E5184 /* button_gallery_indicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_gallery_indicator@2x.png"; sourceTree = "<group>"; };
 		654AE4A41E4BD13B00564EB4 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		65500B40220A163D009734C5 /* lucy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lucy.jpg; sourceTree = "<group>"; };
 		65500B41220A163E009734C5 /* simon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = simon.jpg; sourceTree = "<group>"; };
@@ -272,6 +276,8 @@
 		654AE4891E4BBF1600564EB4 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				6533D7E622228E08004E5184 /* button_gallery_indicator@2x.png */,
+				6533D7E422228DDC004E5184 /* button_gallery_indicator@3x.png */,
 				65312D7C22101688006F49B6 /* button_define_location@2x.png */,
 				65312D7A22101686006F49B6 /* button_define_location@3x.png */,
 				65312D7B22101687006F49B6 /* button_geo_fence@2x.png */,
@@ -426,7 +432,6 @@
 				65C3F3521E271456002F5052 /* Frameworks */,
 				65C3F3531E271456002F5052 /* Resources */,
 				D715F4BEA2C406772D29ADE5 /* [CP] Embed Pods Frameworks */,
-				3E0A246E6429D9CF42E7F22E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -481,6 +486,7 @@
 				65587BC61E7596D100855365 /* MyriadPro-Semibold.ttf in Resources */,
 				65500B48220A1649009734C5 /* bara.jpg in Resources */,
 				65CA8C4D205304BD00737854 /* ilo.jpg in Resources */,
+				6533D7E522228DE0004E5184 /* button_gallery_indicator@3x.png in Resources */,
 				65CA8CA62054226F00737854 /* imf1.pdf in Resources */,
 				65500B7B220FFC02009734C5 /* instagram@3x.png in Resources */,
 				65CA8C892054098E00737854 /* ProximaNova-Bold.otf in Resources */,
@@ -520,6 +526,7 @@
 				65CA8CA02054226F00737854 /* imf2.pdf in Resources */,
 				65CA8CA32054226F00737854 /* hrc1.pdf in Resources */,
 				65500B63220FF5B2009734C5 /* order@2x.png in Resources */,
+				6533D7E722228E09004E5184 /* button_gallery_indicator@2x.png in Resources */,
 				65500B6D220FF994009734C5 /* globe_earth@3x.png in Resources */,
 				65CA8C1220509B9400737854 /* ProximaNova-RegularIt.otf in Resources */,
 				65CA8C51205304BD00737854 /* hrc.jpg in Resources */,
@@ -566,34 +573,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3E0A246E6429D9CF42E7F22E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PORGMUN/Pods-PORGMUN-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D715F4BEA2C406772D29ADE5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PORGMUN/Pods-PORGMUN-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework",
+				"${BUILT_PRODUCTS_DIR}/Lightbox/Lightbox.framework",
+				"${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Imaginary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lightbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTTAttributedLabel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PORGMUN/Pods-PORGMUN-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PORGMUN/Pods-PORGMUN-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EC8BB9FFA056C1EB8D24AA19 /* [CP] Check Pods Manifest.lock */ = {
@@ -602,13 +603,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PORGMUN-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
