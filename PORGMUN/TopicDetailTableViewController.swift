@@ -79,6 +79,7 @@ class TopicDetailTableViewController: UITableViewController, UIDocumentInteracti
                 cell.textLabel?.text = data.description_
             } else {
                 cell.isUserInteractionEnabled = true
+                cell.imageView?.image = UIImage(named: "documents.png")
                 cell.accessoryType = .disclosureIndicator
                 cell.textLabel?.text = "Research Paper"
             }

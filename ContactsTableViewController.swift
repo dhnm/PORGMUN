@@ -52,7 +52,7 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
         ], [
             "name": "Šimon Olmer",
             "occupation": "Secretary-General",
-            "e-mail": "olmer@porgmun.cz",
+            "e-mail": "secretariat@porgmun.cz",
             "phone": "+420 725 552 226",
             "picture": "simon.jpg"
         ], [
@@ -76,13 +76,13 @@ class ContactsTableViewController: UITableViewController, MFMailComposeViewContr
         ], [
             "name": "Lucie Čapková",
             "occupation": "Student Chief Officer",
-            "e-mail": "capkova@porgmun.cz",
+            "e-mail": "capkova@novyporg.cz",
             "phone": "+420 725 366 700",
             "picture": "lucy.jpg"
         ], [
             "name": "Zach Barnes",
             "occupation": "Chief Supervisor",
-            "e-mail": "barnes@porgmun.cz",
+            "e-mail": "barnes@novyporg.cz",
             "phone": "+420 777 251 829",
             "picture": ""
         ]

@@ -3,6 +3,42 @@
     {
       "extent" : "full-screen",
       "idiom" : "iphone",
+      "subtype" : "2688h",
+      "filename" : "iphonexs.png",
+      "minimum-system-version" : "12.0",
+      "orientation" : "portrait",
+      "scale" : "3x"
+    },
+    {
+      "extent" : "full-screen",
+      "idiom" : "iphone",
+      "subtype" : "2688h",
+      "filename" : "iphonexs_landscape.png",
+      "minimum-system-version" : "12.0",
+      "orientation" : "landscape",
+      "scale" : "3x"
+    },
+    {
+      "extent" : "full-screen",
+      "idiom" : "iphone",
+      "subtype" : "1792h",
+      "filename" : "iphonexr.png",
+      "minimum-system-version" : "12.0",
+      "orientation" : "portrait",
+      "scale" : "2x"
+    },
+    {
+      "extent" : "full-screen",
+      "idiom" : "iphone",
+      "subtype" : "1792h",
+      "filename" : "iphonexr_landscape.png",
+      "minimum-system-version" : "12.0",
+      "orientation" : "landscape",
+      "scale" : "2x"
+    },
+    {
+      "extent" : "full-screen",
+      "idiom" : "iphone",
       "subtype" : "2436h",
       "filename" : "iphonex.png",
       "minimum-system-version" : "11.0",
@@ -12,10 +48,28 @@
     {
       "extent" : "full-screen",
       "idiom" : "iphone",
+      "subtype" : "2436h",
+      "filename" : "iphonex_landscape.png",
+      "minimum-system-version" : "11.0",
+      "orientation" : "landscape",
+      "scale" : "3x"
+    },
+    {
+      "extent" : "full-screen",
+      "idiom" : "iphone",
       "subtype" : "736h",
       "filename" : "xl.png",
       "minimum-system-version" : "8.0",
       "orientation" : "portrait",
+      "scale" : "3x"
+    },
+    {
+      "extent" : "full-screen",
+      "idiom" : "iphone",
+      "subtype" : "736h",
+      "filename" : "xl_landscape.png",
+      "minimum-system-version" : "8.0",
+      "orientation" : "landscape",
       "scale" : "3x"
     },
     {
@@ -42,6 +96,25 @@
       "filename" : "m.png",
       "minimum-system-version" : "7.0",
       "orientation" : "portrait",
+      "scale" : "2x"
+    },
+    {
+      "orientation" : "portrait",
+      "idiom" : "iphone",
+      "extent" : "full-screen",
+      "scale" : "1x"
+    },
+    {
+      "orientation" : "portrait",
+      "idiom" : "iphone",
+      "extent" : "full-screen",
+      "scale" : "2x"
+    },
+    {
+      "orientation" : "portrait",
+      "idiom" : "iphone",
+      "extent" : "full-screen",
+      "subtype" : "retina4",
       "scale" : "2x"
     }
   ],

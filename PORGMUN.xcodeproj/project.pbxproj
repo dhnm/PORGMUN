@@ -23,6 +23,26 @@
 		650DAD881E57A0BE0082A9B4 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650DAD871E57A0BE0082A9B4 /* logo@2x.png */; };
 		651901811E7590DE009C5A64 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 651901801E7590DE009C5A64 /* MyriadPro-Regular.otf */; };
 		6519686D1E27914200F0CD7D /* NovyPorg.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6519686C1E27914200F0CD7D /* NovyPorg.gpx */; };
+		651C3B5F2239A0D1000002D9 /* DISEC - Indiscriminate weapons.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B4D2239A0CC000002D9 /* DISEC - Indiscriminate weapons.pdf */; };
+		651C3B602239A0D1000002D9 /* HRC - Net Neutrality.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B4E2239A0CD000002D9 /* HRC - Net Neutrality.pdf */; };
+		651C3B612239A0D1000002D9 /* HSC .pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B4F2239A0CD000002D9 /* HSC .pdf */; };
+		651C3B622239A0D1000002D9 /* AU-South-Sudan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B502239A0CD000002D9 /* AU-South-Sudan.pdf */; };
+		651C3B632239A0D1000002D9 /* DISEC INF treaty.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B512239A0CE000002D9 /* DISEC INF treaty.pdf */; };
+		651C3B642239A0D1000002D9 /* SPECPOL Arctic sea.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B522239A0CE000002D9 /* SPECPOL Arctic sea.pdf */; };
+		651C3B652239A0D1000002D9 /* SPECPOL Peacekeeping.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B532239A0CE000002D9 /* SPECPOL Peacekeeping.pdf */; };
+		651C3B662239A0D1000002D9 /* HRC Child soldiers.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B542239A0CF000002D9 /* HRC Child soldiers.pdf */; };
+		651C3B672239A0D1000002D9 /* ILO2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B552239A0CF000002D9 /* ILO2.pdf */; };
+		651C3B682239A0D1000002D9 /* ILO - Inga Dam.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B562239A0CF000002D9 /* ILO - Inga Dam.pdf */; };
+		651C3B692239A0D1000002D9 /* ECOSOC - drugs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B572239A0CF000002D9 /* ECOSOC - drugs.pdf */; };
+		651C3B6A2239A0D1000002D9 /* LC - cryptocurrencies.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B582239A0CF000002D9 /* LC - cryptocurrencies.pdf */; };
+		651C3B6B2239A0D1000002D9 /* AU Terrorists.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B592239A0D0000002D9 /* AU Terrorists.pdf */; };
+		651C3B6C2239A0D1000002D9 /* Al Libya.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B5A2239A0D0000002D9 /* Al Libya.pdf */; };
+		651C3B6D2239A0D1000002D9 /* AL Oil.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B5B2239A0D0000002D9 /* AL Oil.pdf */; };
+		651C3B6E2239A0D1000002D9 /* LC Space Treaty.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B5C2239A0D0000002D9 /* LC Space Treaty.pdf */; };
+		651C3B6F2239A0D1000002D9 /* ECOSOC Human Trafficking.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B5D2239A0D0000002D9 /* ECOSOC Human Trafficking.pdf */; };
+		651C3B702239A0D1000002D9 /* SC-Venezuela.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B5E2239A0D1000002D9 /* SC-Venezuela.pdf */; };
+		651C3B7B2239B22F000002D9 /* documents@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B792239B22E000002D9 /* documents@2x.png */; };
+		651C3B7C2239B22F000002D9 /* documents@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 651C3B7A2239B22F000002D9 /* documents@3x.png */; };
 		65312D7E2210168C006F49B6 /* button_define_location@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65312D7A22101686006F49B6 /* button_define_location@3x.png */; };
 		65312D7F2210168C006F49B6 /* button_geo_fence@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65312D7B22101687006F49B6 /* button_geo_fence@2x.png */; };
 		65312D802210168C006F49B6 /* button_define_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65312D7C22101688006F49B6 /* button_define_location@2x.png */; };
@@ -88,23 +108,6 @@
 		65CA8C51205304BD00737854 /* hrc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C46205304BD00737854 /* hrc.jpg */; };
 		65CA8C53205364D900737854 /* TopicDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA8C52205364D900737854 /* TopicDetailTableViewController.swift */; };
 		65CA8C892054098E00737854 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C1420509FB800737854 /* ProximaNova-Bold.otf */; };
-		65CA8C9D2054226F00737854 /* ecosoc2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C8C2054226900737854 /* ecosoc2.pdf */; };
-		65CA8C9E2054226F00737854 /* specpol1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C8D2054226A00737854 /* specpol1.pdf */; };
-		65CA8C9F2054226F00737854 /* disec2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C8E2054226A00737854 /* disec2.pdf */; };
-		65CA8CA02054226F00737854 /* imf2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C8F2054226B00737854 /* imf2.pdf */; };
-		65CA8CA12054226F00737854 /* hsc1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C902054226B00737854 /* hsc1.pdf */; };
-		65CA8CA22054226F00737854 /* au1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C912054226C00737854 /* au1.pdf */; };
-		65CA8CA32054226F00737854 /* hrc1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C922054226C00737854 /* hrc1.pdf */; };
-		65CA8CA42054226F00737854 /* al2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C932054226C00737854 /* al2.pdf */; };
-		65CA8CA52054226F00737854 /* au2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C942054226C00737854 /* au2.pdf */; };
-		65CA8CA62054226F00737854 /* imf1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C952054226C00737854 /* imf1.pdf */; };
-		65CA8CA72054226F00737854 /* disec1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C962054226D00737854 /* disec1.pdf */; };
-		65CA8CA82054226F00737854 /* legal2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C972054226D00737854 /* legal2.pdf */; };
-		65CA8CA92054226F00737854 /* specpol2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C982054226D00737854 /* specpol2.pdf */; };
-		65CA8CAA2054226F00737854 /* al1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C992054226D00737854 /* al1.pdf */; };
-		65CA8CAB2054226F00737854 /* hrc2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C9A2054226D00737854 /* hrc2.pdf */; };
-		65CA8CAC2054226F00737854 /* ecosoc1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C9B2054226E00737854 /* ecosoc1.pdf */; };
-		65CA8CAD2054226F00737854 /* legal1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65CA8C9C2054226F00737854 /* legal1.pdf */; };
 		65E6E84B1E4BF76C00BE0E9F /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6E84A1E4BF76C00BE0E9F /* ContactsTableViewController.swift */; };
 		8591D4187AF0F2F01EAA5FC5 /* Pods_PORGMUN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BB6F1C23FEB2BB1618D0B8 /* Pods_PORGMUN.framework */; };
 /* End PBXBuildFile section */
@@ -130,6 +133,26 @@
 		651901801E7590DE009C5A64 /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
 		651901821E7591EB009C5A64 /* MyriadPro-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Semibold.ttf"; sourceTree = "<group>"; };
 		6519686C1E27914200F0CD7D /* NovyPorg.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NovyPorg.gpx; sourceTree = "<group>"; };
+		651C3B4D2239A0CC000002D9 /* DISEC - Indiscriminate weapons.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "DISEC - Indiscriminate weapons.pdf"; sourceTree = "<group>"; };
+		651C3B4E2239A0CD000002D9 /* HRC - Net Neutrality.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "HRC - Net Neutrality.pdf"; sourceTree = "<group>"; };
+		651C3B4F2239A0CD000002D9 /* HSC .pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "HSC .pdf"; sourceTree = "<group>"; };
+		651C3B502239A0CD000002D9 /* AU-South-Sudan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "AU-South-Sudan.pdf"; sourceTree = "<group>"; };
+		651C3B512239A0CE000002D9 /* DISEC INF treaty.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "DISEC INF treaty.pdf"; sourceTree = "<group>"; };
+		651C3B522239A0CE000002D9 /* SPECPOL Arctic sea.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "SPECPOL Arctic sea.pdf"; sourceTree = "<group>"; };
+		651C3B532239A0CE000002D9 /* SPECPOL Peacekeeping.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "SPECPOL Peacekeeping.pdf"; sourceTree = "<group>"; };
+		651C3B542239A0CF000002D9 /* HRC Child soldiers.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "HRC Child soldiers.pdf"; sourceTree = "<group>"; };
+		651C3B552239A0CF000002D9 /* ILO2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ILO2.pdf; sourceTree = "<group>"; };
+		651C3B562239A0CF000002D9 /* ILO - Inga Dam.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ILO - Inga Dam.pdf"; sourceTree = "<group>"; };
+		651C3B572239A0CF000002D9 /* ECOSOC - drugs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ECOSOC - drugs.pdf"; sourceTree = "<group>"; };
+		651C3B582239A0CF000002D9 /* LC - cryptocurrencies.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "LC - cryptocurrencies.pdf"; sourceTree = "<group>"; };
+		651C3B592239A0D0000002D9 /* AU Terrorists.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "AU Terrorists.pdf"; sourceTree = "<group>"; };
+		651C3B5A2239A0D0000002D9 /* Al Libya.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Al Libya.pdf"; sourceTree = "<group>"; };
+		651C3B5B2239A0D0000002D9 /* AL Oil.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "AL Oil.pdf"; sourceTree = "<group>"; };
+		651C3B5C2239A0D0000002D9 /* LC Space Treaty.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "LC Space Treaty.pdf"; sourceTree = "<group>"; };
+		651C3B5D2239A0D0000002D9 /* ECOSOC Human Trafficking.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ECOSOC Human Trafficking.pdf"; sourceTree = "<group>"; };
+		651C3B5E2239A0D1000002D9 /* SC-Venezuela.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "SC-Venezuela.pdf"; sourceTree = "<group>"; };
+		651C3B792239B22E000002D9 /* documents@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "documents@2x.png"; sourceTree = "<group>"; };
+		651C3B7A2239B22F000002D9 /* documents@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "documents@3x.png"; sourceTree = "<group>"; };
 		65312D7A22101686006F49B6 /* button_define_location@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_define_location@3x.png"; sourceTree = "<group>"; };
 		65312D7B22101687006F49B6 /* button_geo_fence@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_geo_fence@2x.png"; sourceTree = "<group>"; };
 		65312D7C22101688006F49B6 /* button_define_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_define_location@2x.png"; sourceTree = "<group>"; };
@@ -196,23 +219,6 @@
 		65CA8C45205304BD00737854 /* legal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = legal.jpg; sourceTree = "<group>"; };
 		65CA8C46205304BD00737854 /* hrc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hrc.jpg; sourceTree = "<group>"; };
 		65CA8C52205364D900737854 /* TopicDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailTableViewController.swift; sourceTree = "<group>"; };
-		65CA8C8C2054226900737854 /* ecosoc2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ecosoc2.pdf; sourceTree = "<group>"; };
-		65CA8C8D2054226A00737854 /* specpol1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = specpol1.pdf; sourceTree = "<group>"; };
-		65CA8C8E2054226A00737854 /* disec2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = disec2.pdf; sourceTree = "<group>"; };
-		65CA8C8F2054226B00737854 /* imf2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = imf2.pdf; sourceTree = "<group>"; };
-		65CA8C902054226B00737854 /* hsc1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = hsc1.pdf; sourceTree = "<group>"; };
-		65CA8C912054226C00737854 /* au1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = au1.pdf; sourceTree = "<group>"; };
-		65CA8C922054226C00737854 /* hrc1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = hrc1.pdf; sourceTree = "<group>"; };
-		65CA8C932054226C00737854 /* al2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = al2.pdf; sourceTree = "<group>"; };
-		65CA8C942054226C00737854 /* au2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = au2.pdf; sourceTree = "<group>"; };
-		65CA8C952054226C00737854 /* imf1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = imf1.pdf; sourceTree = "<group>"; };
-		65CA8C962054226D00737854 /* disec1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = disec1.pdf; sourceTree = "<group>"; };
-		65CA8C972054226D00737854 /* legal2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = legal2.pdf; sourceTree = "<group>"; };
-		65CA8C982054226D00737854 /* specpol2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = specpol2.pdf; sourceTree = "<group>"; };
-		65CA8C992054226D00737854 /* al1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = al1.pdf; sourceTree = "<group>"; };
-		65CA8C9A2054226D00737854 /* hrc2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = hrc2.pdf; sourceTree = "<group>"; };
-		65CA8C9B2054226E00737854 /* ecosoc1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ecosoc1.pdf; sourceTree = "<group>"; };
-		65CA8C9C2054226F00737854 /* legal1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = legal1.pdf; sourceTree = "<group>"; };
 		65E6E84A1E4BF76C00BE0E9F /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsTableViewController.swift; path = ../ContactsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -292,6 +298,8 @@
 				65500B5D220FF5B0009734C5 /* collaboration@3x.png */,
 				65500B69220FF7C1009734C5 /* conference@2x.png */,
 				65500B68220FF7C0009734C5 /* conference@3x.png */,
+				651C3B792239B22E000002D9 /* documents@2x.png */,
+				651C3B7A2239B22F000002D9 /* documents@3x.png */,
 				65CA8C3720518F7100737854 /* fa-location@3x.png */,
 				65500B74220FFC01009734C5 /* facebook@2x.png */,
 				65500B71220FFBFE009734C5 /* facebook@3x.png */,
@@ -388,23 +396,24 @@
 		65CA8C542053744200737854 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				65CA8C992054226D00737854 /* al1.pdf */,
-				65CA8C932054226C00737854 /* al2.pdf */,
-				65CA8C912054226C00737854 /* au1.pdf */,
-				65CA8C942054226C00737854 /* au2.pdf */,
-				65CA8C962054226D00737854 /* disec1.pdf */,
-				65CA8C8E2054226A00737854 /* disec2.pdf */,
-				65CA8C9B2054226E00737854 /* ecosoc1.pdf */,
-				65CA8C8C2054226900737854 /* ecosoc2.pdf */,
-				65CA8C922054226C00737854 /* hrc1.pdf */,
-				65CA8C9A2054226D00737854 /* hrc2.pdf */,
-				65CA8C902054226B00737854 /* hsc1.pdf */,
-				65CA8C952054226C00737854 /* imf1.pdf */,
-				65CA8C8F2054226B00737854 /* imf2.pdf */,
-				65CA8C9C2054226F00737854 /* legal1.pdf */,
-				65CA8C972054226D00737854 /* legal2.pdf */,
-				65CA8C8D2054226A00737854 /* specpol1.pdf */,
-				65CA8C982054226D00737854 /* specpol2.pdf */,
+				651C3B5A2239A0D0000002D9 /* Al Libya.pdf */,
+				651C3B5B2239A0D0000002D9 /* AL Oil.pdf */,
+				651C3B592239A0D0000002D9 /* AU Terrorists.pdf */,
+				651C3B502239A0CD000002D9 /* AU-South-Sudan.pdf */,
+				651C3B4D2239A0CC000002D9 /* DISEC - Indiscriminate weapons.pdf */,
+				651C3B512239A0CE000002D9 /* DISEC INF treaty.pdf */,
+				651C3B572239A0CF000002D9 /* ECOSOC - drugs.pdf */,
+				651C3B5D2239A0D0000002D9 /* ECOSOC Human Trafficking.pdf */,
+				651C3B4E2239A0CD000002D9 /* HRC - Net Neutrality.pdf */,
+				651C3B542239A0CF000002D9 /* HRC Child soldiers.pdf */,
+				651C3B4F2239A0CD000002D9 /* HSC .pdf */,
+				651C3B562239A0CF000002D9 /* ILO - Inga Dam.pdf */,
+				651C3B552239A0CF000002D9 /* ILO2.pdf */,
+				651C3B582239A0CF000002D9 /* LC - cryptocurrencies.pdf */,
+				651C3B5C2239A0D0000002D9 /* LC Space Treaty.pdf */,
+				651C3B5E2239A0D1000002D9 /* SC-Venezuela.pdf */,
+				651C3B522239A0CE000002D9 /* SPECPOL Arctic sea.pdf */,
+				651C3B532239A0CE000002D9 /* SPECPOL Peacekeeping.pdf */,
 			);
 			name = Documents;
 			sourceTree = "<group>";
@@ -493,32 +502,36 @@
 				65500B48220A1649009734C5 /* bara.jpg in Resources */,
 				65CA8C4D205304BD00737854 /* ilo.jpg in Resources */,
 				6533D7E522228DE0004E5184 /* button_gallery_indicator@3x.png in Resources */,
-				65CA8CA62054226F00737854 /* imf1.pdf in Resources */,
 				65500B7B220FFC02009734C5 /* instagram@3x.png in Resources */,
 				65CA8C892054098E00737854 /* ProximaNova-Bold.otf in Resources */,
 				65500B8922100298009734C5 /* speech_bubble@3x.png in Resources */,
-				65CA8CA22054226F00737854 /* au1.pdf in Resources */,
-				65CA8CA12054226F00737854 /* hsc1.pdf in Resources */,
+				651C3B662239A0D1000002D9 /* HRC Child soldiers.pdf in Resources */,
+				651C3B6A2239A0D1000002D9 /* LC - cryptocurrencies.pdf in Resources */,
+				651C3B6B2239A0D1000002D9 /* AU Terrorists.pdf in Resources */,
 				65067AB81E2AA35100750469 /* porgmun.png in Resources */,
 				65500B64220FF5B2009734C5 /* planner@2x.png in Resources */,
+				651C3B632239A0D1000002D9 /* DISEC INF treaty.pdf in Resources */,
+				651C3B6C2239A0D1000002D9 /* Al Libya.pdf in Resources */,
+				651C3B6E2239A0D1000002D9 /* LC Space Treaty.pdf in Resources */,
 				65CA8C47205304BD00737854 /* al.jpg in Resources */,
 				65CA8C4E205304BD00737854 /* ecosoc.jpg in Resources */,
 				65CA8C1120509B9400737854 /* ProximaNova-Regular.otf in Resources */,
+				651C3B652239A0D1000002D9 /* SPECPOL Peacekeeping.pdf in Resources */,
 				65312D7F2210168C006F49B6 /* button_geo_fence@2x.png in Resources */,
+				651C3B622239A0D1000002D9 /* AU-South-Sudan.pdf in Resources */,
 				65067AB91E2AA35100750469 /* purple.png in Resources */,
 				65CA8C182051633900737854 /* logo-black@2x.png in Resources */,
 				65500B6A220FF7C2009734C5 /* conference@3x.png in Resources */,
-				65CA8CAC2054226F00737854 /* ecosoc1.pdf in Resources */,
-				65CA8CA92054226F00737854 /* specpol2.pdf in Resources */,
-				65CA8CA52054226F00737854 /* au2.pdf in Resources */,
 				65CA8C4C205304BD00737854 /* icj.jpg in Resources */,
+				651C3B602239A0D1000002D9 /* HRC - Net Neutrality.pdf in Resources */,
 				65500B78220FFC02009734C5 /* twitter@2x.png in Resources */,
 				65500B5F220FF5B2009734C5 /* collaboration@2x.png in Resources */,
 				65500B7A220FFC02009734C5 /* facebook@2x.png in Resources */,
 				6533D7EA2222CFAF004E5184 /* train@2x.png in Resources */,
 				65312D7E2210168C006F49B6 /* button_define_location@3x.png in Resources */,
+				651C3B692239A0D1000002D9 /* ECOSOC - drugs.pdf in Resources */,
 				65500B8322100021009734C5 /* message@3x.png in Resources */,
-				65CA8CAA2054226F00737854 /* al1.pdf in Resources */,
+				651C3B702239A0D1000002D9 /* SC-Venezuela.pdf in Resources */,
 				65500B77220FFC02009734C5 /* facebook@3x.png in Resources */,
 				65500B66220FF5B2009734C5 /* order@3x.png in Resources */,
 				65067AB71E2AA35100750469 /* orange.png in Resources */,
@@ -528,53 +541,52 @@
 				65067ABA1E2AA35100750469 /* red.png in Resources */,
 				651901811E7590DE009C5A64 /* MyriadPro-Regular.otf in Resources */,
 				65500B47220A1649009734C5 /* ela.jpg in Resources */,
+				651C3B7B2239B22F000002D9 /* documents@2x.png in Resources */,
 				65CA8C4F205304BD00737854 /* au.jpg in Resources */,
+				651C3B6F2239A0D1000002D9 /* ECOSOC Human Trafficking.pdf in Resources */,
 				650DAD881E57A0BE0082A9B4 /* logo@2x.png in Resources */,
 				65CA8C3820518F7200737854 /* fa-location@3x.png in Resources */,
-				65CA8CA02054226F00737854 /* imf2.pdf in Resources */,
-				65CA8CA32054226F00737854 /* hrc1.pdf in Resources */,
 				65500B63220FF5B2009734C5 /* order@2x.png in Resources */,
+				651C3B6D2239A0D1000002D9 /* AL Oil.pdf in Resources */,
 				6533D7E722228E09004E5184 /* button_gallery_indicator@2x.png in Resources */,
 				65500B6D220FF994009734C5 /* globe_earth@3x.png in Resources */,
+				651C3B682239A0D1000002D9 /* ILO - Inga Dam.pdf in Resources */,
 				65CA8C1220509B9400737854 /* ProximaNova-RegularIt.otf in Resources */,
 				65CA8C51205304BD00737854 /* hrc.jpg in Resources */,
 				65312D802210168C006F49B6 /* button_define_location@2x.png in Resources */,
 				65CA8C1320509B9400737854 /* ProximaNova-Semibold.otf in Resources */,
+				651C3B672239A0D1000002D9 /* ILO2.pdf in Resources */,
 				65500B8B2210029E009734C5 /* speech_bubble@2x.png in Resources */,
 				65067AC31E2B884400750469 /* Ban-Ki-moon.jpg in Resources */,
 				65500B6B220FF7C2009734C5 /* conference@2x.png in Resources */,
-				65CA8CAB2054226F00737854 /* hrc2.pdf in Resources */,
+				651C3B612239A0D1000002D9 /* HSC .pdf in Resources */,
 				6519686D1E27914200F0CD7D /* NovyPorg.gpx in Resources */,
+				651C3B642239A0D1000002D9 /* SPECPOL Arctic sea.pdf in Resources */,
 				65500B76220FFC02009734C5 /* instagram@2x.png in Resources */,
 				65C3F3621E271456002F5052 /* Assets.xcassets in Resources */,
-				65CA8C9F2054226F00737854 /* disec2.pdf in Resources */,
 				65500B8522100027009734C5 /* message@2x.png in Resources */,
-				65CA8CAD2054226F00737854 /* legal1.pdf in Resources */,
 				65500B5E220FF5B2009734C5 /* news@2x.png in Resources */,
 				65500B67220FF5B2009734C5 /* collaboration@3x.png in Resources */,
 				65500B45220A1649009734C5 /* lucy.jpg in Resources */,
 				65500B87221001F5009734C5 /* phone@3x.png in Resources */,
+				651C3B7C2239B22F000002D9 /* documents@3x.png in Resources */,
 				65067AB51E2AA35100750469 /* black.png in Resources */,
 				65CA8C50205304BD00737854 /* legal.jpg in Resources */,
-				65CA8CA42054226F00737854 /* al2.pdf in Resources */,
-				65CA8C9E2054226F00737854 /* specpol1.pdf in Resources */,
 				65067AB61E2AA35100750469 /* green.png in Resources */,
 				65312D812210168C006F49B6 /* button_geo_fence@3x.png in Resources */,
-				65CA8CA72054226F00737854 /* disec1.pdf in Resources */,
 				65CA8C48205304BD00737854 /* specpol.jpg in Resources */,
 				65500B7F2210000F009734C5 /* phone@2x.png in Resources */,
 				65500B6F220FF99D009734C5 /* globe_earth@2x.png in Resources */,
 				65500B79220FFC02009734C5 /* twitter@3x.png in Resources */,
 				65067ABB1E2AA35100750469 /* yellow.png in Resources */,
 				65CA8C4A205304BD00737854 /* disec.jpg in Resources */,
-				65CA8CA82054226F00737854 /* legal2.pdf in Resources */,
 				65CA8C4B205304BD00737854 /* sc.jpg in Resources */,
 				65500B46220A1649009734C5 /* simon.jpg in Resources */,
-				65CA8C9D2054226F00737854 /* ecosoc2.pdf in Resources */,
 				2D6BD1572200B6BE000FBCB5 /* Committees.plist in Resources */,
 				65C3F3601E271456002F5052 /* Main.storyboard in Resources */,
 				65CA8C49205304BD00737854 /* hsc.jpg in Resources */,
 				65587BC81E75970F00855365 /* MyriadPro-Italic.ttf in Resources */,
+				651C3B5F2239A0D1000002D9 /* DISEC - Indiscriminate weapons.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

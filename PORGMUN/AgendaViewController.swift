@@ -80,7 +80,7 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate, UITabBa
                       coordinate: CLLocationCoordinate2D(latitude: 50.1018732, longitude: 14.4492928),
                       directionsText: ["Instructions not available. Please, use the Apple Maps button above."],
                       fonts: [UIFont(name: "ProximaNova-RegularIt", size: 15)!]),
-        MapPointClass(title: "Chamber of Deputies, Hall 205",
+        MapPointClass(title: "Parliament (Room 205)",
                       address: "Sněmovní 1",
                       color: "brown",
                       coordinate: CLLocationCoordinate2D(latitude: 50.0887854, longitude: 14.4028628),
@@ -193,13 +193,13 @@ class AgendaViewController: UIViewController, CLLocationManagerDelegate, UITabBa
             "dateString": "Thursday 21st",
              "title": "The Opening Day",
              "schedule": [
-                    "10:00–12:00": ["Registration", "4", "red"],
+                    "09:00–11:00": ["Registration", "0", "porgmun"],
                     "12:00-13:30": ["Opening Ceremony", "4", "red"],
-                    "13:30-14:30": ["Lunch Break", "4", "red"],
                     "13:30-13:45": ["Meeting with Supervisors", "4", "red"],
+                    "13:45-14:30": ["Coffee Break", "4", "red"],
                     "14:30-16:00": ["Opening Ceremony", "4", "red"],
                     "16:15–18:45": ["Prague Tour and Icebreakers", "4", "red"],
-                    "19:00–21:30": ["Gala Dinner", "3", "purple"],
+                    "19:30–21:30": ["Gala Dinner", "3", "purple"],
                 ]
         ],
         [

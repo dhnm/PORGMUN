@@ -169,6 +169,7 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
                             } else {
                                 self.triggerError(0)
                                 print("token expired")
+                                print(jsonResult)
                             }
                             
                             DispatchQueue.main.sync {
@@ -518,7 +519,6 @@ class NewsTableViewController: UITableViewController, TTTAttributedLabelDelegate
     }
     
     override open func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        print("IAMHERE", pagingNextUrl != nil, posts.count < 200, posts.count % 6 == 0, indexPath.row == posts.count - 1, indexPath.row, posts.count - 1)
         if pagingNextUrl != nil, posts.count < 200, posts.count % 6 == 0, indexPath.section == posts.count - 1 {
             if connectedToNetwork() {
                 callAPI(overrideUrl: pagingNextUrl)

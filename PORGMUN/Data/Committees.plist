@@ -16,12 +16,16 @@
                 <string>Ending the Use of Child Soldiers</string>
                 <key>description_</key>
                 <string>Tens of thousands of children are serving as soldiers in conflicts around the world, most prevailingly in Africa and the Middle East. Fighting for government armies and opposition militias alike, children as young as 7 years old battle on the frontlines, conduct suicide missions or act as messengers and spies, putting their life to the risk, being stripped of their freedom and human rights. And while the military recruitment of children is being gradually outlawed worldwide, 50 countries still allow children to serve in their military, and many other lack any framework set to prosecute those responsible for recruiting children, implement preventative measures and assure the re-integration of children finally released from forced service.</string>
+                <key>fileName</key>
+                <string>HRC Child soldiers.pdf</string>
             </dict>
             <dict>
                 <key>name</key>
                 <string>Human Right of the Modern Age: Access to the Internet and Net Neutrality</string>
                 <key>description_</key>
                 <string>70 years after the ratification of the Universal Declaration of Human Rights, the innovation and progress of our society in terms of technological development are beginning to pose questions regarding the interpretation of the Declaration. The international community is yet to universally decide whether the right to access the Internet can be understood as an aspect of the Right to Freedom of Expression, which is defined as any act of seeking or receiving information and ideas in the 19th article of the UDHR, and consequentially if member states then have the responsibility to ensure that Internet is broadly accessible to everybody. Additional questions arise around the very attitude and power states should hold over the Internet. Should states and Internet providers have the power to regulate internet content by blocking certain websites? And are the rights to Internet access and net-neutrality so substantial they should be seen as a fundamental human right and treated accordingly?</string>
+                <key>fileName</key>
+                <string>HRC - Net Neutrality.pdf</string>
             </dict>
         </array>
         <key>countryMatrix</key>
@@ -41,12 +45,16 @@
                 <string>Eliminating the Spread of Counterfeit Drugs</string>
                 <key>description_</key>
                 <string>Recent World Health Organisations reports state that at least 10% of medication sold in lesser developed countries are counterfeit, meaning that they have been deliberately falsified to have no medical properties whatsoever and contain entirely different chemical substances than the medication they are deceptively representing. Counterfeit drugs include products that have not been approved for medical use, met safety standards, and some simply misplace the active ingredients in order to minimise expenses on the making of the drug. Since it is virtually impossible for consumers to differ falsified from legitimate medication, due to the precise imitation of packaging etc., tens of thousands people end up spending their money on drugs that will not cure them, or in some scenarios even further exacerbate their condition. In Sub-Saharan Africa, one of the most affected regions, as many as 257 thousands deaths annually are attributed to substandard and counterfeit malaria drugs alone.</string>
+                <key>fileName</key>
+                <string>ECOSOC - drugs.pdf</string>
             </dict>
             <dict>
                 <key>name</key>
                 <string>Strengthening Measures Against Human Trafficking</string>
                 <key>description_</key>
                 <string>Human trafficking is the illicit trade of persons against their will, with the intent to exploit the victim in the form of forced labour, slavery, prostitution or other forms of sexual exploitation, and extractions of organs. The trade of persons, most commonly women and children, is though to be one of the fastest growing activities of transnational crime organisations, as the International Labour Organization reports that forced labour alone generates $150 billion in profit annually. The rise of human trafficking is rooted in several larger issues - poverty and gender inequality put victims in vulnerable positions, globalisation strengthens the link between the demand of developed countries and the human supply from less developed ones, and the Internet makes the operations easier, faster and less traceable. The three pillars of combating human trafficking are generally understood to be prevention, protection and persecution - international organisations seemingly know what has to be done in theory, but translating these principles into action remains problematic, and so criminals remain largely unidentified and victims unprotected.</string>
+                <key>fileName</key>
+                <string>ECOSOC Human Trafficking.pdf</string>
             </dict>
         </array>
         <key>countryMatrix</key>
@@ -66,12 +74,16 @@
                 <string>The Deteriorating Humanitarian Situation in South Sudan Brought by the Ongoing Civil War</string>
                 <key>description_</key>
                 <string>South Sudan has been struggling to maintain political stability ever-since it declared its independence from Sudan in 2011. In December 2013, a power struggle between President Kiir and his former Deputy Riek Machar and the accusation of a coup d’état aggravated fights among the nation, eventually escalating to a civil war that has not ceased to this day. With more than 50 000 dead, 4 million displaced and counting, the conflict has made a permanent mark on the South Sudanese population. As farmers are prevented from planting and harvesting crops due to the fighting, there is a nation-wide food shortage crisis, deemed by the UN as the “worst in the World” in 2014. Additionally, the refugees flooding the nation in fear of prosecution and violence from the militant groups pose a strain on the struggling neighboring countries.</string>
+                <key>fileName</key>
+                <string>AU-South-Sudan.pdf</string>
             </dict>
             <dict>
                 <key>name</key>
                 <string>Addressing the Growing Influence and Power of Islamist Militant Groups in The Lake Chad Region</string>
                 <key>description_</key>
                 <string>ISIS and Al-Qaeda are both radical Islamist militant groups who we normally associate with the region of Middle East, yet in the last decade Islamist militant groups have been gaining ground in Africa, claiming tens of thousands of lives. Boko Haram, a terrorist group originally based in Nigeria, has claimed its allegiance to the Islamic State and became the world’s deadliest terror group in 2015. Since then, it has moved its base to Lake Chad, where the lack of government presence allows Boko Haram and the newly formed Islamic State West Africa to exploit and persecute defenceless civilians. The strategy of seizing control over ungoverned areas has proven to be effective for rogue, ISIS or Al-Qaeda affiliated islamist militant groups alike - the epicentre of radical violence being the Sahel region. Lacking government presence, with the added tension of food and water shortages make the vulnerable, predominantly Muslim, population an easy target for extremist groups to exploit, but also recruit into its fronts, executing attacks all over Africa. The growing number and strength of these groups not only continue to threaten international security, but pressingly exacerbate the political and humanitarian situation in the AU member states of the Sahel region.</string>
+                <key>fileName</key>
+                <string>AU Terrorists.pdf</string>
             </dict>
         </array>
         <key>countryMatrix</key>
@@ -91,12 +103,16 @@
                 <string>Defining the Legal Boundaries for International Use of Decentralised Currencies</string>
                 <key>description_</key>
                 <string>Cryptocurrency has garnered great popularity in recent years as a decentralised method of exchange to be used, with the demand increasing since the release of Bitcoin as open-source software in 2009. However, the use of cryptocurrency - particularly the extent of its legality - varies from country to country. As such, cryptocurrency stands as an issue both to the international legal system, as well as the system of economic sanctions, due to the potential ability of persons or countries to use cryptocurrency in order to evade them. As technology is becoming ever and ever more advanced, there is a need for the international community to take into account new technologies - such as cryptocurrency - and reach an international agreement on their legality, especially in regards to concerns over the plausible tax evasion, money laundering, and other issues that may arise from unregulated circulation of cryptocurrency.</string>
+                <key>fileName</key>
+                <string>LC - cryptocurrencies.pdf</string>
             </dict>
             <dict>
                 <key>name</key>
                 <string>Revisiting the 1967 Outer Space Treaty Regarding Ownership of Celestial Bodies and Deployment of Weapons into Earth’s Orbit</string>
                 <key>description_</key>
                 <string>The Outer Space Treaty, entered into force in 1967, provides the basis of international space law and currently has 107 countries as parties. There are however some major problems with the treaty. Firstly, it only prevents countries from claiming territory in space but it contains nothing to prevent private ownership. This effectively allows both legal and natural persons to claim and sell property on celestial bodies although they are still answerable to their respective governments. Companies such as Lunar Embassy have already taken advantage of this and sold hundreds of millions of acres of land on the Moon. The second problem of the Outer Space Treaty is the ability to deploy conventional weapons into orbit as only weapons of mass destruction have been banned, although conventional weapons still allow for devastating attacks with large amounts of explosive material. Therefore, while the Outer Space Treaty remains to be the cornerstone of international space law, additions and changes have to be made to ensure its effectivity and legitimacy in the future.</string>
+                <key>fileName</key>
+                <string>LC Space Treaty.pdf</string>
             </dict>
         </array>
         <key>countryMatrix</key>
@@ -116,12 +132,16 @@
                 <string>Resolving the Territorial Crisis in the Arctic Sea</string>
                 <key>description_</key>
                 <string>With global temperatures rising and ice melting all over the world a conflict has been raging in the Arctic Sea. This yet undiscovered but strategically important body of water is opening up its gates and reveals numerous key resources under its bottom, including 30% of the world's undiscovered natural gas and 13% of its oil. The melting ice also provides some new trade routes between the Asian and Western markets. All of this makes this area extremely valuable and increases the desire to control it. Five nations have begun to struggle over the control of these resources. Today the borders in the Arctic work according to the maritime law and each nation controls water 200 nautical miles of its coast, the rest is international territory. The existence of continental shelfs, and rapid militarisation of the area make this quickly escalating conflict very dangerous. It is clear that the current laws regarding the Arctic are not sufficient and action must be taken to resolve this matter before it is too late.</string>
+                <key>fileName</key>
+                <string>SPECPOL Arctic sea.pdf</string>
             </dict>
             <dict>
                 <key>name</key>
                 <string>Clearly Outlining the Role of the UN Peacekeeping Forces</string>
                 <key>description_</key>
                 <string>In the twenty-first century, there is an increasing number of peacekeeping operations taking place in areas currently dealing with terrorist threats. In these areas, there are often tendencies to pressure the UN to incorporate the counter insurgency into its agenda in the region either by directly enabling a UN peacekeeping mission to perform counter terrorism or by launching a separate mission devoted to counter terrorism. There are however problems with this kind of approach. Currently, peacekeeping missions are designed to be balanced between Chapter VI of the UN Charter, which encourages peaceful settlement of disputes, and Chapter VII, describing the use of force to preserve peace. The counter insurgent pressures not only push peacekeeping completely away from Chapter VI but more towards Chapter VIII, which describes regional arrangements as part of peacekeeping missions or parallel with them. A model example of this development is the peacekeeping mission MINUSMA in Mali. A clear, modern outline of the role of peacekeeping is needed to resolve this modern development.</string>
+                <key>fileName</key>
+                <string>SPECPOL Peacekeeping.pdf</string>
             </dict>
         </array>
         <key>countryMatrix</key>
@@ -141,12 +161,16 @@
                 <string>Defining the Response to the Use of Indiscriminate Weapons</string>
                 <key>description_</key>
                 <string>Although outlawed by numerous international conventions and inherently by international humanitarian law, indiscriminate weaponry, which can not be directed at a specific military target and thus its effects on civilians can not be limited - for example chemical or biological weapons, are still being used in contemporary conflicts. Due to the inevitable civilian harm, humanitarian intervention is necessary upon the usage of indiscriminate weaponry, in order to prevent their further use. It is very difficult to force the state which deployed indiscriminate weapons to remove these weapons from its possession through means other than force. However, any forceful actions of the UN must be approved by the Security Council, where a danger exists that one of the permanent members will use their veto power to prevent the intervention because of their own political agendas. This was clearly demonstrated in the example of the U.S. humanitarian intervention in Syria on April 13th, 2018 following the Syrian use of chemical weaponry on civilians, which was technically carried out illegally, since it did not gain approval by the UNSC because of a veto coming from Russia. Generalised response mechanisms to the usage of indiscriminate weapons should be decided upon to not only effectively abolish the use of indiscriminate weapons, but to also make the workings of the Security Council more effective by limiting the impact of self-interests of member states on security questions.</string>
+                <key>fileName</key>
+                <string>DISEC - Indiscriminate weapons.pdf</string>
             </dict>
             <dict>
                 <key>name</key>
                 <string>Addressing the Possible End of the INF Treaty</string>
                 <key>description_</key>
                 <string>The Intermediate-Range Nuclear Forces Treaty (INF Treaty) is a bilateral treaty banning all land-based short and mid-range missiles, signed in 1987 by the USA and USSR, which then passed its obligations to Russia. The treaty was extremely effective in its outset, as both parties successfully eliminated all their short and mid range missiles by 1991, however, recent developments have put the state of the treaty at risk. The US has alleged that Russia violated the treaty in 2017, to which Russia has responded by rejecting the allegations and reporting that the USA has violated the treaty itself. With other consequences factored, there are strong tendencies in the US government to withdraw from the Treaty. This sends off an alarm to the entire international community - due to the unlimited duration of the INF, there have been no efforts by either the US or Russia to propose a new treaty in place of the INF. Consequentially, if it were to be concluded, there is virtually nothing stopping either member state from replenishing their arsenal of short and mid-range missiles, potentially leading to an all new arms race, putting international peace and security at risk.</string>
+                <key>fileName</key>
+                <string>DISEC INF treaty.pdf</string>
             </dict>
         </array>
         <key>countryMatrix</key>
@@ -166,12 +190,16 @@
                 <string>Aiding the Unification of Libya</string>
                 <key>description_</key>
                 <string>Already the second civil war to break out in Libya in this decade, the conflict between rival fractions seeking control over the Libyan government, territory and oil reserves continues since 2014, despite the many attempts of cease-fire and continuous international involvement. The conflict has started as a clash of interests between the House of Representatives (HoR) and the General National Congress (GNC) backed government. After the more secular HoR controversially won the 2014 elections, the GNC has responded to their democratic defeat by declaring the National Salvation Government, which was since dissolved. In 2015, the Government of the National Accord was set up under a UN - led initiative, and is still the only Libyan government recognised as legitimate by the UN SC. The GNA’s relationship with the HoR remains to be fluctuant and complicated. In addition to the GNA (backed up by the UN, USA, Qatar, Turkey and others) the HoR (backed by the UAE and Egypt), there is a huge Islamic State presence in Libya and an alarming number of local rogue or jihadist militia with often changing allegiances.</string>
+                <key>fileName</key>
+                <string>Al Libya.pdf</string>
             </dict>
             <dict>
                 <key>name</key>
                 <string>Addressing the Importance of Oil Revenue in Middle Eastern Economies</string>
                 <key>description_</key>
                 <string>After the discovery of vast oil deposits in the Middle East the region has witnessed a rapid growth of wealth and transformation of many economies from agricultural to rentier economies. Nowadays nearly all countries of the Middle East base their development and future on oil revenue. This may be extremely profitable now as the demand for oil may seem everlasting but the growth of environmental protection and systematic replacement of fossil fuels with clean energy globally presents imminent danger. The past sets a clear example that having economies tied to the price of an oil barrel can be fatal. Some nations in the region have recognised this and begun to transform their economies, preparing for the future without seemingly endless oil reserves. Others are unfortunately behind. If we want to ensure the stability of the region and posterity of it's people, the restructuring of the entire regional approach to economy must be debated and reconsidered.</string>
+                <key>fileName</key>
+                <string>AL Oil.pdf</string>
             </dict>
         </array>
         <key>countryMatrix</key>
@@ -191,12 +219,16 @@
                 <string>Breaking the Cycle of Violence and Human Rights Violations Perpetuated by the Extraction and Trade of Conflict Minerals</string>
                 <key>description_</key>
                 <string>Conflict minerals are rare, valuable commodities extracted in conflict zones and thereupon sold to perpetuate fighting and violence in the given region. In DRC in particular, cassiterite, wolframite, coltan and gold ore (3TGs) are often mined in remote locations, with most being patrolled by various armed groups that tax, coerce and force civilians to work. Workers, often including children, work shifts far surpassing the ILO imposed limit of 12 hours in hazardous areas with no safety precautions. The sales of these minerals are then used to finance the armed groups that continue to terrorise the region. The 3TGs are ultimately used by tech companies in developed countries to create phones, computers and other high-demand gadgets, but pass by numerous middlemen transporting the minerals from the region to East Asian processing plants. Although there have been attempts by firms up the production chain to avoid sourcing conflict minerals, the mere transition of responsibility to companies concerned with the end product has not proven to be a very effective strategy, as they can not grant fair human rights to the miners and eliminate the presence of militant groups without the direct cooperation of the governments of the source countries.</string>
+                <key>fileName</key>
+                <string>ILO2.pdf</string>
             </dict>
             <dict>
                 <key>name</key>
                 <string>Establishing the Conditions for the Construction of the Grand Inga Dam in DRC</string>
                 <key>description_</key>
                 <string>The Grand Inga Dam is a proposed hydroelectric dam, which would be the fourth dam at the Inga Falls of the Congo River and could potentially spur industrial economic development across the entirety of Africa. With the expected generating capacity of 39,000 MW, it would produce roughly twice as much energy as the Chinese Three Gorges Dam, which is currently the largest energy-producing body of any kind. The proposed budget for the entire project is expected to top $100 billion. As of 2011, the project in the feasibility study stage, meaning its practicality is being assessed, but no concrete action has been taken regarding the construction itself, and many questions surrounding the project continue to arise. First, the benefit for the DRC and its people is a great concern, as there are currently no plans on how poor communities would access the energy. Considering the many proved instances of corruption within the Congolese government, the lucrative foreign investments in the dam can potentially hinder rather than accelerate the country’s economy, and the very question of who will invest in such a project is still open.</string>
+                <key>fileName</key>
+                <string>ILO - Inga Dam.pdf</string>
             </dict>
         </array>
         <key>countryMatrix</key>
@@ -216,6 +248,8 @@
                 <string>Containing the Crisis in Venezuela</string>
                 <key>description_</key>
                 <string>Marked by unprecedented rates of unemployment and poverty, resource shortage and brutal violence, the political and socioeconomic crisis that has been unfolding in Venezuela under the presidency of Nicolas Manduro has been deemed one of the worst crises to ever strike in the Americas. The President has taken increasingly authoritarian steps in order to consolidate his power over the nation, jeopardising democracy in Venezuela, and consequently posing a threat to the international community. The refugees escaping the humanitarian crisis have been putting a strain on the neighbouring countries, lacking appropriate contingency plans for this massive influx in refugees. Alarmingly, the undisrupted rise to power of militant pro-government groups sets a dangerous precedent to foreign militias in the region, as Venezuela proves that criminal gangs can rise to power through politicisation and governments can consolidate their power by turning to militias to oppress dissidents and deter protests. The Crisis has been recognised by the international community, and although individual member states have used diplomatic, financial and military means to aid the situation, the UN has not yet decided on a united course of action.</string>
+                <key>fileName</key>
+                <string>SC-Venezuela.pdf</string>
             </dict>
         </array>
         <key>countryMatrix</key>
@@ -235,6 +269,8 @@
 				<string>1968: The Warsaw Pact Invasion of Czechoslovakia</string>
 				<key>description_</key>
 				<string>On the 21st of August 1968, half a million troops of the Warsaw Pact states’ armies moved into Czechoslovakian territory in response to government policies imposed by a reformist faction led by president Alexander Dubček. The period of political liberalisation referred to as Prague Spring, categorised by moving away from the strict Soviet doctrine and granting of additional human rights was not well received in the USSR, which had dominated Czechoslovakia since WWII. The invasion was labelled by many as unlawful, and on the following night, Canada, Denmark, France, UK, and USA called for a meeting, discussing the supposed Soviet intervention/invasion (described by the USSR as "brotherly help" , and thus "not an invasion"). The aim of the meeting was to decide which of the mentioned categories the event fell into, and consequentially if, and how, the UN should act, in the means of intervening directly against one of its permanent, founding members.</string>
+                <key>fileName</key>
+                <string>HSC .pdf</string>
 			</dict>
 		</array>
 		<key>countryMatrix</key>
